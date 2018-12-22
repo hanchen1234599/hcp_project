@@ -40,15 +40,13 @@ CREATE TABLE `usertable` (
 #
 
 DROP FUNCTION IF EXISTS `createrole`;
-CREATE FUNCTION `createrole`( vDBIndex INT(11), vRoleName VARCHAR(45) ) RETURNS bigint(20)
+CREATE FUNCTION `createrole`( vRoleName VARCHAR(45) ) RETURNS bigint(20)
 BEGIN
     DECLARE tRoleID BIGINT;
     select roleid into tRoleID from roletable where rolename = vRoleName;
     if tRoleID is null then
         INSERT INTO roletable ( rolename ) VALUES ( vRoleName );
         SELECT roleid INTO tRoleID FROM roletable WHERE rolename = vRoleName;
-        SET tRoleID = ( vDBIndex << 34 ) | tRoleID;
-        UPDATE roletable SET roleid=tRoleID WHERE rolename = vRoleName;
         RETURN tRoleID;
     end if;
 
@@ -56,7 +54,7 @@ BEGIN
 END;
 
 DROP FUNCTION IF EXISTS `login`;
-CREATE DEFINER=`root`@`localhost` FUNCTION `login`( vDBIndex INT(11), vAuthUserID VARCHAR(45), vAuthName VARCHAR(45), vIDFA VARCHAR(255) ) RETURNS bigint(20)
+CREATE DEFINER=`root`@`localhost` FUNCTION `login`( vAuthUserID VARCHAR(45), vAuthName VARCHAR(45), vIDFA VARCHAR(255) ) RETURNS bigint(20)
 BEGIN
     DECLARE tUserID BIGINT;    
     SELECT userid INTO tUserID FROM usertable WHERE authuserid = vAuthUserID AND authname = vAuthName;
@@ -68,8 +66,6 @@ BEGIN
         end if;   
 
         SELECT userid INTO tUserID FROM usertable WHERE authuserid = vAuthUserID AND authname = vAuthName;
-        SET tUserID = ( vDBIndex << 34 ) | tUserID;
-        UPDATE usertable SET userid=tUserID WHERE authuserid = vAuthUserID AND authname = vAuthName;
         RETURN tUserID;
     end if;    
 
