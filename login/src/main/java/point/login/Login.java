@@ -11,6 +11,8 @@ import com.hc.point.Point;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
 
+import point.login.base.LoginApp;
+
 public class Login {
 	
 	public static void main(String[] args) {
@@ -27,12 +29,8 @@ public class Login {
 				p.parse();
 				endPoints.add(p);
 			}
-//			ResultSet rs = LoginApp.getInstace().getDb().find("select login(?, ?, ?)", "aaa1", "evo", "");
-//			long userID = 0;
-//			if(rs.next()) {
-//				userID = rs.getLong(1);
-//			}
-//			Trace.info("userID:"+ userID);
+			
+			LoginApp.getInstace().launchLogin();
 			Thread.sleep(10000000000l);
 		} catch (Exception e) {
 			Trace.fatal("start error");

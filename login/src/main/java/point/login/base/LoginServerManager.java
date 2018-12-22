@@ -5,7 +5,6 @@ import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
 
 import io.netty.buffer.ByteBuf;
-import point.login.logic.LoginApp;
 
 public class LoginServerManager implements ServerListener {
 	@Override
@@ -25,22 +24,21 @@ public class LoginServerManager implements ServerListener {
 
 	@Override
 	public void onAddSession(Session<byte[]> session) {
-		
+		LoginApp.getInstace().addGateConnect(session);
 	}
 
 	@Override
 	public void onRemoveSession(Session<byte[]> session) {
-		
+		LoginApp.getInstace().addGateConnect(session);
 	}
 
 	@Override
 	public void onExceptionSession(Session<byte[]> session) {
-		
+		session.getChannel().close();
 	}
 
 	@Override
 	public void onData(Session<byte[]> session, ByteBuf body) {
-		
+		LoginApp.getInstace().recvProto(session, body);
 	}
-
 }

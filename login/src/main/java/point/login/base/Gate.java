@@ -1,4 +1,4 @@
-package point.login.logic;
+package point.login.base;
 
 import com.hc.component.net.session.Session;
 /**
