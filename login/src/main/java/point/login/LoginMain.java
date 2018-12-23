@@ -13,7 +13,7 @@ import com.hc.share.util.XmlReader;
 
 import point.login.logic.account.AccountManager;
 
-public class Login {
+public class LoginMain {
 	
 	public static void main(String[] args) {
 		Trace.logger.info("login server is begin");

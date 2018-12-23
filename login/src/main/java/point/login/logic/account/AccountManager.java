@@ -30,7 +30,7 @@ public class AccountManager extends LogicAbstract {
 		return this.moduleName;
 	}
 	@Override
-	public void onProtoBuf(Session<byte[]> session, int pid, byte[] body) {
+	public void onGateProto(Session<byte[]> session, int pid, byte[] body) {
 		Trace.logger.info("recv protobuf");
 	}
 }

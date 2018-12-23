@@ -40,6 +40,6 @@ public class LoginServerManager implements ServerListener {
 
 	@Override
 	public void onData(Session<byte[]> session, ByteBuf body) {
-		LoginApp.getInstace().recvProto(session, body);
+		LoginApp.getInstace().recvGateProto(session, body);
 	}
 }

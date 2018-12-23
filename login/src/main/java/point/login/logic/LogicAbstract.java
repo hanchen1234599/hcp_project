@@ -1,6 +1,7 @@
 package point.login.logic;
 
-import point.login.base.Gate;
+import com.hc.share.service.Gate;
+
 import point.login.base.LoginModule;
 
 public abstract class LogicAbstract implements LoginModule {

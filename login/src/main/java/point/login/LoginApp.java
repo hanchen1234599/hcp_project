@@ -10,11 +10,11 @@ import com.google.protobuf.InvalidProtocolBufferException;
 import com.hc.component.db.mysql.MysqlManager;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
+import com.hc.share.service.Gate;
 import com.hc.share.util.Trace;
 
 import hc.head.ProtoHead.Head.Builder;
 import io.netty.buffer.ByteBuf;
-import point.login.base.Gate;
 import point.login.base.LoginModule;
 /**
  * @author hanchen
@@ -70,7 +70,7 @@ public class LoginApp {
 	}
 	
 	//收到协议
-	public void recvProto(Session<byte[]> session, ByteBuf buf) {
+	public void recvGateProto(Session<byte[]> session, ByteBuf buf) {
 		int bufLenght = buf.readableBytes();
 		short headLen = buf.readShort();
 		ByteBuf bufHead = buf.slice(2, headLen);
@@ -85,7 +85,7 @@ public class LoginApp {
 				byte[] body = new byte[bufLenght - 2 - headLen];
 				buf.getBytes(2 + headLen, body, 0, body.length);
 				appExec.execute(()->{ //执行器提供登陆服务	
-					protoBufProtocols.get(protoID).onProtoBuf(session, protoID, body);
+					protoBufProtocols.get(protoID).onGateProto(session, protoID, body);
 				});
 			}else {
 				Trace.logger.warn("sessionID:" + session.getSessionID() + "protocol type error");
