@@ -2,9 +2,9 @@
 	<point name = "login" type = "login">
 		<component name = "server" type = "server" port="6544"
 		 boosthreadnum="1" workethreadnum="4" inprotolength="65536"
-		  outprotolength="65536" listener="point.login.LoginServerManager"/>
+		  outprotolength="65536" listener="point.login.base.LoginServerManager"/>
 		<component name = "accountdb" type = "mysql" packetpath="point.login.dbbean"
 		 workethreadnum="1" hikariconfig="./config/HikariConfig.properties" 
-		 listener="point.login.AccountDbManager"/>
+		 listener="point.login.base.AccountDbManager"/>
 	</point>
 </project>

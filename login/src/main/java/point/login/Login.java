@@ -11,7 +11,7 @@ import com.hc.point.Point;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
 
-import point.login.base.LoginApp;
+import point.login.logic.account.AccountManager;
 
 public class Login {
 	
@@ -19,7 +19,11 @@ public class Login {
 		Trace.logger.info("login server is begin");
 		List<Point> endPoints = new ArrayList<Point>();
 		try {
-			Trace.logger.info("pwd:" + System.getProperty("user.dir"));
+			Trace.logger.info(" registerModule");
+			// 注册模块
+			LoginApp.getInstace().registerModule(AccountManager.getInstance());
+			LoginApp.getInstace().launchLogin();
+			// 组件启动
 			Document doc = XmlReader.getInstance().readFile("./config/login.xml");
 			Element eRoot = doc.getRootElement();
 			@SuppressWarnings("unchecked")
@@ -30,10 +34,9 @@ public class Login {
 				endPoints.add(p);
 			}
 			
-			LoginApp.getInstace().launchLogin();
-			Thread.sleep(10000000000l);
+//			Thread.sleep(10000000000l);
 		} catch (Exception e) {
-			Trace.fatal("start error");
+			Trace.fatal("start  error");
 			e.printStackTrace();
 		}
 	}

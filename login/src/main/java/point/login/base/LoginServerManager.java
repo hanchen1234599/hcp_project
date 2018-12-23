@@ -5,6 +5,7 @@ import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
 
 import io.netty.buffer.ByteBuf;
+import point.login.LoginApp;
 
 public class LoginServerManager implements ServerListener {
 	@Override
