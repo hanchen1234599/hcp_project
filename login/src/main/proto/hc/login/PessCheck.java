@@ -42,7 +42,7 @@ public final class PessCheck {
         getPassWordBytes();
   }
   /**
-   * Protobuf type {@code head.LoginReq}
+   * Protobuf type {@code login.LoginReq}
    */
   public static final class LoginReq extends
       com.google.protobuf.GeneratedMessage
@@ -116,12 +116,12 @@ public final class PessCheck {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return hc.login.PessCheck.internal_static_head_LoginReq_descriptor;
+      return hc.login.PessCheck.internal_static_login_LoginReq_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return hc.login.PessCheck.internal_static_head_LoginReq_fieldAccessorTable
+      return hc.login.PessCheck.internal_static_login_LoginReq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               hc.login.PessCheck.LoginReq.class, hc.login.PessCheck.LoginReq.Builder.class);
     }
@@ -354,19 +354,19 @@ public final class PessCheck {
       return builder;
     }
     /**
-     * Protobuf type {@code head.LoginReq}
+     * Protobuf type {@code login.LoginReq}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements hc.login.PessCheck.LoginReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return hc.login.PessCheck.internal_static_head_LoginReq_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginReq_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return hc.login.PessCheck.internal_static_head_LoginReq_fieldAccessorTable
+        return hc.login.PessCheck.internal_static_login_LoginReq_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 hc.login.PessCheck.LoginReq.class, hc.login.PessCheck.LoginReq.Builder.class);
       }
@@ -404,7 +404,7 @@ public final class PessCheck {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return hc.login.PessCheck.internal_static_head_LoginReq_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginReq_descriptor;
       }
 
       public hc.login.PessCheck.LoginReq getDefaultInstanceForType() {
@@ -640,7 +640,7 @@ public final class PessCheck {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:head.LoginReq)
+      // @@protoc_insertion_point(builder_scope:login.LoginReq)
     }
 
     static {
@@ -648,7 +648,7 @@ public final class PessCheck {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:head.LoginReq)
+    // @@protoc_insertion_point(class_scope:login.LoginReq)
   }
 
   public interface LoginRspOrBuilder
@@ -683,7 +683,7 @@ public final class PessCheck {
     long getUserID();
   }
   /**
-   * Protobuf type {@code head.LoginRsp}
+   * Protobuf type {@code login.LoginRsp}
    */
   public static final class LoginRsp extends
       com.google.protobuf.GeneratedMessage
@@ -757,12 +757,12 @@ public final class PessCheck {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return hc.login.PessCheck.internal_static_head_LoginRsp_descriptor;
+      return hc.login.PessCheck.internal_static_login_LoginRsp_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return hc.login.PessCheck.internal_static_head_LoginRsp_fieldAccessorTable
+      return hc.login.PessCheck.internal_static_login_LoginRsp_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               hc.login.PessCheck.LoginRsp.class, hc.login.PessCheck.LoginRsp.Builder.class);
     }
@@ -949,19 +949,19 @@ public final class PessCheck {
       return builder;
     }
     /**
-     * Protobuf type {@code head.LoginRsp}
+     * Protobuf type {@code login.LoginRsp}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements hc.login.PessCheck.LoginRspOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return hc.login.PessCheck.internal_static_head_LoginRsp_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginRsp_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return hc.login.PessCheck.internal_static_head_LoginRsp_fieldAccessorTable
+        return hc.login.PessCheck.internal_static_login_LoginRsp_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 hc.login.PessCheck.LoginRsp.class, hc.login.PessCheck.LoginRsp.Builder.class);
       }
@@ -999,7 +999,7 @@ public final class PessCheck {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return hc.login.PessCheck.internal_static_head_LoginRsp_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginRsp_descriptor;
       }
 
       public hc.login.PessCheck.LoginRsp getDefaultInstanceForType() {
@@ -1165,7 +1165,7 @@ public final class PessCheck {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:head.LoginRsp)
+      // @@protoc_insertion_point(builder_scope:login.LoginRsp)
     }
 
     static {
@@ -1173,7 +1173,7 @@ public final class PessCheck {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:head.LoginRsp)
+    // @@protoc_insertion_point(class_scope:login.LoginRsp)
   }
 
   public interface LoginPessReqOrBuilder
@@ -1228,7 +1228,7 @@ public final class PessCheck {
     long getSessionID();
   }
   /**
-   * Protobuf type {@code head.LoginPessReq}
+   * Protobuf type {@code login.LoginPessReq}
    */
   public static final class LoginPessReq extends
       com.google.protobuf.GeneratedMessage
@@ -1307,12 +1307,12 @@ public final class PessCheck {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return hc.login.PessCheck.internal_static_head_LoginPessReq_descriptor;
+      return hc.login.PessCheck.internal_static_login_LoginPessReq_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return hc.login.PessCheck.internal_static_head_LoginPessReq_fieldAccessorTable
+      return hc.login.PessCheck.internal_static_login_LoginPessReq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               hc.login.PessCheck.LoginPessReq.class, hc.login.PessCheck.LoginPessReq.Builder.class);
     }
@@ -1581,19 +1581,19 @@ public final class PessCheck {
       return builder;
     }
     /**
-     * Protobuf type {@code head.LoginPessReq}
+     * Protobuf type {@code login.LoginPessReq}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements hc.login.PessCheck.LoginPessReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return hc.login.PessCheck.internal_static_head_LoginPessReq_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginPessReq_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return hc.login.PessCheck.internal_static_head_LoginPessReq_fieldAccessorTable
+        return hc.login.PessCheck.internal_static_login_LoginPessReq_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 hc.login.PessCheck.LoginPessReq.class, hc.login.PessCheck.LoginPessReq.Builder.class);
       }
@@ -1633,7 +1633,7 @@ public final class PessCheck {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return hc.login.PessCheck.internal_static_head_LoginPessReq_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginPessReq_descriptor;
       }
 
       public hc.login.PessCheck.LoginPessReq getDefaultInstanceForType() {
@@ -1929,7 +1929,7 @@ public final class PessCheck {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:head.LoginPessReq)
+      // @@protoc_insertion_point(builder_scope:login.LoginPessReq)
     }
 
     static {
@@ -1937,7 +1937,7 @@ public final class PessCheck {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:head.LoginPessReq)
+    // @@protoc_insertion_point(class_scope:login.LoginPessReq)
   }
 
   public interface LoginPessRspOrBuilder
@@ -1990,7 +1990,7 @@ public final class PessCheck {
     long getSessionID();
   }
   /**
-   * Protobuf type {@code head.LoginPessRsp}
+   * Protobuf type {@code login.LoginPessRsp}
    */
   public static final class LoginPessRsp extends
       com.google.protobuf.GeneratedMessage
@@ -2069,12 +2069,12 @@ public final class PessCheck {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return hc.login.PessCheck.internal_static_head_LoginPessRsp_descriptor;
+      return hc.login.PessCheck.internal_static_login_LoginPessRsp_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return hc.login.PessCheck.internal_static_head_LoginPessRsp_fieldAccessorTable
+      return hc.login.PessCheck.internal_static_login_LoginPessRsp_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               hc.login.PessCheck.LoginPessRsp.class, hc.login.PessCheck.LoginPessRsp.Builder.class);
     }
@@ -2297,19 +2297,19 @@ public final class PessCheck {
       return builder;
     }
     /**
-     * Protobuf type {@code head.LoginPessRsp}
+     * Protobuf type {@code login.LoginPessRsp}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements hc.login.PessCheck.LoginPessRspOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return hc.login.PessCheck.internal_static_head_LoginPessRsp_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginPessRsp_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return hc.login.PessCheck.internal_static_head_LoginPessRsp_fieldAccessorTable
+        return hc.login.PessCheck.internal_static_login_LoginPessRsp_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 hc.login.PessCheck.LoginPessRsp.class, hc.login.PessCheck.LoginPessRsp.Builder.class);
       }
@@ -2349,7 +2349,7 @@ public final class PessCheck {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return hc.login.PessCheck.internal_static_head_LoginPessRsp_descriptor;
+        return hc.login.PessCheck.internal_static_login_LoginPessRsp_descriptor;
       }
 
       public hc.login.PessCheck.LoginPessRsp getDefaultInstanceForType() {
@@ -2575,7 +2575,7 @@ public final class PessCheck {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:head.LoginPessRsp)
+      // @@protoc_insertion_point(builder_scope:login.LoginPessRsp)
     }
 
     static {
@@ -2583,29 +2583,29 @@ public final class PessCheck {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:head.LoginPessRsp)
+    // @@protoc_insertion_point(class_scope:login.LoginPessRsp)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_head_LoginReq_descriptor;
+    internal_static_login_LoginReq_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_head_LoginReq_fieldAccessorTable;
+      internal_static_login_LoginReq_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_head_LoginRsp_descriptor;
+    internal_static_login_LoginRsp_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_head_LoginRsp_fieldAccessorTable;
+      internal_static_login_LoginRsp_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_head_LoginPessReq_descriptor;
+    internal_static_login_LoginPessReq_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_head_LoginPessReq_fieldAccessorTable;
+      internal_static_login_LoginPessReq_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_head_LoginPessRsp_descriptor;
+    internal_static_login_LoginPessRsp_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_head_LoginPessRsp_fieldAccessorTable;
+      internal_static_login_LoginPessRsp_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2615,43 +2615,43 @@ public final class PessCheck {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017passcheck.proto\022\004head\"1\n\010LoginReq\022\023\n\013a" +
-      "ccountName\030\001 \002(\t\022\020\n\010passWord\030\002 \002(\t\"*\n\010Lo" +
-      "ginRsp\022\016\n\006result\030\001 \002(\005\022\016\n\006userID\030\002 \002(\003\"H" +
-      "\n\014LoginPessReq\022\023\n\013accountName\030\001 \002(\t\022\020\n\010p" +
-      "assWord\030\002 \002(\t\022\021\n\tsessionID\030\003 \002(\003\"A\n\014Logi" +
-      "nPessRsp\022\016\n\006result\030\001 \002(\005\022\016\n\006userID\030\002 \002(\003" +
-      "\022\021\n\tsessionID\030\003 \002(\003B\025\n\010hc.loginB\tPessChe" +
-      "ck"
+      "\n\017passcheck.proto\022\005login\"1\n\010LoginReq\022\023\n\013" +
+      "accountName\030\001 \002(\t\022\020\n\010passWord\030\002 \002(\t\"*\n\010L" +
+      "oginRsp\022\016\n\006result\030\001 \002(\005\022\016\n\006userID\030\002 \002(\003\"" +
+      "H\n\014LoginPessReq\022\023\n\013accountName\030\001 \002(\t\022\020\n\010" +
+      "passWord\030\002 \002(\t\022\021\n\tsessionID\030\003 \002(\003\"A\n\014Log" +
+      "inPessRsp\022\016\n\006result\030\001 \002(\005\022\016\n\006userID\030\002 \002(" +
+      "\003\022\021\n\tsessionID\030\003 \002(\003B\025\n\010hc.loginB\tPessCh" +
+      "eck"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
         public com.google.protobuf.ExtensionRegistry assignDescriptors(
             com.google.protobuf.Descriptors.FileDescriptor root) {
           descriptor = root;
-          internal_static_head_LoginReq_descriptor =
+          internal_static_login_LoginReq_descriptor =
             getDescriptor().getMessageTypes().get(0);
-          internal_static_head_LoginReq_fieldAccessorTable = new
+          internal_static_login_LoginReq_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_head_LoginReq_descriptor,
+              internal_static_login_LoginReq_descriptor,
               new java.lang.String[] { "AccountName", "PassWord", });
-          internal_static_head_LoginRsp_descriptor =
+          internal_static_login_LoginRsp_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_head_LoginRsp_fieldAccessorTable = new
+          internal_static_login_LoginRsp_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_head_LoginRsp_descriptor,
+              internal_static_login_LoginRsp_descriptor,
               new java.lang.String[] { "Result", "UserID", });
-          internal_static_head_LoginPessReq_descriptor =
+          internal_static_login_LoginPessReq_descriptor =
             getDescriptor().getMessageTypes().get(2);
-          internal_static_head_LoginPessReq_fieldAccessorTable = new
+          internal_static_login_LoginPessReq_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_head_LoginPessReq_descriptor,
+              internal_static_login_LoginPessReq_descriptor,
               new java.lang.String[] { "AccountName", "PassWord", "SessionID", });
-          internal_static_head_LoginPessRsp_descriptor =
+          internal_static_login_LoginPessRsp_descriptor =
             getDescriptor().getMessageTypes().get(3);
-          internal_static_head_LoginPessRsp_fieldAccessorTable = new
+          internal_static_login_LoginPessRsp_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_head_LoginPessRsp_descriptor,
+              internal_static_login_LoginPessRsp_descriptor,
               new java.lang.String[] { "Result", "UserID", "SessionID", });
           return null;
         }

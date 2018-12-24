@@ -13,7 +13,6 @@ public class AccountManager extends LogicAbstract {
 	public static AccountManager getInstance() {
 		return instance;
 	} 
-	
 	@Override
 	public void onLaunchLogin() {
 		Trace.logger.info("onLauchLogin");
@@ -24,13 +23,12 @@ public class AccountManager extends LogicAbstract {
 	public void onDbComplate() {
 		Trace.logger.info("on db complete");
 	}
-
 	@Override
 	public String getModuleName() {
 		return this.moduleName;
 	}
 	@Override
-	public void onGateProto(Session<byte[]> session, int pid, byte[] body) {
+	public void onGateProto(Session session, int pid, byte[] body) {
 		Trace.logger.info("recv protobuf");
 	}
 }
