@@ -25,24 +25,13 @@ public final class PessCheck {
      */
     com.google.protobuf.ByteString
         getAccountNameBytes();
-
-    // required string passWord = 2;
-    /**
-     * <code>required string passWord = 2;</code>
-     */
-    boolean hasPassWord();
-    /**
-     * <code>required string passWord = 2;</code>
-     */
-    java.lang.String getPassWord();
-    /**
-     * <code>required string passWord = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getPassWordBytes();
   }
   /**
    * Protobuf type {@code login.LoginReq}
+   *
+   * <pre>
+   *11
+   * </pre>
    */
   public static final class LoginReq extends
       com.google.protobuf.GeneratedMessage
@@ -95,11 +84,6 @@ public final class PessCheck {
             case 10: {
               bitField0_ |= 0x00000001;
               accountName_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              passWord_ = input.readBytes();
               break;
             }
           }
@@ -185,52 +169,8 @@ public final class PessCheck {
       }
     }
 
-    // required string passWord = 2;
-    public static final int PASSWORD_FIELD_NUMBER = 2;
-    private java.lang.Object passWord_;
-    /**
-     * <code>required string passWord = 2;</code>
-     */
-    public boolean hasPassWord() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required string passWord = 2;</code>
-     */
-    public java.lang.String getPassWord() {
-      java.lang.Object ref = passWord_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          passWord_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string passWord = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getPassWordBytes() {
-      java.lang.Object ref = passWord_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        passWord_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     private void initFields() {
       accountName_ = "";
-      passWord_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -238,10 +178,6 @@ public final class PessCheck {
       if (isInitialized != -1) return isInitialized == 1;
 
       if (!hasAccountName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPassWord()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -255,9 +191,6 @@ public final class PessCheck {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeBytes(1, getAccountNameBytes());
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getPassWordBytes());
-      }
       getUnknownFields().writeTo(output);
     }
 
@@ -270,10 +203,6 @@ public final class PessCheck {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(1, getAccountNameBytes());
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getPassWordBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -355,6 +284,10 @@ public final class PessCheck {
     }
     /**
      * Protobuf type {@code login.LoginReq}
+     *
+     * <pre>
+     *11
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
@@ -393,8 +326,6 @@ public final class PessCheck {
         super.clear();
         accountName_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        passWord_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -427,10 +358,6 @@ public final class PessCheck {
           to_bitField0_ |= 0x00000001;
         }
         result.accountName_ = accountName_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.passWord_ = passWord_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -452,21 +379,12 @@ public final class PessCheck {
           accountName_ = other.accountName_;
           onChanged();
         }
-        if (other.hasPassWord()) {
-          bitField0_ |= 0x00000002;
-          passWord_ = other.passWord_;
-          onChanged();
-        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
         if (!hasAccountName()) {
-          
-          return false;
-        }
-        if (!hasPassWord()) {
           
           return false;
         }
@@ -566,80 +484,6 @@ public final class PessCheck {
         return this;
       }
 
-      // required string passWord = 2;
-      private java.lang.Object passWord_ = "";
-      /**
-       * <code>required string passWord = 2;</code>
-       */
-      public boolean hasPassWord() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required string passWord = 2;</code>
-       */
-      public java.lang.String getPassWord() {
-        java.lang.Object ref = passWord_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          passWord_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string passWord = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getPassWordBytes() {
-        java.lang.Object ref = passWord_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          passWord_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string passWord = 2;</code>
-       */
-      public Builder setPassWord(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        passWord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string passWord = 2;</code>
-       */
-      public Builder clearPassWord() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        passWord_ = getDefaultInstance().getPassWord();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string passWord = 2;</code>
-       */
-      public Builder setPassWordBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        passWord_ = value;
-        onChanged();
-        return this;
-      }
-
       // @@protoc_insertion_point(builder_scope:login.LoginReq)
     }
 
@@ -684,6 +528,10 @@ public final class PessCheck {
   }
   /**
    * Protobuf type {@code login.LoginRsp}
+   *
+   * <pre>
+   *12
+   * </pre>
    */
   public static final class LoginRsp extends
       com.google.protobuf.GeneratedMessage
@@ -950,6 +798,10 @@ public final class PessCheck {
     }
     /**
      * Protobuf type {@code login.LoginRsp}
+     *
+     * <pre>
+     *12
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
@@ -1229,6 +1081,10 @@ public final class PessCheck {
   }
   /**
    * Protobuf type {@code login.LoginPessReq}
+   *
+   * <pre>
+   *13
+   * </pre>
    */
   public static final class LoginPessReq extends
       com.google.protobuf.GeneratedMessage
@@ -1582,6 +1438,10 @@ public final class PessCheck {
     }
     /**
      * Protobuf type {@code login.LoginPessReq}
+     *
+     * <pre>
+     *13
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
@@ -1991,6 +1851,10 @@ public final class PessCheck {
   }
   /**
    * Protobuf type {@code login.LoginPessRsp}
+   *
+   * <pre>
+   *14
+   * </pre>
    */
   public static final class LoginPessRsp extends
       com.google.protobuf.GeneratedMessage
@@ -2298,6 +2162,10 @@ public final class PessCheck {
     }
     /**
      * Protobuf type {@code login.LoginPessRsp}
+     *
+     * <pre>
+     *14
+     * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
@@ -2615,14 +2483,13 @@ public final class PessCheck {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017passcheck.proto\022\005login\"1\n\010LoginReq\022\023\n\013" +
-      "accountName\030\001 \002(\t\022\020\n\010passWord\030\002 \002(\t\"*\n\010L" +
-      "oginRsp\022\016\n\006result\030\001 \002(\005\022\016\n\006userID\030\002 \002(\003\"" +
-      "H\n\014LoginPessReq\022\023\n\013accountName\030\001 \002(\t\022\020\n\010" +
-      "passWord\030\002 \002(\t\022\021\n\tsessionID\030\003 \002(\003\"A\n\014Log" +
-      "inPessRsp\022\016\n\006result\030\001 \002(\005\022\016\n\006userID\030\002 \002(" +
-      "\003\022\021\n\tsessionID\030\003 \002(\003B\025\n\010hc.loginB\tPessCh" +
-      "eck"
+      "\n\017passcheck.proto\022\005login\"\037\n\010LoginReq\022\023\n\013" +
+      "accountName\030\001 \002(\t\"*\n\010LoginRsp\022\016\n\006result\030" +
+      "\001 \002(\005\022\016\n\006userID\030\002 \002(\003\"H\n\014LoginPessReq\022\023\n" +
+      "\013accountName\030\001 \002(\t\022\020\n\010passWord\030\002 \002(\t\022\021\n\t" +
+      "sessionID\030\003 \002(\003\"A\n\014LoginPessRsp\022\016\n\006resul" +
+      "t\030\001 \002(\005\022\016\n\006userID\030\002 \002(\003\022\021\n\tsessionID\030\003 \002" +
+      "(\003B\025\n\010hc.loginB\tPessCheck"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -2634,7 +2501,7 @@ public final class PessCheck {
           internal_static_login_LoginReq_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_login_LoginReq_descriptor,
-              new java.lang.String[] { "AccountName", "PassWord", });
+              new java.lang.String[] { "AccountName", });
           internal_static_login_LoginRsp_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_login_LoginRsp_fieldAccessorTable = new

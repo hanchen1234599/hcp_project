@@ -6,14 +6,13 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.google.protobuf.InvalidProtocolBufferException;
 import com.hc.component.db.mysql.MysqlManager;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
 import com.hc.share.service.Gate;
+import com.hc.share.util.ProtoHelper;
 import com.hc.share.util.Trace;
-
-import hc.head.ProtoHead.Head.Builder;
+import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import point.login.base.LoginModule;
 
@@ -35,7 +34,6 @@ public class LoginApp {
 	public void registerModule(LoginModule module) {
 		this.modules.put(module.getModuleName(), module);
 	}
-
 	// 给模块注册协议
 	public void registerProtoBufProtoProtocol(int pid, LoginModule logic) {
 		if (this.protoBufProtocols.get(pid) != null) {
@@ -44,14 +42,12 @@ public class LoginApp {
 		}
 		this.protoBufProtocols.put(pid, logic);
 	}
-
 	// 服务器初始化
 	public void launchLogin() {
 		for (Entry<String, LoginModule> logic : modules.entrySet()) {
 			logic.getValue().onLaunchLogin();
 		}
 	}
-
 	// 添加链接
 	public void addGateConnect(Session session) {
 		Gate gate = new Gate(session);
@@ -61,7 +57,6 @@ public class LoginApp {
 		}
 		Trace.logger.info("add gate sessionid :" + session.getSessionID());
 	}
-
 	// 断开连接
 	public void removeGateConnect(Session session) {
 		Gate gate = gates.remove(session.getSessionID());
@@ -70,39 +65,25 @@ public class LoginApp {
 		}
 		Trace.logger.info("remove gate sessionid :" + session.getSessionID());
 	}
-
 	// 收到协议
 	public void recvGateProto(Session session, ByteBuf buf) {
-		int bufLenght = buf.readableBytes();
-		short headLen = buf.readShort();
-		ByteBuf bufHead = buf.slice(2, headLen);
-		byte[] bytes = new byte[headLen];
-		bufHead.getBytes(0, bytes);
-		buf.slice(0, headLen);
-		try {
-			Builder header = hc.head.ProtoHead.Head.newBuilder().mergeFrom(bytes);
-			hc.head.ProtoHead.Head head = header.build();
-			int protoID = head.getProtoID();
-			if (head.getType() == hc.head.ProtoHead.Head.ProtoType.PROTOBUF) {
-				byte[] body = new byte[bufLenght - 2 - headLen];
-				buf.getBytes(2 + headLen, body, 0, body.length);
-				appExec.execute(() -> { // 执行器提供登陆服务
-					protoBufProtocols.get(protoID).onGateProto(session, protoID, body);
-				});
-			} else {
-				Trace.logger.warn("sessionID:" + session.getSessionID() + "protocol type error");
-				session.getChannel().close();
+		ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
+			if (protoType == ProtoType.PROTOBUF) {
+				if(result) {
+					appExec.execute(() -> { // 执行器提供登陆服务
+						protoBufProtocols.get(protoID).onGateProto(session, protoID, body);
+					});
+				}else {
+					Trace.logger.info("Gate 发来的数据头协议解析错误");
+				}
+			}else {
+				Trace.logger.info("暂时不支持其他类型的协议");
 			}
-		} catch (InvalidProtocolBufferException e) {
-			session.getChannel().close();
-			e.printStackTrace();
-		}
+		});
 	}
-
 	public MysqlManager getDb() {
 		return db;
 	}
-
 	public void setDb(MysqlManager db) {
 		this.db = db;
 		if (db != null) {
@@ -111,16 +92,16 @@ public class LoginApp {
 			}
 		}
 	}
-
 	public ServerManager getServer() {
 		return server;
 	}
-
 	public void setServer(ServerManager server) {
 		this.server = server;
 	}
-
 	public static LoginApp getInstace() {
 		return instance;
+	}
+	public ExecutorService getAppExec() {
+		return appExec;
 	}
 }
