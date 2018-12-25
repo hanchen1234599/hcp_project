@@ -36,7 +36,7 @@ public class AccountManager extends LogicAbstract {
 	}
 	@Override
 	public void onGateProto(Session session, int pid, ByteBuf body) {
-		Trace.logger.info("recv protobuf pid");
+		Trace.logger.info("recv protobuf pid :" + pid);
 		if(isOpen == false)
 			return;
 		if(pid == 12) {
