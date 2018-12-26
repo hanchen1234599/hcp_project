@@ -1,0 +1,24 @@
+package login;
+
+option java_package = "hc.login";
+option java_outer_classname = "PessCheck";
+//11
+message LoginReq {
+  required string accountName = 1;
+}
+//14
+message LoginRsp {
+  required int32 result = 1;
+  required int64 userID = 2;        // Unique ID number for this person.
+}
+//12
+message LoginPessReq {
+  required string accountName = 1;
+  required int64 sessionID = 2;        // Unique ID number for this person.
+}
+//13
+message LoginPessRsp {
+  required int32 result = 1;
+  required int64 userID = 2;        // Unique ID number for this person.
+  required int64 sessionID = 3;        // Unique ID number for this person.
+}
