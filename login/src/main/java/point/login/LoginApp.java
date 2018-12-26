@@ -52,10 +52,10 @@ public class LoginApp {
 	public void addGateConnect(Session session) {
 		Gate gate = new Gate(session);
 		gates.put(session.getSessionID(), gate);
+		Trace.logger.info("onAddGateConnect sessionid :" + session.getSessionID());
 		for (Entry<String, LoginModule> logic : modules.entrySet()) {
 			logic.getValue().onAddGateConnect(gate);
 		}
-		Trace.logger.info("add gate sessionid :" + session.getSessionID());
 	}
 	// 断开连接
 	public void removeGateConnect(Session session) {

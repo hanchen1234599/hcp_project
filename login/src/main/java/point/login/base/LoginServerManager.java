@@ -29,7 +29,7 @@ public class LoginServerManager implements ServerListener {
 
 	@Override
 	public void onRemoveSession(Session session) {
-		LoginApp.getInstace().addGateConnect(session);
+		LoginApp.getInstace().removeGateConnect(session);
 	}
 
 	@Override

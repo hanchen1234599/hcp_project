@@ -33,6 +33,7 @@ public class LoginMain {
 				p.parse();
 				endPoints.add(p);
 			}
+			Thread.sleep(1200000000);
 		} catch (Exception e) {
 			Trace.fatal("start  error");
 			e.printStackTrace();

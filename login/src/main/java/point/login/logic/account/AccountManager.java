@@ -47,13 +47,15 @@ public class AccountManager extends LogicAbstract {
 				hc.login.PessCheck.LoginPessReq loginReq = hc.login.PessCheck.LoginPessReq.newBuilder().mergeFrom(bodyBuff).build();
 				String accountName = loginReq.getAccountName();
 				long sessionID = loginReq.getSessionID();
+				Trace.logger.info("账号 " + accountName + " query. " + " time:" + System.currentTimeMillis());
 				LoginApp.getInstace().getDb().findASync((rs)->{
+					Trace.logger.info("账号 " + accountName + " query. " + " time:" + System.currentTimeMillis());
 					hc.login.PessCheck.LoginPessRsp.Builder loginPessRspBuilder = hc.login.PessCheck.LoginPessRsp.newBuilder();
 					try {
 						if(rs.next() == false)
 							return;
 						long userID = rs.getLong(1);
-						Trace.info("创建账号  accountName : " + accountName + " userID : " + userID);
+						Trace.logger.info("账号: " + accountName + " userID: " + userID  + " time:" + System.currentTimeMillis());
 						
 						loginPessRspBuilder.setResult(0);
 						loginPessRspBuilder.setSessionID(sessionID);
