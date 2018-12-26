@@ -1,0 +1,1167 @@
+[INFO ] 2018-12-22 10:31:22,918(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:31:22,925(7)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is end  
+[INFO ] 2018-12-22 10:32:18,649(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:32:18,651(2)-->[main] com.hc.share.util.Trace.info(Trace.java:9): F:\point_01  
+[INFO ] 2018-12-22 10:32:18,654(5)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is end  
+[INFO ] 2018-12-22 10:32:49,436(1)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:32:49,438(3)-->[main] com.hc.share.util.Trace.info(Trace.java:9): F:\point_01  
+[INFO ] 2018-12-22 10:32:49,491(56)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is end  
+[INFO ] 2018-12-22 10:47:02,432(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:47:02,434(2)-->[main] com.hc.share.util.Trace.info(Trace.java:9): pwd:F:\point_01  
+[INFO ] 2018-12-22 10:47:02,492(60)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Point xml config error  
+[FATAL] 2018-12-22 10:47:02,492(60)-->[main] com.hc.share.util.Trace.fatal(Trace.java:29): com.hc.share.exception.NetException: NettyServerImpl port is error  
+[INFO ] 2018-12-22 10:50:16,534(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:50:16,536(2)-->[main] com.hc.share.util.Trace.info(Trace.java:9): pwd:F:\point_01  
+[INFO ] 2018-12-22 10:50:16,615(81)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Point xml config error  
+[FATAL] 2018-12-22 10:50:16,615(81)-->[main] com.hc.share.util.Trace.fatal(Trace.java:29): com.hc.share.exception.NetException: NettyServerImpl port is error  
+[INFO ] 2018-12-22 10:50:31,022(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:50:31,024(2)-->[main] com.hc.share.util.Trace.info(Trace.java:9): pwd:F:\point_01  
+[INFO ] 2018-12-22 10:50:31,091(69)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Point xml config error  
+[FATAL] 2018-12-22 10:50:31,092(70)-->[main] com.hc.share.util.Trace.fatal(Trace.java:29): com.hc.share.exception.NetException: NettyServerImpl port is error  
+[INFO ] 2018-12-22 10:51:26,285(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:51:26,287(2)-->[main] com.hc.share.util.Trace.info(Trace.java:9): pwd:F:\point_01  
+[INFO ] 2018-12-22 10:53:19,572(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:53:19,574(2)-->[main] com.hc.share.util.Trace.info(Trace.java:9): pwd:F:\point_01  
+[INFO ] 2018-12-22 10:55:36,662(0)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Swicher is begin  
+[INFO ] 2018-12-22 10:55:36,664(2)-->[main] com.hc.share.util.Trace.info(Trace.java:9): pwd:F:\point_01  
+[DEBUG] 2018-12-22 10:55:36,738(76)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 10:55:36,742(80)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 10:55:36,761(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 10:55:36,761(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 10:55:36,778(116)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 10:55:36,780(118)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 10:55:36,780(118)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 10:55:36,781(119)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 10:55:36,782(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 10:55:36,782(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 10:55:36,783(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 10:55:36,783(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 10:55:36,783(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 10:55:36,784(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 10:55:36,784(122)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 10:55:36,785(123)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 10:55:36,785(123)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 10:55:36,786(124)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 10:55:36,786(124)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 10:55:36,787(125)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 10:55:36,787(125)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 10:55:36,793(131)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 10:55:36,848(186)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 10:55:36,848(186)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 10:55:36,926(264)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 7844 (auto-detected)  
+[DEBUG] 2018-12-22 10:55:36,929(267)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 10:55:36,929(267)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 10:55:36,967(305)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 10:55:36,968(306)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 10:55:37,002(340)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 10:55:37,015(353)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 10:55:37,015(353)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 10:55:37,031(369)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 10:55:37,031(369)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 10:55:37,031(369)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 10:55:37,031(369)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 10:55:37,031(369)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 10:55:37,032(370)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 10:55:37,032(370)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 10:55:37,032(370)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 10:55:37,032(370)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 10:55:37,032(370)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 10:55:37,032(370)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 10:55:37,049(387)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 10:55:37,051(389)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 10:55:37,051(389)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[WARN ] 2018-12-22 10:55:37,063(401)-->[main] io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:460): Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x6f0e15f6]'  
+[DEBUG] 2018-12-22 10:55:37,076(414)-->[main] com.hc.share.util.Trace.debug(Trace.java:13): openListener  
+[INFO ] 2018-12-22 10:55:37,076(414)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 外网server已经开启  
+[INFO ] 2018-12-22 10:55:37,076(414)-->[main] com.hc.share.util.Trace.info(Trace.java:9): OutServerListener onInit  
+[INFO ] 2018-12-22 10:55:37,076(414)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Component:server1 start success  
+[INFO ] 2018-12-22 10:55:37,079(417)-->[main] com.hc.share.util.Trace.info(Trace.java:9): PassCheckConnect init  
+[INFO ] 2018-12-22 10:55:37,079(417)-->[main] com.hc.share.util.Trace.info(Trace.java:9): Component:connect start success  
+[INFO ] 2018-12-22 10:55:37,080(418)-->[main] com.hc.share.util.Trace.info(Trace.java:9): point:point start success  
+[INFO ] 2018-12-22 11:02:36,140(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:02:36,143(3)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:02:36,217(77)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:02:36,222(82)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:02:36,239(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:02:36,240(100)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:02:36,258(118)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:02:36,259(119)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:02:36,260(120)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:02:36,261(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:02:36,261(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:02:36,262(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:02:36,263(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:02:36,263(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:02:36,263(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:02:36,263(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:02:36,264(124)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:02:36,265(125)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:02:36,265(125)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:02:36,266(126)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:02:36,266(126)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:02:36,267(127)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:02:36,267(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:02:36,273(133)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:02:36,335(195)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:02:36,335(195)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:02:36,369(229)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 16228 (auto-detected)  
+[DEBUG] 2018-12-22 11:02:36,371(231)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:02:36,371(231)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:02:36,404(264)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:02:36,405(265)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:02:36,436(296)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:02:36,445(305)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:02:36,446(306)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:02:36,461(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:02:36,462(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:02:36,462(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:02:36,462(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:02:36,462(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:02:36,462(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:02:36,462(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:02:36,463(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:02:36,463(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:02:36,463(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:02:36,463(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:02:36,469(329)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:02:36,469(329)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:02:36,469(329)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[WARN ] 2018-12-22 11:02:36,476(336)-->[main] io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:460): Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xc25350b2]'  
+[DEBUG] 2018-12-22 11:02:36,487(347)-->[main] com.hc.share.util.Trace.debug(Trace.java:13): openListener  
+[INFO ] 2018-12-22 11:02:36,487(347)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:02:36,487(347)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:02:36,487(347)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:02:36,491(351)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:02:36,491(351)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:02:36,491(351)-->[main] com.hc.point.Point.parse(Point.java:49): point:point start success  
+[INFO ] 2018-12-22 11:03:52,575(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:03:52,577(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:03:52,649(74)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:03:52,653(78)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:03:52,672(97)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:03:52,672(97)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:03:52,696(121)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:03:52,697(122)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:03:52,698(123)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:03:52,699(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:03:52,700(125)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:03:52,700(125)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:03:52,701(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:03:52,702(127)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:03:52,703(128)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:03:52,703(128)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:03:52,705(130)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:03:52,705(130)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:03:52,705(130)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:03:52,707(132)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:03:52,707(132)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:03:52,707(132)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:03:52,708(133)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:03:52,715(140)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:03:52,770(195)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:03:52,770(195)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:03:52,802(227)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 12380 (auto-detected)  
+[DEBUG] 2018-12-22 11:03:52,804(229)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:03:52,804(229)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:03:52,836(261)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:03:52,836(261)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:03:52,870(295)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:03:52,880(305)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:03:52,880(305)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:03:52,895(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:03:52,895(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:03:52,895(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:03:52,896(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:03:52,902(327)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:03:52,902(327)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:03:52,903(328)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[WARN ] 2018-12-22 11:03:52,910(335)-->[main] io.netty.bootstrap.AbstractBootstrap.setChannelOption(AbstractBootstrap.java:460): Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x8e6c8322]'  
+[DEBUG] 2018-12-22 11:03:52,921(346)-->[main] com.hc.share.util.Trace.debug(Trace.java:13): openListener  
+[INFO ] 2018-12-22 11:03:52,922(347)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:03:52,922(347)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:03:52,922(347)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:03:52,925(350)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:03:52,925(350)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:03:52,925(350)-->[main] com.hc.point.Point.parse(Point.java:49): point:point start success  
+[INFO ] 2018-12-22 11:05:08,366(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:05:08,369(3)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:05:08,443(77)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:05:08,447(81)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:05:08,465(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:05:08,465(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:05:08,482(116)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:05:08,483(117)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:05:08,483(117)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:05:08,485(119)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:05:08,485(119)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:05:08,486(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:05:08,486(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:05:08,487(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:05:08,487(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:05:08,487(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:05:08,488(122)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:05:08,489(123)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:05:08,489(123)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:05:08,490(124)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:05:08,490(124)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:05:08,491(125)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:05:08,491(125)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:05:08,496(130)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:05:08,553(187)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:05:08,553(187)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:05:08,586(220)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 15240 (auto-detected)  
+[DEBUG] 2018-12-22 11:05:08,588(222)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:05:08,588(222)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:05:08,623(257)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:05:08,624(258)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:05:08,657(291)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:05:08,668(302)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:05:08,668(302)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:05:08,684(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:05:08,684(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:05:08,685(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:05:08,685(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:05:08,685(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:05:08,685(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:05:08,686(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:05:08,686(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:05:08,686(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:05:08,686(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:05:08,686(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:05:08,692(326)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:05:08,692(326)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:05:08,692(326)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[DEBUG] 2018-12-22 11:05:08,700(334)-->[main] com.hc.share.util.Trace.debug(Trace.java:13): openListener  
+[INFO ] 2018-12-22 11:05:08,703(337)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:05:08,703(337)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:05:08,704(338)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:05:08,707(341)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:05:08,707(341)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:05:08,708(342)-->[main] com.hc.point.Point.parse(Point.java:49): point:point start success  
+[INFO ] 2018-12-22 11:07:37,113(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:07:37,115(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:07:52,668(15555)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:07:52,673(15560)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:07:52,698(15585)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:07:52,698(15585)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:07:52,724(15611)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:07:52,726(15613)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:07:52,726(15613)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:07:52,727(15614)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:07:52,728(15615)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:07:52,729(15616)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:07:52,729(15616)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:07:52,730(15617)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:07:52,730(15617)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:07:52,730(15617)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:07:52,731(15618)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:07:52,732(15619)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:07:52,732(15619)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:07:52,733(15620)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:07:52,733(15620)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:07:52,734(15621)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:07:52,734(15621)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:07:52,742(15629)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:07:52,814(15701)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:07:52,815(15702)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:07:52,851(15738)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 12048 (auto-detected)  
+[DEBUG] 2018-12-22 11:07:52,853(15740)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:07:52,853(15740)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:07:52,884(15771)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:07:52,885(15772)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:07:52,918(15805)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:07:52,934(15821)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:07:52,935(15822)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:07:52,952(15839)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:07:52,952(15839)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:07:52,952(15839)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:07:52,952(15839)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:07:52,953(15840)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:07:52,953(15840)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:07:52,953(15840)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:07:52,953(15840)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:07:52,953(15840)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:07:52,953(15840)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:07:52,953(15840)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:07:52,960(15847)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:07:52,961(15848)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:07:52,961(15848)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[DEBUG] 2018-12-22 11:07:52,972(15859)-->[main] com.hc.share.util.Trace.debug(Trace.java:13): openListener  
+[INFO ] 2018-12-22 11:07:52,975(15862)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:07:52,975(15862)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:07:52,975(15862)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:10:05,373(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:10:05,375(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:10:05,451(78)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:10:05,456(83)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:10:05,474(101)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:10:05,474(101)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:10:05,492(119)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:10:05,494(121)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:10:05,494(121)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:10:05,495(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:10:05,496(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:10:05,496(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:10:05,497(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:10:05,497(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:10:05,497(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:10:05,498(125)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:10:05,499(126)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:10:05,499(126)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:10:05,499(126)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:10:05,500(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:10:05,500(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:10:05,501(128)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:10:05,501(128)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:10:05,507(134)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:10:05,566(193)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:10:05,566(193)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:10:05,600(227)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 2652 (auto-detected)  
+[DEBUG] 2018-12-22 11:10:05,602(229)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:10:05,602(229)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:10:05,636(263)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:10:05,637(264)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:10:05,673(300)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:10:05,685(312)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:10:05,686(313)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:10:05,701(328)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:10:05,702(329)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:10:05,702(329)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:10:05,702(329)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:10:05,702(329)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:10:05,702(329)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:10:05,702(329)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:10:05,703(330)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:10:05,704(331)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:10:05,704(331)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:10:05,704(331)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:10:05,710(337)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:10:05,710(337)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:10:05,710(337)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:10:05,718(345)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:10:05,721(348)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:10:05,721(348)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:10:05,722(349)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:10:05,725(352)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:10:05,725(352)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:10:05,725(352)-->[main] com.hc.point.Point.parse(Point.java:49): point:point start success  
+[INFO ] 2018-12-22 11:10:12,214(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:10:12,216(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:10:12,291(77)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:10:12,294(80)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:10:12,313(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:10:12,313(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:10:12,335(121)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:10:12,336(122)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:10:12,336(122)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:10:12,338(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:10:12,338(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:10:12,339(125)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:10:12,339(125)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:10:12,340(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:10:12,340(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:10:12,340(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:10:12,341(127)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:10:12,341(127)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:10:12,341(127)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:10:12,343(129)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:10:12,343(129)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:10:12,343(129)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:10:12,343(129)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:10:12,349(135)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:10:12,405(191)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:10:12,405(191)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:10:12,439(225)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 636 (auto-detected)  
+[DEBUG] 2018-12-22 11:10:12,441(227)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:10:12,441(227)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:10:12,473(259)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:10:12,473(259)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:10:12,506(292)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:10:12,516(302)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:10:12,516(302)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:10:12,531(317)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:10:12,531(317)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:10:12,531(317)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:10:12,531(317)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:10:12,532(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:10:12,532(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:10:12,532(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:10:12,532(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:10:12,532(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:10:12,532(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:10:12,532(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:10:12,538(324)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:10:12,538(324)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:10:12,539(325)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:10:12,548(334)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:10:12,551(337)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:10:12,551(337)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:10:12,551(337)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:10:12,554(340)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:10:12,554(340)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:10:12,554(340)-->[main] com.hc.point.Point.parse(Point.java:49): point:point start success  
+[INFO ] 2018-12-22 11:11:15,977(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:11:15,979(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:11:16,052(75)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:11:16,055(78)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:11:16,073(96)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:11:16,073(96)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:11:16,090(113)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:11:16,092(115)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:11:16,092(115)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:11:16,093(116)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:11:16,094(117)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:11:16,094(117)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:11:16,095(118)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:11:16,096(119)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:11:16,096(119)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:11:16,096(119)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:11:16,097(120)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:11:16,098(121)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:11:16,098(121)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:11:16,099(122)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:11:16,099(122)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:11:16,100(123)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:11:16,100(123)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:11:16,106(129)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:11:16,164(187)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:11:16,164(187)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:11:16,200(223)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 9196 (auto-detected)  
+[DEBUG] 2018-12-22 11:11:16,201(224)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:11:16,202(225)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:11:16,237(260)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:11:16,237(260)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:11:16,271(294)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:11:16,283(306)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:11:16,283(306)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:11:16,299(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:11:16,299(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:11:16,299(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:11:16,299(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:11:16,299(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:11:16,299(322)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:11:16,300(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:11:16,300(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:11:16,300(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:11:16,300(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:11:16,300(323)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:11:16,306(329)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:11:16,306(329)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:11:16,306(329)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:11:16,314(337)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:11:16,316(339)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:11:16,317(340)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:11:16,317(340)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:11:16,321(344)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:11:16,321(344)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:11:16,321(344)-->[main] com.hc.point.Point.parse(Point.java:49): point:swither1 start success  
+[INFO ] 2018-12-22 11:15:20,324(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:15:20,327(3)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:15:20,400(76)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:15:20,403(79)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:15:20,423(99)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:15:20,424(100)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:15:20,440(116)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:15:20,442(118)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:15:20,442(118)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:15:20,444(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:15:20,444(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:15:20,445(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:15:20,445(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:15:20,446(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:15:20,446(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:15:20,446(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:15:20,447(123)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:15:20,447(123)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:15:20,447(123)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:15:20,448(124)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:15:20,448(124)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:15:20,449(125)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:15:20,449(125)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:15:20,455(131)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:15:20,511(187)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:15:20,511(187)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:15:20,545(221)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 1160 (auto-detected)  
+[DEBUG] 2018-12-22 11:15:20,547(223)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:15:20,547(223)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:15:20,582(258)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:15:20,582(258)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:15:20,617(293)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:15:20,627(303)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:15:20,627(303)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:15:20,642(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:15:20,643(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:15:20,643(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:15:20,644(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:15:20,651(327)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:15:20,651(327)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:15:20,651(327)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:15:20,660(336)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:15:20,663(339)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:15:20,663(339)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:15:20,663(339)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:15:20,666(342)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:15:20,666(342)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:15:20,666(342)-->[main] com.hc.point.Point.parse(Point.java:49): point:swither1 start success  
+[INFO ] 2018-12-22 11:16:50,163(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:16:50,165(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:16:50,247(84)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:16:50,252(89)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:16:50,274(111)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:16:50,275(112)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:16:50,294(131)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:16:50,296(133)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:16:50,296(133)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:16:50,298(135)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:16:50,298(135)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:16:50,299(136)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:16:50,300(137)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:16:50,301(138)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:16:50,301(138)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:16:50,301(138)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:16:50,302(139)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:16:50,302(139)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:16:50,302(139)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:16:50,304(141)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:16:50,304(141)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:16:50,304(141)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:16:50,305(142)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:16:50,311(148)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:16:50,373(210)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:16:50,373(210)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:16:50,408(245)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 14760 (auto-detected)  
+[DEBUG] 2018-12-22 11:16:50,410(247)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:16:50,411(248)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:16:50,444(281)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:16:50,444(281)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:16:50,479(316)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:16:50,499(336)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:16:50,499(336)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:16:50,516(353)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:16:50,516(353)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:16:50,517(354)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:16:50,517(354)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:16:50,517(354)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:16:50,517(354)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:16:50,517(354)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:16:50,517(354)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:16:50,517(354)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:16:50,518(355)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:16:50,518(355)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:16:50,525(362)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:16:50,525(362)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:16:50,525(362)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:16:50,536(373)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:16:50,539(376)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:16:50,539(376)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:16:50,539(376)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:17:20,177(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:17:20,179(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:17:20,261(84)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:17:20,265(88)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:17:20,287(110)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:17:20,287(110)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:17:20,309(132)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:17:20,311(134)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:17:20,311(134)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:17:20,312(135)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:17:20,313(136)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:17:20,313(136)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:17:20,314(137)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:17:20,315(138)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:17:20,315(138)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:17:20,315(138)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:17:20,316(139)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:17:20,317(140)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:17:20,317(140)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:17:20,318(141)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:17:20,318(141)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:17:20,319(142)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:17:20,319(142)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:17:20,326(149)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:17:20,387(210)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:17:20,387(210)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:17:20,419(242)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 14064 (auto-detected)  
+[DEBUG] 2018-12-22 11:17:20,421(244)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:17:20,421(244)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:17:20,457(280)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:17:20,457(280)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:17:20,491(314)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:17:20,501(324)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:17:20,501(324)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:17:20,518(341)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:17:20,518(341)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:17:20,519(342)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:17:20,519(342)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:17:20,519(342)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:17:20,519(342)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:17:20,519(342)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:17:20,520(343)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:17:20,520(343)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:17:20,520(343)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:17:20,521(344)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:17:20,527(350)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:17:20,528(351)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:17:20,528(351)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:17:20,537(360)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:17:20,541(364)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:17:20,541(364)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:17:20,541(364)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:17:56,371(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:17:56,373(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:17:56,460(89)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:17:56,464(93)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:17:56,487(116)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:17:56,487(116)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:17:56,506(135)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:17:56,508(137)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:17:56,509(138)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:17:56,511(140)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:17:56,512(141)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:17:56,512(141)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:17:56,513(142)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:17:56,514(143)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:17:56,514(143)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:17:56,514(143)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:17:56,515(144)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:17:56,516(145)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:17:56,516(145)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:17:56,517(146)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:17:56,517(146)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:17:56,518(147)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:17:56,518(147)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:17:56,525(154)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:17:56,590(219)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:17:56,590(219)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:17:56,623(252)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 16292 (auto-detected)  
+[DEBUG] 2018-12-22 11:17:56,624(253)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:17:56,625(254)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:17:56,660(289)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:17:56,661(290)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:17:56,696(325)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:17:56,710(339)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:17:56,710(339)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:17:56,728(357)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:17:56,728(357)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:17:56,728(357)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:17:56,728(357)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:17:56,729(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:17:56,729(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:17:56,729(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:17:56,729(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:17:56,729(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:17:56,729(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:17:56,729(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:17:56,736(365)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:17:56,736(365)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:17:56,737(366)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:17:56,747(376)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:17:56,750(379)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:17:56,750(379)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:17:56,750(379)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:18:48,919(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:18:48,924(5)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:18:49,093(174)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:18:49,101(182)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:18:49,140(221)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:18:49,140(221)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:18:49,167(248)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:18:49,170(251)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:18:49,171(252)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:18:49,172(253)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:18:49,173(254)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:18:49,175(256)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:18:49,176(257)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:18:49,177(258)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:18:49,177(258)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:18:49,177(258)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:18:49,178(259)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:18:49,179(260)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:18:49,179(260)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:18:49,180(261)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:18:49,180(261)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:18:49,182(263)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:18:49,182(263)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:18:49,196(277)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:18:49,266(347)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:18:49,266(347)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:18:49,310(391)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 16072 (auto-detected)  
+[DEBUG] 2018-12-22 11:18:49,316(397)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:18:49,316(397)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:18:49,358(439)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:18:49,359(440)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:18:49,396(477)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:18:49,415(496)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:18:49,416(497)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:18:49,451(532)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:18:49,451(532)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:18:49,451(532)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:18:49,451(532)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:18:49,451(532)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:18:49,451(532)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:18:49,452(533)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:18:49,452(533)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:18:49,452(533)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:18:49,452(533)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:18:49,455(536)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:18:49,468(549)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:18:49,468(549)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:18:49,468(549)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:18:49,480(561)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:18:49,481(562)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:18:49,481(562)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:18:49,481(562)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:18:49,488(569)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:18:49,488(569)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:18:49,489(570)-->[main] com.hc.point.Point.parse(Point.java:49): point:swither1 start success  
+[INFO ] 2018-12-22 11:19:06,311(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:19:06,313(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:19:06,396(85)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:19:06,400(89)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:19:06,422(111)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:19:06,422(111)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:19:06,441(130)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:19:06,443(132)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:19:06,443(132)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:19:06,445(134)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:19:06,445(134)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:19:06,446(135)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:19:06,446(135)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:19:06,447(136)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:19:06,447(136)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:19:06,447(136)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:19:06,448(137)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:19:06,449(138)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:19:06,449(138)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:19:06,450(139)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:19:06,450(139)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:19:06,451(140)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:19:06,451(140)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:19:06,458(147)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:19:06,524(213)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:19:06,524(213)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:19:06,556(245)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 13624 (auto-detected)  
+[DEBUG] 2018-12-22 11:19:06,558(247)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:19:06,558(247)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:19:06,591(280)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:19:06,592(281)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:19:06,627(316)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:19:06,640(329)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:19:06,641(330)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:19:06,659(348)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:19:06,659(348)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:19:06,659(348)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:19:06,659(348)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:19:06,659(348)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:19:06,660(349)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:19:06,660(349)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:19:06,660(349)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:19:06,660(349)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:19:06,660(349)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:19:06,660(349)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:19:06,667(356)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:19:06,667(356)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:19:06,667(356)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:19:06,678(367)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:19:06,681(370)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:19:06,681(370)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:19:06,681(370)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:19:28,555(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:19:28,557(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:19:28,648(93)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:19:28,652(97)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:19:28,674(119)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:19:28,675(120)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:19:28,694(139)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:19:28,696(141)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:19:28,696(141)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:19:28,698(143)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:19:28,699(144)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:19:28,699(144)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:19:28,700(145)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:19:28,701(146)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:19:28,701(146)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:19:28,701(146)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:19:28,702(147)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:19:28,702(147)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:19:28,703(148)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:19:28,704(149)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:19:28,704(149)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:19:28,705(150)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:19:28,705(150)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:19:28,712(157)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:19:28,776(221)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:19:28,776(221)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:19:28,809(254)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 11716 (auto-detected)  
+[DEBUG] 2018-12-22 11:19:28,811(256)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:19:28,811(256)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:19:28,845(290)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:19:28,846(291)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:19:28,881(326)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:19:28,895(340)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:19:28,895(340)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:19:28,913(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:19:28,913(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:19:28,913(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:19:28,913(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:19:28,913(358)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:19:28,914(359)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:19:28,914(359)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:19:28,914(359)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:19:28,914(359)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:19:28,914(359)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:19:28,914(359)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:19:28,921(366)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:19:28,921(366)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:19:28,921(366)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:19:28,931(376)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:19:28,935(380)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:19:28,935(380)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:19:28,935(380)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:19:34,675(6120)-->[main] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6543......  
+[INFO ] 2018-12-22 11:19:34,688(6133)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:19:34,689(6134)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:19:34,689(6134)-->[main] com.hc.point.Point.parse(Point.java:49): point:swither1 start success  
+[DEBUG] 2018-12-22 11:19:34,693(6138)-->[nioEventLoopGroup-4-1] com.hc.share.util.Trace.debug(Trace.java:13): client channelActive  
+[INFO ] 2018-12-22 11:20:04,452(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:20:04,454(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:20:04,529(77)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:20:04,533(81)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:20:04,552(100)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:20:04,552(100)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:20:04,569(117)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:20:04,570(118)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:20:04,570(118)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:20:04,572(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:20:04,572(120)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:20:04,573(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:20:04,573(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:20:04,574(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:20:04,574(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:20:04,574(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:20:04,575(123)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:20:04,575(123)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:20:04,575(123)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:20:04,576(124)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:20:04,577(125)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:20:04,577(125)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:20:04,577(125)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:20:04,584(132)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:20:04,638(186)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:20:04,638(186)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:20:04,670(218)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 14084 (auto-detected)  
+[DEBUG] 2018-12-22 11:20:04,672(220)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:20:04,672(220)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:20:04,705(253)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:20:04,706(254)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:20:04,740(288)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:20:04,752(300)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:20:04,752(300)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:20:04,767(315)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:20:04,767(315)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:20:04,767(315)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:20:04,767(315)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:20:04,767(315)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:20:04,767(315)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:20:04,768(316)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:20:04,768(316)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:20:04,768(316)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:20:04,768(316)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:20:04,768(316)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:20:04,774(322)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:20:04,775(323)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:20:04,775(323)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:20:04,783(331)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:20:04,786(334)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:20:04,786(334)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:20:04,786(334)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:20:04,790(338)-->[main] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6543......  
+[INFO ] 2018-12-22 11:20:04,797(345)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:20:04,797(345)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:20:04,797(345)-->[main] com.hc.point.Point.parse(Point.java:49): point:swither1 start success  
+[DEBUG] 2018-12-22 11:20:04,801(349)-->[nioEventLoopGroup-4-1] com.hc.share.util.Trace.debug(Trace.java:13): client channelActive  
+[INFO ] 2018-12-22 11:21:27,004(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:21:27,006(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:21:27,079(75)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:21:27,084(80)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:21:27,102(98)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:21:27,102(98)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:21:27,123(119)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:21:27,124(120)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:21:27,124(120)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:21:27,125(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:21:27,126(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:21:27,126(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:21:27,127(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:21:27,127(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:21:27,127(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:21:27,128(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:21:27,128(124)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:21:27,129(125)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:21:27,129(125)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:21:27,131(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:21:27,131(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:21:27,132(128)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:21:27,132(128)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:21:27,138(134)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:21:27,195(191)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:21:27,195(191)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:21:27,227(223)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 15548 (auto-detected)  
+[DEBUG] 2018-12-22 11:21:27,228(224)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:21:27,229(225)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:21:27,262(258)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:21:27,263(259)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:21:27,298(294)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:21:27,308(304)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:21:27,308(304)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:21:27,323(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:21:27,324(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:21:27,324(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:21:27,324(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:21:27,324(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:21:27,324(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:21:27,324(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:21:27,325(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:21:27,325(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:21:27,325(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:21:27,325(321)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:21:27,331(327)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:21:27,332(328)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:21:27,332(328)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:21:27,340(336)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:21:27,342(338)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:21:27,343(339)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:21:27,343(339)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:21:27,347(343)-->[main] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6543......  
+[INFO ] 2018-12-22 11:21:27,354(350)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:21:27,354(350)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:21:27,354(350)-->[main] com.hc.point.Point.parse(Point.java:49): point:swither1 start success  
+[DEBUG] 2018-12-22 11:21:27,357(353)-->[nioEventLoopGroup-4-1] com.hc.share.util.Trace.debug(Trace.java:13): client channelActive  
+[INFO ] 2018-12-22 11:22:14,075(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:22:14,077(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:22:14,153(78)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:22:14,157(82)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:22:14,176(101)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:22:14,176(101)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:22:14,193(118)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:22:14,194(119)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:22:14,195(120)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:22:14,196(121)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:22:14,197(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:22:14,197(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:22:14,198(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:22:14,198(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:22:14,198(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:22:14,199(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:22:14,199(124)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:22:14,200(125)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:22:14,200(125)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:22:14,201(126)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:22:14,201(126)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:22:14,202(127)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:22:14,202(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:22:14,208(133)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:22:14,263(188)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:22:14,263(188)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:22:14,295(220)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 2892 (auto-detected)  
+[DEBUG] 2018-12-22 11:22:14,297(222)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:22:14,297(222)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:22:14,332(257)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:22:14,333(258)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:22:14,367(292)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:22:14,378(303)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:22:14,379(304)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:22:14,393(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:22:14,393(318)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:22:14,394(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:22:14,394(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:22:14,394(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:22:14,394(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:22:14,394(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:22:14,394(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:22:14,394(319)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:22:14,395(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:22:14,395(320)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:22:14,401(326)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:22:14,401(326)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:22:14,401(326)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:22:14,409(334)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): openListener port:6543  
+[INFO ] 2018-12-22 11:22:14,413(338)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:22:14,413(338)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:22:14,413(338)-->[main] com.hc.point.Point.parse(Point.java:42): Component:server1 start success  
+[INFO ] 2018-12-22 11:22:14,416(341)-->[main] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[INFO ] 2018-12-22 11:22:14,423(348)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[INFO ] 2018-12-22 11:22:14,424(349)-->[main] com.hc.point.Point.parse(Point.java:42): Component:connect start success  
+[INFO ] 2018-12-22 11:22:14,424(349)-->[main] com.hc.point.Point.parse(Point.java:49): point:swither1 start success  
+[DEBUG] 2018-12-22 11:22:20,429(6354)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:22:20,429(6354)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:22:26,432(12357)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:22:26,432(12357)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:22:32,435(18360)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:22:32,435(18360)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:22:38,438(24363)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:22:38,438(24363)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:22:44,441(30366)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:22:44,441(30366)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:22:50,443(36368)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:22:50,443(36368)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:22:56,447(42372)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:22:56,447(42372)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[INFO ] 2018-12-22 11:27:20,233(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:27:20,235(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:27:20,311(78)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:27:20,314(81)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:27:20,334(101)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:27:20,334(101)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:27:20,354(121)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:27:20,355(122)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:27:20,356(123)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:27:20,357(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:27:20,357(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:27:20,358(125)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:27:20,359(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:27:20,359(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:27:20,359(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:27:20,359(126)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:27:20,361(128)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:27:20,361(128)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:27:20,361(128)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:27:20,362(129)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:27:20,363(130)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:27:20,363(130)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:27:20,363(130)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:27:20,370(137)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:27:20,426(193)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:27:20,426(193)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:27:20,459(226)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 16100 (auto-detected)  
+[DEBUG] 2018-12-22 11:27:20,461(228)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:27:20,461(228)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:27:20,495(262)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:27:20,496(263)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:27:20,530(297)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:27:20,542(309)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:27:20,542(309)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:27:20,558(325)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:27:20,558(325)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:27:20,558(325)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:27:20,558(325)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:27:20,559(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:27:20,559(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:27:20,559(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:27:20,559(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:27:20,559(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:27:20,559(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:27:20,559(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:27:20,565(332)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:27:20,566(333)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:27:20,566(333)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:27:20,573(340)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): open listener port:6543 success  
+[INFO ] 2018-12-22 11:27:20,577(344)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:27:20,577(344)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:27:20,580(347)-->[main] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[INFO ] 2018-12-22 11:27:20,588(355)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[DEBUG] 2018-12-22 11:27:24,595(4362)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:24,595(4362)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:28,602(8369)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:28,602(8369)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:32,604(12371)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:32,604(12371)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:36,607(16374)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:36,607(16374)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:40,612(20379)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:40,612(20379)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:44,613(24380)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:44,613(24380)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:48,617(28384)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:48,617(28384)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:52,620(32387)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:52,620(32387)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:27:56,624(36391)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:27:56,624(36391)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:28:00,626(40393)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:00,626(40393)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:28:04,628(44395)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:04,628(44395)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:28:08,631(48398)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:08,631(48398)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:28:12,633(52400)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:12,633(52400)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:28:16,636(56403)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:16,636(56403)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:28:20,638(60405)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:20,638(60405)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[DEBUG] 2018-12-22 11:28:24,643(64410)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:24,643(64410)-->[nioEventLoopGroup-4-4] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544......  
+[INFO ] 2018-12-22 11:28:29,577(0)-->[main] point.switcher.Swicher.main(Swicher.java:16): Swicher is begin  
+[INFO ] 2018-12-22 11:28:29,579(2)-->[main] point.switcher.Swicher.main(Swicher.java:19): pwd:F:\point_01  
+[DEBUG] 2018-12-22 11:28:29,656(79)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-22 11:28:29,660(83)-->[main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44): -Dio.netty.eventLoopThreads: 8  
+[DEBUG] 2018-12-22 11:28:29,678(101)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:104): -Dio.netty.noKeySetOptimization: false  
+[DEBUG] 2018-12-22 11:28:29,679(102)-->[main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:105): -Dio.netty.selectorAutoRebuildThreshold: 512  
+[DEBUG] 2018-12-22 11:28:29,696(119)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-22 11:28:29,697(120)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-22 11:28:29,698(121)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-22 11:28:29,699(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-22 11:28:29,699(122)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-22 11:28:29,700(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-22 11:28:29,700(123)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-22 11:28:29,701(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-22 11:28:29,701(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-22 11:28:29,701(124)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-22 11:28:29,702(125)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-22 11:28:29,703(126)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-22 11:28:29,703(126)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-22 11:28:29,704(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-22 11:28:29,704(127)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-22 11:28:29,705(128)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-22 11:28:29,705(128)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-22 11:28:29,712(135)-->[main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:864): org.jctools-core.MpscChunkedArrayQueue: available  
+[DEBUG] 2018-12-22 11:28:29,768(191)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024  
+[DEBUG] 2018-12-22 11:28:29,768(191)-->[main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096  
+[DEBUG] 2018-12-22 11:28:29,802(225)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79): -Dio.netty.processId: 16000 (auto-detected)  
+[DEBUG] 2018-12-22 11:28:29,804(227)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:139): -Djava.net.preferIPv4Stack: false  
+[DEBUG] 2018-12-22 11:28:29,804(227)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:140): -Djava.net.preferIPv6Addresses: false  
+[DEBUG] 2018-12-22 11:28:29,838(261)-->[main] io.netty.util.NetUtil.<clinit>(NetUtil.java:224): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)  
+[DEBUG] 2018-12-22 11:28:29,839(262)-->[main] io.netty.util.NetUtil$1.run(NetUtil.java:289): Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200  
+[DEBUG] 2018-12-22 11:28:29,875(298)-->[main] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101): -Dio.netty.machineId: 54:bf:64:ff:fe:64:1d:63 (auto-detected)  
+[DEBUG] 2018-12-22 11:28:29,886(309)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-22 11:28:29,886(309)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-22 11:28:29,902(325)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120): -Dio.netty.allocator.numHeapArenas: 8  
+[DEBUG] 2018-12-22 11:28:29,902(325)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121): -Dio.netty.allocator.numDirectArenas: 8  
+[DEBUG] 2018-12-22 11:28:29,902(325)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123): -Dio.netty.allocator.pageSize: 8192  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128): -Dio.netty.allocator.maxOrder: 11  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132): -Dio.netty.allocator.chunkSize: 16777216  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133): -Dio.netty.allocator.tinyCacheSize: 512  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134): -Dio.netty.allocator.smallCacheSize: 256  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135): -Dio.netty.allocator.normalCacheSize: 64  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136): -Dio.netty.allocator.maxCachedBufferCapacity: 32768  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137): -Dio.netty.allocator.cacheTrimInterval: 8192  
+[DEBUG] 2018-12-22 11:28:29,903(326)-->[main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138): -Dio.netty.allocator.useCacheForAllThreads: true  
+[DEBUG] 2018-12-22 11:28:29,909(332)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83): -Dio.netty.allocator.type: pooled  
+[DEBUG] 2018-12-22 11:28:29,909(332)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92): -Dio.netty.threadLocalDirectBufferSize: 0  
+[DEBUG] 2018-12-22 11:28:29,909(332)-->[main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95): -Dio.netty.maxThreadLocalCharBufferSize: 16384  
+[INFO ] 2018-12-22 11:28:29,918(341)-->[main] com.hc.component.net.server.base.NettyServer$NettyServerImpl.openListen(NettyServer.java:54): open listener port:6543 success  
+[INFO ] 2018-12-22 11:28:29,921(344)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:23): 外网server已经开启  
+[INFO ] 2018-12-22 11:28:29,921(344)-->[main] point.switcher.OutServerListener.onInit(OutServerListener.java:24): OutServerListener onInit  
+[INFO ] 2018-12-22 11:28:29,925(348)-->[main] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544 ......  
+[INFO ] 2018-12-22 11:28:29,933(356)-->[main] point.switcher.PassCheckConnect.onInit(PassCheckConnect.java:25): PassCheckConnect init  
+[DEBUG] 2018-12-22 11:28:35,939(6362)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:35,939(6362)-->[nioEventLoopGroup-4-1] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544 ......  
+[DEBUG] 2018-12-22 11:28:41,944(12367)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:41,944(12367)-->[nioEventLoopGroup-4-2] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544 ......  
+[DEBUG] 2018-12-22 11:28:47,949(18372)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient$2.run(NettyClient.java:58): reConnect  
+[INFO ] 2018-12-22 11:28:47,949(18372)-->[nioEventLoopGroup-4-3] com.hc.component.net.client.base.NettyClient.beginConnect(NettyClient.java:40): connect host:127.0.0.1 port:6544 ......  

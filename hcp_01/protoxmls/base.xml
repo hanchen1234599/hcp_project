@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<namespace name="share">
+	<bean name="bean0">
+		<variable name="var0" type="string"/>
+	</bean>
+	<protocol name="protocol0">
+		<variable name="var0" type="string"/>
+		<variable name="var1" type="bean0"/>
+	</protocol>
+</namespace>

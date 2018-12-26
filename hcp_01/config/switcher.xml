@@ -1,0 +1,11 @@
+<project>
+	<point name = "swither1" type = "swither">
+		<component name = "server1" type = "server" port="6543"
+		 boosthreadnum="1" workethreadnum="4" inprotolength="65536"
+		  outprotolength="65536" listener=""/>
+		<component name = "connect" type = "client"
+		 host = "127.0.0.1" port="6543" 
+		 workethreadnum="4" inprotolength="65536"
+		  outprotolength="65536" listener=""/>
+	</point>
+</project>

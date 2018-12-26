@@ -1,0 +1,486 @@
+[INFO ] 2018-12-12 17:40:24,324(0) --> [main] com.hc.test.MainLog.main(MainLog.java:10): info  
+[DEBUG] 2018-12-12 17:40:24,327(3) --> [main] com.hc.test.MainLog.main(MainLog.java:11): info  
+[ERROR] 2018-12-12 17:40:24,327(3) --> [main] com.hc.test.MainLog.main(MainLog.java:12): error  
+[INFO ] 2018-12-12 17:44:00,717(0)-->[main] com.hc.test.MainLog.main(MainLog.java:10): info  
+[DEBUG] 2018-12-12 17:44:00,719(2)-->[main] com.hc.test.MainLog.main(MainLog.java:11): info  
+[ERROR] 2018-12-12 17:44:00,719(2)-->[main] com.hc.test.MainLog.main(MainLog.java:12): error  
+[DEBUG] 2018-12-12 17:54:58,090(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 17:54:58,093(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 17:54:58,093(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 17:54:58,110(20)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 17:54:58,111(21)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 17:54:58,112(22)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 17:54:58,113(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 17:54:58,114(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 17:54:58,114(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 17:54:58,115(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 17:54:58,115(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 17:54:58,115(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 17:54:58,115(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 17:54:58,116(26)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 17:54:58,116(26)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 17:54:58,116(26)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 17:54:58,118(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 17:54:58,118(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 17:54:58,119(29)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 17:54:58,119(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 17:54:58,130(40)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 17:54:58,130(40)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 17:54:58,131(41)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): -------------------------  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): readIndex:0  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): writeIndex:16  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): -------------------------  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 6096  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[INFO ] 2018-12-12 17:54:58,136(46)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 6096  
+[DEBUG] 2018-12-12 17:56:26,412(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 17:56:26,415(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 17:56:26,415(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 17:56:26,431(19)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 17:56:26,432(20)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 17:56:26,433(21)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 17:56:26,434(22)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 17:56:26,435(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 17:56:26,435(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 17:56:26,435(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 17:56:26,436(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 17:56:26,436(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 17:56:26,436(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 17:56:26,436(24)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 17:56:26,436(24)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 17:56:26,436(24)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 17:56:26,438(26)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 17:56:26,438(26)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 17:56:26,439(27)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 17:56:26,439(27)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 17:56:26,446(34)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 17:56:26,446(34)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 17:56:26,447(35)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 17:56:26,451(39)-->[main] com.hc.share.util.Trace.info(Trace.java:7): -------------------------  
+[INFO ] 2018-12-12 17:56:26,451(39)-->[main] com.hc.share.util.Trace.info(Trace.java:7): readIndex:0  
+[INFO ] 2018-12-12 17:56:26,451(39)-->[main] com.hc.share.util.Trace.info(Trace.java:7): writeIndex:16  
+[INFO ] 2018-12-12 17:56:26,451(39)-->[main] com.hc.share.util.Trace.info(Trace.java:7): -------------------------  
+[INFO ] 2018-12-12 17:56:26,451(39)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[INFO ] 2018-12-12 17:56:26,451(39)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 6096  
+[INFO ] 2018-12-12 17:56:26,452(40)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[INFO ] 2018-12-12 17:56:26,452(40)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[INFO ] 2018-12-12 17:56:26,452(40)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 6096  
+[DEBUG] 2018-12-12 18:01:41,725(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:01:41,728(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:01:41,728(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:01:41,746(21)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:01:41,748(23)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:01:41,748(23)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:01:41,750(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:01:41,750(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:01:41,751(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:01:41,751(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:01:41,752(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:01:41,752(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:01:41,752(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:01:41,752(27)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:01:41,752(27)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:01:41,752(27)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:01:41,754(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:01:41,754(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:01:41,756(31)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:01:41,756(31)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:01:41,762(37)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:01:41,762(37)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:01:41,763(38)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:01:41,767(42)-->[main] com.hc.share.util.Trace.info(Trace.java:7): -------------------------  
+[INFO ] 2018-12-12 18:01:41,767(42)-->[main] com.hc.share.util.Trace.info(Trace.java:7): readIndex:0  
+[INFO ] 2018-12-12 18:01:41,768(43)-->[main] com.hc.share.util.Trace.info(Trace.java:7): writeIndex:16  
+[INFO ] 2018-12-12 18:01:41,768(43)-->[main] com.hc.share.util.Trace.info(Trace.java:7): -------------------------  
+[INFO ] 2018-12-12 18:01:41,768(43)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[INFO ] 2018-12-12 18:01:41,768(43)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 6096  
+[INFO ] 2018-12-12 18:01:41,768(43)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 1024  
+[ERROR] 2018-12-12 18:01:41,768(43)-->[main] com.hc.share.util.Trace.error(Trace.java:16): 1024  
+[INFO ] 2018-12-12 18:01:41,768(43)-->[main] com.hc.share.util.Trace.info(Trace.java:7): 6096  
+[DEBUG] 2018-12-12 18:06:20,546(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:06:20,550(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:06:20,550(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:06:20,565(19)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:06:20,567(21)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:06:20,567(21)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:06:20,569(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:06:20,569(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:06:20,570(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:06:20,570(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:06:20,570(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:06:20,571(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:06:20,571(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:06:20,571(25)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:06:20,571(25)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:06:20,571(25)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:06:20,573(27)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:06:20,573(27)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:06:20,574(28)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:06:20,574(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:06:20,581(35)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:06:20,581(35)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:06:20,582(36)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:06:20,586(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:06:20,586(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:06:20,586(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:06:20,586(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:06:20,587(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:06:20,587(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:06:20,587(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:06:20,587(41)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:06:20,587(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:11:40,048(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:11:40,051(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:11:40,051(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:11:40,068(20)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:11:40,070(22)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:11:40,070(22)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:11:40,071(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:11:40,072(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:11:40,072(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:11:40,073(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:11:40,074(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:11:40,074(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:11:40,074(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:11:40,074(26)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:11:40,074(26)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:11:40,074(26)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:11:40,076(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:11:40,077(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:11:40,077(29)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:11:40,077(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:11:40,084(36)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:11:40,084(36)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:11:40,085(37)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:11:40,089(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:11:40,090(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:19:23,011(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:19:23,014(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:19:23,015(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:19:23,031(20)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:19:23,033(22)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:19:23,033(22)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:19:23,035(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:19:23,035(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:19:23,036(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:19:23,036(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:19:23,037(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:19:23,037(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:19:23,037(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:19:23,037(26)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:19:23,037(26)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:19:23,037(26)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:19:23,040(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:19:23,040(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:19:23,041(30)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:19:23,041(30)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:19:23,047(36)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:19:23,048(37)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:19:23,049(38)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:19:23,053(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:19:23,053(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:19:23,053(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:19:23,053(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:19:23,054(43)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:19:23,054(43)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:19:23,054(43)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:19:23,054(43)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:19:23,054(43)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:20:55,703(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:20:55,706(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:20:55,706(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:20:55,722(19)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:20:55,723(20)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:20:55,724(21)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:20:55,725(22)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:20:55,725(22)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:20:55,726(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:20:55,726(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:20:55,727(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:20:55,727(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:20:55,727(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:20:55,727(24)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:20:55,728(25)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:20:55,728(25)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:20:55,730(27)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:20:55,730(27)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:20:55,731(28)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:20:55,731(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:20:55,737(34)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:20:55,737(34)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:20:55,738(35)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:20:55,742(39)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:20:55,742(39)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:20:55,742(39)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:20:55,742(39)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:20:55,743(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:20:55,743(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:20:55,743(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:20:55,743(40)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:20:55,743(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:24:16,821(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:24:16,824(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:24:16,825(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:24:16,841(20)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:24:16,843(22)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:24:16,843(22)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:24:16,845(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:24:16,845(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:24:16,846(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:24:16,846(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:24:16,847(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:24:16,847(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:24:16,847(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:24:16,847(26)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:24:16,848(27)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:24:16,848(27)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:24:16,850(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:24:16,850(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:24:16,851(30)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:24:16,851(30)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:24:16,857(36)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:24:16,858(37)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:24:16,858(37)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:24:16,862(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:24:16,862(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:24:16,863(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:24:16,863(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:24:16,863(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:24:16,863(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:24:16,863(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:24:16,863(42)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:24:16,863(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:25:14,366(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:25:14,369(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:25:14,369(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:25:14,386(20)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:25:14,387(21)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:25:14,388(22)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:25:14,389(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:25:14,390(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:25:14,390(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:25:14,391(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:25:14,391(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:25:14,391(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:25:14,392(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:25:14,392(26)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:25:14,392(26)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:25:14,392(26)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:25:14,394(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:25:14,394(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:25:14,395(29)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:25:14,395(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:25:14,402(36)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:25:14,403(37)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:25:14,404(38)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:25:14,407(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:25:14,407(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:25:14,408(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:25:14,408(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:25:14,408(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:25:14,408(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:25:14,408(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:25:14,408(42)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:25:14,408(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:25:37,961(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:25:37,964(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:25:37,964(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:25:37,981(20)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:25:37,982(21)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:25:37,983(22)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:25:37,984(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:25:37,985(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:25:37,985(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:25:37,986(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:25:37,986(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:25:37,986(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:25:37,986(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:25:37,987(26)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:25:37,987(26)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:25:37,987(26)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:25:37,989(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:25:37,989(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:25:37,990(29)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:25:37,990(29)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:25:37,997(36)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:25:37,997(36)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:25:37,998(37)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:25:38,002(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:25:38,002(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:25:38,002(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:25:38,002(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:25:38,002(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:25:38,003(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:25:38,003(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:25:38,003(42)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:25:38,003(42)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:27:18,083(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:27:18,087(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:27:18,087(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:27:18,104(21)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:27:18,106(23)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:27:18,106(23)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:27:18,106(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:27:18,108(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:27:18,108(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:27:18,108(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:27:18,109(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:27:18,109(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:27:18,109(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:27:18,109(26)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:27:18,109(26)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:27:18,109(26)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:27:18,111(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:27:18,111(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:27:18,111(28)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:27:18,111(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:27:18,129(46)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:27:18,129(46)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:27:18,130(47)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:27:18,134(51)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:27:18,134(51)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:27:18,134(51)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:27:18,134(51)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:27:18,134(51)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:27:18,134(51)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:27:18,134(51)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[ERROR] 2018-12-12 18:27:18,135(52)-->[main] com.hc.share.util.Trace.error(Trace.java:21): 1024  
+[INFO ] 2018-12-12 18:27:18,135(52)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 18:28:37,023(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 18:28:37,026(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 18:28:37,026(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 18:28:37,042(19)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 18:28:37,044(21)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 18:28:37,044(21)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 18:28:37,045(22)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 18:28:37,046(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 18:28:37,046(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 18:28:37,046(23)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 18:28:37,047(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 18:28:37,047(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 18:28:37,047(24)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 18:28:37,047(24)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 18:28:37,048(25)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\hanchen\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 18:28:37,048(25)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 18:28:37,050(27)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 3793747968 bytes  
+[DEBUG] 2018-12-12 18:28:37,050(27)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 18:28:37,051(28)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 18:28:37,051(28)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 18:28:37,058(35)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 18:28:37,058(35)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 18:28:37,059(36)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 18:28:37,063(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:28:37,063(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 18:28:37,063(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 18:28:37,063(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 18:28:37,063(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:28:37,063(40)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 18:28:37,064(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:28:37,064(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 18:28:37,064(41)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 20:53:16,421(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 20:53:16,424(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 20:53:16,425(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 20:53:16,443(22)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 20:53:16,445(24)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 20:53:16,445(24)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 20:53:16,446(25)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 20:53:16,447(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 20:53:16,447(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 20:53:16,447(26)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 20:53:16,448(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 20:53:16,448(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 20:53:16,448(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 20:53:16,449(28)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 20:53:16,449(28)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\ADMINI~1\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 20:53:16,449(28)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 20:53:16,452(31)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 1892155392 bytes  
+[DEBUG] 2018-12-12 20:53:16,452(31)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 20:53:16,453(32)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 20:53:16,453(32)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 20:53:16,461(40)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 20:53:16,461(40)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 20:53:16,462(41)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 20:53:16,467(46)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 20:53:16,467(46)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 20:53:16,467(46)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 20:53:16,467(46)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 20:53:16,467(46)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 20:53:16,467(46)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 20:53:16,468(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 20:53:16,468(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 20:53:16,468(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 21:37:25,671(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 21:37:25,674(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 21:37:25,674(3)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 21:37:25,695(24)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 21:37:25,696(25)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 21:37:25,697(26)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 21:37:25,698(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 21:37:25,699(28)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 21:37:25,699(28)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 21:37:25,700(29)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 21:37:25,700(29)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 21:37:25,700(29)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 21:37:25,700(29)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 21:37:25,701(30)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 21:37:25,702(31)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\ADMINI~1\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 21:37:25,702(31)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 21:37:25,704(33)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 1892155392 bytes  
+[DEBUG] 2018-12-12 21:37:25,704(33)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 21:37:25,705(34)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 21:37:25,705(34)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 21:37:25,712(41)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 21:37:25,713(42)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 21:37:25,714(43)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 21:37:25,718(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 21:37:25,718(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 21:37:25,718(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 21:37:25,718(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 21:37:25,718(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 21:37:25,719(48)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 21:37:25,719(48)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 21:37:25,719(48)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 21:37:25,719(48)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[DEBUG] 2018-12-12 21:37:48,965(0)-->[main] io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47): Using Log4J as the default logging framework  
+[DEBUG] 2018-12-12 21:37:48,969(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121): -Dio.netty.leakDetection.level: simple  
+[DEBUG] 2018-12-12 21:37:48,969(4)-->[main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122): -Dio.netty.leakDetection.targetRecords: 4  
+[DEBUG] 2018-12-12 21:37:48,988(23)-->[main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:959): Platform: Windows  
+[DEBUG] 2018-12-12 21:37:48,990(25)-->[main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:395): -Dio.netty.noUnsafe: false  
+[DEBUG] 2018-12-12 21:37:48,990(25)-->[main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:871): Java version: 8  
+[DEBUG] 2018-12-12 21:37:48,992(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120): sun.misc.Unsafe.theUnsafe: available  
+[DEBUG] 2018-12-12 21:37:48,992(27)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144): sun.misc.Unsafe.copyMemory: available  
+[DEBUG] 2018-12-12 21:37:48,993(28)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182): java.nio.Buffer.address: available  
+[DEBUG] 2018-12-12 21:37:48,993(28)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243): direct buffer constructor: available  
+[DEBUG] 2018-12-12 21:37:48,994(29)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:313): java.nio.Bits.unaligned: available, true  
+[DEBUG] 2018-12-12 21:37:48,994(29)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:378): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9  
+[DEBUG] 2018-12-12 21:37:48,994(29)-->[main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385): java.nio.DirectByteBuffer.<init>(long, int): available  
+[DEBUG] 2018-12-12 21:37:48,994(29)-->[main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:996): sun.misc.Unsafe: available  
+[DEBUG] 2018-12-12 21:37:48,994(29)-->[main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1090): -Dio.netty.tmpdir: C:\Users\ADMINI~1\AppData\Local\Temp (java.io.tmpdir)  
+[DEBUG] 2018-12-12 21:37:48,995(30)-->[main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1169): -Dio.netty.bitMode: 64 (sun.arch.data.model)  
+[DEBUG] 2018-12-12 21:37:48,997(32)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:158): -Dio.netty.maxDirectMemory: 1892155392 bytes  
+[DEBUG] 2018-12-12 21:37:48,997(32)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:164): -Dio.netty.uninitializedArrayAllocationThreshold: -1  
+[DEBUG] 2018-12-12 21:37:48,998(33)-->[main] io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:92): java.nio.ByteBuffer.cleaner(): available  
+[DEBUG] 2018-12-12 21:37:48,998(33)-->[main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:184): -Dio.netty.noPreferDirect: false  
+[DEBUG] 2018-12-12 21:37:49,005(40)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:61): -Dio.netty.buffer.checkAccessible: true  
+[DEBUG] 2018-12-12 21:37:49,005(40)-->[main] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:62): -Dio.netty.buffer.checkBounds: true  
+[DEBUG] 2018-12-12 21:37:49,007(42)-->[main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5aaa6d82  
+[INFO ] 2018-12-12 21:37:49,011(46)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 21:37:49,012(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): readIndex:0  
+[INFO ] 2018-12-12 21:37:49,012(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): writeIndex:16  
+[INFO ] 2018-12-12 21:37:49,012(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): -------------------------  
+[INFO ] 2018-12-12 21:37:49,012(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 21:37:49,012(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  
+[INFO ] 2018-12-12 21:37:49,012(47)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 21:37:49,013(48)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 1024  
+[INFO ] 2018-12-12 21:37:49,013(48)-->[main] com.hc.share.util.Trace.info(Trace.java:9): 6096  

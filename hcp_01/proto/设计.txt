@@ -1,0 +1,8 @@
+hc.head.proto 头设计
+协议长度4 + 头长度2 + 头数据 + 数据协议
+头数据协议设计
+源id
+目标id
+加密 true, false
+压缩 true, false
+协议 id
