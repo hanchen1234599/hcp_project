@@ -5,6 +5,6 @@ import com.hc.share.service.ServerType;
 
 public interface PassCheck {
 	void addPass(Server server);
-	Server checkPass(ServerType type);
+	Server getPass(ServerType type);
 	long getUserID();
 }

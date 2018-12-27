@@ -2,7 +2,7 @@ package com.hc.component.net.websocket;
 
 import org.dom4j.Element;
 
-import com.hc.component.Type;
+import com.hc.component.ComponentType;
 import com.hc.component.net.websocket.base.WebSocketManagerImpl;
 import com.hc.share.Component;
 
@@ -30,7 +30,7 @@ public class WebSocketComponent extends Component<WebSocketManager, WebSocketLis
 	}
 	@Override
 	public void build() throws Exception {
-		this.setType(Type.WEBSOCKT);	
+		this.setType(ComponentType.WEBSOCKT);	
 		this.manager = new WebSocketManagerImpl(this.port, this.boosThreadNum, this.workeThreadNum);
 		this.manager.registListener(this.listener);
 		this.listener.onInit(this.manager);

@@ -1,7 +1,6 @@
 package com.hc.share.util;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.google.protobuf.MessageLite.Builder;
 import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

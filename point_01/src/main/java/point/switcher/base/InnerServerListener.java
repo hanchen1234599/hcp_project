@@ -49,12 +49,13 @@ public class InnerServerListener implements ServerListener {
 	public void onRemoveSession(Session session) {
 		Server server = servers.remove(session);
 		if( server != null )
-			GateApp.getInstace().onRemoveServer(server.getServerId());
+			GateApp.getInstace().onRemoveServer(server);
 	}
 
 	@Override
 	public void onExceptionSession(Session session) {
-		session.getChannel().close();
+		//session.getChannel().close(); // 内网发生异常  不断开链接
+		Trace.logger.info("内网连接 sessionID:" + session.getSessionID() + "发生异常。");
 	}
 
 	@Override

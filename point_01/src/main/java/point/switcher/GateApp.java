@@ -8,6 +8,7 @@ import java.util.concurrent.Executors;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
+import com.hc.share.service.Center;
 import com.hc.share.service.Login;
 import com.hc.share.service.Server;
 import com.hc.share.util.ProtoHelper;
@@ -36,10 +37,7 @@ public class GateApp {
 	private HashMap<Integer, GateModule> protoBufProtocols = new HashMap<>();
 	private ConcurrentHashMap<Long, Session> clients = new ConcurrentHashMap<>(); // userid - > session
 	private ConcurrentHashMap<Integer, Server> servers = new ConcurrentHashMap<>();
-	
-	public void setAppNThead(int nThread) {
-		this.appExec = Executors.newFixedThreadPool(nThread);
-	}
+	private int centerID = 0;
 	
 	// 注册模块 main
 	public void registerModule(GateModule module) {
@@ -57,16 +55,27 @@ public class GateApp {
 
 	// 服务器初始化
 	public void onAddServer(int serverID, Server server) {
+		if(server instanceof Center) {
+			if(this.centerID == 0) {
+				this.centerID = serverID;
+			}else {
+				server.getSession().getChannel().close();
+				return;
+			}
+		}
 		this.servers.put(serverID, server);
 		for (Entry<String, GateModule> logic : modules.entrySet()) {
 			logic.getValue().onAddServer(serverID, server);
 		}
 	}
 
-	public void onRemoveServer(int serverID) {
-		this.servers.remove(serverID);
+	public void onRemoveServer(Server server) {
+		if(server instanceof Center) {
+			this.centerID = 0;
+		}
+		this.servers.remove(server.getServerId());
 		for (Entry<String, GateModule> logic : modules.entrySet()) {
-			logic.getValue().onRemoveServer(serverID);
+			logic.getValue().onRemoveServer(server.getServerId());
 		}
 	}
 
@@ -119,12 +128,16 @@ public class GateApp {
 								return;
 							}
 							if (clientSession != null && clientSession.getChannel().isActive()) {
+								Center center = getCenterServer();
+								if(center == null) {
+									clientSession.getChannel().close();
+									return;
+								}
+								
 								AccountPass pass = new AccountPass();
 								pass.setUserID(rspUserID);
-								// 这里找到center的server添加
-								// pass.addPass(server);
+								pass.addPass(center);
 								clientSession.setPassCheck(pass);
-								// 给客户端回应
 								rspBuilder.setUserID(rspUserID);
 								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0, 14, rspBuilder.build().toByteArray()));
 								Trace.logger.info("usreID: " + rspUserID + " 登陆成功" + " time:" + System.currentTimeMillis() );
@@ -145,7 +158,6 @@ public class GateApp {
 	}
 
 	public void recvClientProto(Session session, ByteBuf buf) {
-		// session 里边已经有了通行证
 		this.appExec.execute(() -> {				
 					
 		});
@@ -163,7 +175,19 @@ public class GateApp {
 			}
 		}
 	}
-
+	
+	public void setAppNThead(int nThread) {
+		this.appExec = Executors.newFixedThreadPool(nThread);
+	}
+	
+	public Center getCenterServer() {
+		Server server = servers.get(this.centerID);
+		if(server != null)
+			return (Center) server;
+		else
+			return null;
+	}
+	
 	public Login getLogin() {
 		return login;
 	}

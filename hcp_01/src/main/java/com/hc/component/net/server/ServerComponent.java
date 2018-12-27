@@ -2,7 +2,7 @@ package com.hc.component.net.server;
 
 import org.dom4j.Element;
 
-import com.hc.component.Type;
+import com.hc.component.ComponentType;
 import com.hc.component.net.server.base.ServerManagerImpl;
 import com.hc.share.Component;
 import com.hc.share.exception.NetException;
@@ -40,7 +40,7 @@ public class ServerComponent extends Component<ServerManager, ServerListener> im
 	}
 	@Override
 	public void build() throws NetException {
-		this.setType(Type.SERVER);
+		this.setType(ComponentType.SERVER);
 		if(port == 0)
 			throw new NetException("NettyServerImpl port is error");
 		if(this.listener == null)

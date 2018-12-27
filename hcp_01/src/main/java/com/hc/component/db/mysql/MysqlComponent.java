@@ -2,7 +2,7 @@ package com.hc.component.db.mysql;
 
 import org.dom4j.Element;
 
-import com.hc.component.Type;
+import com.hc.component.ComponentType;
 import com.hc.component.db.mysql.base.MysqlManagerImpl;
 import com.hc.share.Component;
 
@@ -33,7 +33,7 @@ public class MysqlComponent extends Component<MysqlManager, MysqlListener> imple
 	
 	@Override
 	public void build() throws Exception {
-		this.setType(Type.MYSQL);
+		this.setType(ComponentType.MYSQL);
 		this.manager = new MysqlManagerImpl(this.packetPath, this.nThread, this.dbConfigPath);
 		this.manager.registListener(this.listener);
 		this.listener.onInit(this.manager);

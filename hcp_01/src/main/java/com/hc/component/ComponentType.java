@@ -1,5 +1,5 @@
 package com.hc.component;
 
-public enum Type {
+public enum ComponentType {
 	CLIENT, SERVER, WEBSOCKT, MYSQL
 }

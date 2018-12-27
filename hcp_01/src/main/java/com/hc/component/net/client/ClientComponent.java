@@ -2,7 +2,7 @@ package com.hc.component.net.client;
 
 import org.dom4j.Element;
 
-import com.hc.component.Type;
+import com.hc.component.ComponentType;
 import com.hc.component.net.client.base.ClientManagerImpl;
 import com.hc.share.Component;
 
@@ -44,7 +44,7 @@ public class ClientComponent extends Component<ClientManager, ClientListener> im
 	
 	@Override
 	public void build() throws Exception {
-		this.setType(Type.CLIENT);
+		this.setType(ComponentType.CLIENT);
 		this.manager = new ClientManagerImpl(host, port, workeThreadNum, inProtoLength, outProtoLength);
 		this.manager.registListener(listener);
 		this.listener.onInit(this.manager);

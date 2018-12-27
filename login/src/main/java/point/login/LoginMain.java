@@ -2,15 +2,12 @@ package point.login;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
-
 import com.hc.point.Point;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
-
 import point.login.logic.account.AccountManager;
 
 public class LoginMain {
-	
 	public static void main(String[] args) {
 		Trace.logger.info("login server is begin");
 		try {

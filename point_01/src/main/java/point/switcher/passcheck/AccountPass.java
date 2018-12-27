@@ -30,7 +30,7 @@ public class AccountPass implements PassCheck {
 		powers.put(type, server);
 	}
 	@Override
-	public Server checkPass(ServerType type) {
+	public Server getPass(ServerType type) {
 		return powers.get(type);
 	}
 	public long getUserID() {
