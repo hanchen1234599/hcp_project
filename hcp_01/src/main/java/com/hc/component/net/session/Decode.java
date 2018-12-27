@@ -1,7 +1,5 @@
 package com.hc.component.net.session;
 
-import com.hc.share.util.Trace;
-
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
@@ -21,7 +19,6 @@ public class Decode extends LengthFieldBasedFrameDecoder {
 		ByteBuf frame = (ByteBuf) super.decode(ctx, in);
 		int len = frame.readInt();
 		ByteBuf body = frame.slice(4, len);
-		Trace.info("recv time:" + System.currentTimeMillis());
 		return body;
 	}
 }

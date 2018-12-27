@@ -2,7 +2,6 @@ package point.login.base;
 
 import com.hc.component.db.mysql.MysqlListener;
 import com.hc.component.db.mysql.MysqlManager;
-import com.hc.share.util.Trace;
 
 import point.login.LoginApp;
 

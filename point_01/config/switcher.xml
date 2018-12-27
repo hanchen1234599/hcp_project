@@ -1,5 +1,5 @@
 <project>
-	<point name = "swither1" type = "swither">
+	<point name = "swither1" type = "swither" nthread = "4">
 		<component name = "outer" type = "server" port="8000"
 		 boosthreadnum="1" workethreadnum="4" inprotolength="65536"
 		  outprotolength="65536" listener="point.switcher.base.OutServerListener"/>

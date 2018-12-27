@@ -25,7 +25,7 @@ public class LoginApp {
 	private static LoginApp instance = new LoginApp();
 	private MysqlManager db = null;
 	private ServerManager server = null;
-	private ExecutorService appExec = Executors.newFixedThreadPool(4);
+	private ExecutorService appExec = null;
 	private ConcurrentHashMap<Long, Gate> gates = new ConcurrentHashMap<>();
 	private HashMap<String, LoginModule> modules = new HashMap<>();
 	private HashMap<Integer, LoginModule> protoBufProtocols = new HashMap<>();
@@ -103,5 +103,8 @@ public class LoginApp {
 	}
 	public ExecutorService getAppExec() {
 		return appExec;
+	}
+	public void setAppNThead(int nThread) {
+		this.appExec = Executors.newFixedThreadPool(nThread);
 	}
 }

@@ -1,5 +1,5 @@
 <project>
-	<point name = "login" type = "login">
+	<point name = "login" type = "login" nthread = "4">
 		<component name = "server" type = "server" port="6544"
 		 boosthreadnum="1" workethreadnum="4" inprotolength="65536"
 		  outprotolength="65536" listener="point.login.base.LoginServerManager"/>

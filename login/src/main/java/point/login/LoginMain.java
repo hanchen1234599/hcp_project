@@ -1,9 +1,5 @@
 package point.login;
 
-//import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.dom4j.Document;
 import org.dom4j.Element;
 
@@ -17,7 +13,6 @@ public class LoginMain {
 	
 	public static void main(String[] args) {
 		Trace.logger.info("login server is begin");
-		List<Point> endPoints = new ArrayList<Point>();
 		try {
 			Trace.logger.info(" registerModule");
 			// 注册模块
@@ -26,13 +21,11 @@ public class LoginMain {
 			// 组件启动
 			Document doc = XmlReader.getInstance().readFile("./config/login.xml");
 			Element eRoot = doc.getRootElement();
-			@SuppressWarnings("unchecked")
-			List<Element> points =  eRoot.elements("point");
-			for(Element point: points) {
-				Point p = new Point(point);
-				p.parse();
-				endPoints.add(p);
-			}
+			Element point =  eRoot.element("point");
+			int nThread = Integer.parseInt(point.attribute("nthread").getText());
+			LoginApp.getInstace().setAppNThead(nThread);
+			Point p = new Point(point);
+			p.parse();
 			Thread.sleep(1200000000);
 		} catch (Exception e) {
 			Trace.fatal("start  error");

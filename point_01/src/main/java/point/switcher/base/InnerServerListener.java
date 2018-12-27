@@ -23,8 +23,6 @@ import hc.head.ProtoHead.Head.ProtoType;
  */
 public class InnerServerListener implements ServerListener {
 	private ConcurrentHashMap<Session, Server> servers = new ConcurrentHashMap<>();
-	//连接缓存建立连接成功未认证服务器
-	private ConcurrentHashMap<Session, Boolean> sessionCatch = new ConcurrentHashMap<>();
 
 	@Override
 	public void onInit(ServerManager manager) {
@@ -40,17 +38,15 @@ public class InnerServerListener implements ServerListener {
 	@Override
 	public void onDestory(ServerManager manager) {
 		GateApp.getInstace().setInnerManager(manager);
-		Trace.logger.info("Inner Server Component Close");
 	}
 
 	@Override
 	public void onAddSession(Session session) {
-		sessionCatch.put(session, true);
+		Trace.logger.info("内网建立连接  sessionID:" + session.getSessionID());
 	}
 
 	@Override
 	public void onRemoveSession(Session session) {
-		sessionCatch.remove(session);
 		Server server = servers.remove(session);
 		if( server != null )
 			GateApp.getInstace().onRemoveServer(server.getServerId());
@@ -63,7 +59,8 @@ public class InnerServerListener implements ServerListener {
 
 	@Override
 	public void onData(Session session, ByteBuf buf) {
-		if(sessionCatch.get(session) != null) {
+		Server server = servers.get(session);
+		if(server == null) {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
 				if(result) {
 					if(protoType == ProtoType.PROTOBUF) {
@@ -76,26 +73,23 @@ public class InnerServerListener implements ServerListener {
 								int serverID = req.getServerID();
 								//这里要检查serverID的有效性
 								if(serverID < 0 ) {
-									sessionCatch.remove(session);
 									session.getChannel().close();
 									return;
 								}
 								int serverType = req.getServerType();
-								Server server = null;
+								Server newServer = null;
 								if(serverType == ServerType.CENTER.ordinal()) {
-									server = new Center(session, serverID);
+									newServer = new Center(session, serverID);
 								}else if(serverType == ServerType.DATA.ordinal()) {
-									server = new Data(session, serverID);
+									newServer = new Data(session, serverID);
 								}else if(serverType == ServerType.SCENE.ordinal()) {
-									server = new Scene(session, serverID);
+									newServer = new Scene(session, serverID);
 								}else {
-									sessionCatch.remove(session);
 									session.getChannel().close();
 									return;
 								}
-								sessionCatch.remove(session);
-								servers.put(session, server);
-								GateApp.getInstace().onAddServer(serverID, server);
+								servers.put(session, newServer);
+								GateApp.getInstace().onAddServer(serverID, newServer);
 								hc.gate.S2GConnect.S2GRsp.Builder rspBody = hc.gate.S2GConnect.S2GRsp.newBuilder();
 								rspBody.setResult(true);
 								byte[] rspBodyBuff = rspBody.build().toByteArray();
@@ -113,13 +107,7 @@ public class InnerServerListener implements ServerListener {
 				}
 			});
 		}else{
-			Server server = servers.get(session);
-			if( server == null ) {
-				session.getChannel().close();
-				return;
-			}else {
-				GateApp.getInstace().recvServerProto( server, buf );
-			}
+			GateApp.getInstace().recvServerProto( server, buf );
 		}
 	}
 }

@@ -1,7 +1,7 @@
 package com.hc.share.util;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-
+import com.google.protobuf.MessageLite.Builder;
 import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -42,7 +42,6 @@ public class ProtoHelper {
 			Trace.logger.info(e);
 			callback.recvProtoBufByteBuf(false, 0, 0, ProtoType.PROTOBUF, 0, null);
 		}
-		
 	}
 }
 

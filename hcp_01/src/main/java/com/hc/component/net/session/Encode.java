@@ -28,6 +28,5 @@ public class Encode extends MessageToByteEncoder<ByteBuf> {
 		}
 		ByteBuf body = Unpooled.wrappedBuffer(Unpooled.copyInt(len), msg);
 		out.writeBytes(body);
-		Trace.info("send time:" + System.currentTimeMillis());
 	}
 }
