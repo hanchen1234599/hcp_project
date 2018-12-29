@@ -14,6 +14,7 @@ public class GateMain {
 			Trace.logger.info("pwd:" + System.getProperty("user.dir"));
 			GateApp.getInstace().setCurServiceID(10);
 			GateApp.getInstace().launchGate();
+			
 			Document doc = XmlReader.getInstance().readFile("./config/switcher.xml");
 			Element eRoot = doc.getRootElement();
 			Element point =  eRoot.element("point");
@@ -21,6 +22,7 @@ public class GateMain {
 			GateApp.getInstace().setAppNThead(nThread);
 			Point p = new Point(point);
 			p.parse();
+			
 			Thread.sleep(1000000000);
 		} catch (Exception e) {
 			Trace.fatal("gate start error");

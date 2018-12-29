@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	进程内组件用到的配置   具体起几个组件不是由这个决定的    这个文件是用来定制服务器类型 以及该类型服务器内组件用到的默认配置
+	元素point内部配置的 组件未启动组件  其他类型中的组件在  启动后逻辑里边会用到
+ -->
+<project name = "mmotest">
+	<point pointid = "1" name = "gate1" type = "gate"><!-- 内部配置决定了组件的启动顺序 -->
+		<union remoteip = "127.0.0.1" remoteport = "5000"/>
+		<center remoteid = "127.0.0.1" remoteport = "5003"/>
+		<inner port ="5001"/>
+		<outer port ="5001"/>
+	</point>
+	<point pointid = "2" name = "union" type = "union">
+		<uniondb hikariconfig = "./config/HikariConfig.properties"/>
+		<inner port = "5000"/>
+	</point>
+	<point pointid = "2" name = "login" type = "center">
+		<inner port = "5003"/>
+	</point>
+</project>

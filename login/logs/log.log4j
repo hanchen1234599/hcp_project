@@ -48,3 +48,6 @@
 [INFO ] 2018-12-29 13:42:16,864(171390)-->[pool-1-thread-1] point.login.logic.account.AccountManager.onGateProto(AccountManager.java:50): 账号 hanchen query.  time:1546062136864  
 [INFO ] 2018-12-29 13:42:16,864(171390)-->[pool-2-thread-1] com.hc.component.db.mysql.base.MysqlManagerImpl.find(MysqlManagerImpl.java:101): select login( ?, 'evo', '' )  
 [INFO ] 2018-12-29 13:42:16,870(171396)-->[pool-1-thread-2] point.login.logic.account.AccountManager.lambda$0(AccountManager.java:57): 账号: hanchen userID: 3 time:1546062136870  
+[INFO ] 2018-12-29 13:43:41,723(256249)-->[nioEventLoopGroup-3-3] com.hc.component.net.server.base.ServerLogic.exceptionCaught(ServerLogic.java:37): java.io.IOException: 远程主机强迫关闭了一个现有的连接。  
+[INFO ] 2018-12-29 13:43:41,723(256249)-->[nioEventLoopGroup-3-3] point.login.base.LoginServerManager.OnExceptionCaught(LoginServerManager.java:44): java.io.IOException: 远程主机强迫关闭了一个现有的连接。  
+[INFO ] 2018-12-29 13:43:41,723(256249)-->[nioEventLoopGroup-3-3] point.login.LoginApp.removeGateConnect(LoginApp.java:66): remove gate sessionid :102  

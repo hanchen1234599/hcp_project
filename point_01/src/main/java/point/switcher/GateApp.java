@@ -128,7 +128,7 @@ public class GateApp {
 								return;
 							}
 							if (clientSession != null && clientSession.getChannel().isActive()) {
-								Center center = getCenterServer();
+								//Center center = getCenterServer();
 //								if(center == null) {
 //									clientSession.getChannel().close();
 //									return;
