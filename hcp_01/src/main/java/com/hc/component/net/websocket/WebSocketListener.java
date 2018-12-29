@@ -13,4 +13,5 @@ public interface WebSocketListener extends Listener<WebSocketManager> {
 	void onExceptionSession(Session session);
 	void onData(Session session, ByteBuf body);
 	void onHttp(Session session, FullHttpRequest req, FullHttpResponse rsp);
+	void OnExceptionCaught(Session session, Throwable cause);
 }

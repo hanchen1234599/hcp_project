@@ -86,12 +86,6 @@ class myListener implements ServerListener{
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public void onExceptionSession(Session session) {
-		// TODO Auto-generated method stub
-		
-	}
 	// body 包体 数据
 	@Override
 	public void onData(Session session, ByteBuf body) {
@@ -104,6 +98,12 @@ class myListener implements ServerListener{
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
+		
+	}
+
+	@Override
+	public void OnExceptionCaught(Session session, Throwable cause) {
+		// TODO Auto-generated method stub
 		
 	}
 }

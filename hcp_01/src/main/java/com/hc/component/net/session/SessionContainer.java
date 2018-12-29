@@ -18,4 +18,5 @@ public interface SessionContainer extends Container {
 	void removeSession(Channel channel);
 	void recvData(Session session, ByteBuf body);
 	Session getSession(Channel channel);
+	void OnExceptionCaught(Session session, Throwable cause);
 }

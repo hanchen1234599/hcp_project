@@ -3,6 +3,8 @@ package point.login.base;
 import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
+import com.hc.share.util.Trace;
+
 import io.netty.buffer.ByteBuf;
 import point.login.LoginApp;
 
@@ -33,12 +35,12 @@ public class LoginServerManager implements ServerListener {
 	}
 
 	@Override
-	public void onExceptionSession(Session session) {
-		session.getChannel().close();
+	public void onData(Session session, ByteBuf body) {
+		LoginApp.getInstace().recvGateProto(session, body);
 	}
 
 	@Override
-	public void onData(Session session, ByteBuf body) {
-		LoginApp.getInstace().recvGateProto(session, body);
+	public void OnExceptionCaught(Session session, Throwable cause) {
+		Trace.logger.info(cause);
 	}
 }

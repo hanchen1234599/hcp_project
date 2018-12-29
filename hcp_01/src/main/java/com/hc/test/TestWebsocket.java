@@ -94,5 +94,11 @@ class MyListener1 implements WebSocketListener{
 		//ChannelFuture f = session.getChannel().writeAndFlush(rsp);
 		//f.addListener(ChannelFutureListener.CLOSE); //http链接 在响应后关闭
 	}
+
+	@Override
+	public void OnExceptionCaught(Session session, Throwable cause) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

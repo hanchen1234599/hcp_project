@@ -1,6 +1,7 @@
 package com.hc.share.util;
 
 import com.google.protobuf.InvalidProtocolBufferException;
+
 import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -12,6 +13,7 @@ public class ProtoHelper {
 		rspHead.setDesID(desID);
 		rspHead.setType(ProtoType.PROTOBUF);
 		rspHead.setProtoID(pid);
+		
 		byte[] headBuff = rspHead.build().toByteArray();
 		short rspHeadLen = (short) headBuff.length;
 		ByteBuf rspHeadLenBuf = Unpooled.copyShort(rspHeadLen);
@@ -22,6 +24,7 @@ public class ProtoHelper {
 //	ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
 //		
 //	});
+	// 这个函数是线程安全的  适合底层用  
 	public static void recvProtoBufByteBuf(ByteBuf buf, RecvProtoBufByteBuf callback) {
 		int bufLenght = buf.readableBytes();
 		short headLen = buf.readShort();

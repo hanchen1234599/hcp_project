@@ -34,6 +34,8 @@ public class ServerLogic extends ChannelInboundHandlerAdapter  {
 	}
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-		ctx.close();
+		Trace.logger.info(cause);
+		Session session = this.container.getSession(ctx.channel());
+		this.container.OnExceptionCaught(session, cause);
 	}
 }

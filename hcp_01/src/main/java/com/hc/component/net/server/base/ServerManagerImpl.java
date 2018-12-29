@@ -70,6 +70,10 @@ public class ServerManagerImpl implements ServerManager, SessionContainer {
 		this.listener.onData(session, bd);
 	}
 	@Override
+	public void OnExceptionCaught(Session session, Throwable cause) {
+		this.listener.OnExceptionCaught(session, cause);
+	}
+	@Override
 	public Session getSession(Channel channel) {
 		return this.sessionContainerChannel.get(channel);
 	}

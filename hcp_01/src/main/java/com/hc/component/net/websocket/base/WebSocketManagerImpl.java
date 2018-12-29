@@ -82,4 +82,8 @@ public class WebSocketManagerImpl implements WebSocketManager, SessionContainer 
 	public Session getSession(long sessionID) {
 		return this.sessionContainerId.get(sessionID);
 	}
+	@Override
+	public void OnExceptionCaught(Session session, Throwable cause) {
+		this.listener.OnExceptionCaught(session, cause);
+	}
 }

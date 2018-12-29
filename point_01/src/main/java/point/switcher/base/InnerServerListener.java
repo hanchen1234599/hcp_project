@@ -53,19 +53,13 @@ public class InnerServerListener implements ServerListener {
 	}
 
 	@Override
-	public void onExceptionSession(Session session) {
-		//session.getChannel().close(); // 内网发生异常  不断开链接
-		Trace.logger.info("内网连接 sessionID:" + session.getSessionID() + "发生异常。");
-	}
-
-	@Override
 	public void onData(Session session, ByteBuf buf) {
 		Server server = servers.get(session);
 		if(server == null) {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
 				if(result) {
 					if(protoType == ProtoType.PROTOBUF) {
-						if(protoID == 21) {
+						if(protoID == hc.protoconfig.GateProtocol.S2GReq) {
 							int bodyLen = body.readableBytes();
 							byte[] bodyBuff = new byte[bodyLen];
 							body.getBytes(0, bodyBuff, 0, bodyLen);
@@ -94,7 +88,7 @@ public class InnerServerListener implements ServerListener {
 								hc.gate.S2GConnect.S2GRsp.Builder rspBody = hc.gate.S2GConnect.S2GRsp.newBuilder();
 								rspBody.setResult(true);
 								byte[] rspBodyBuff = rspBody.build().toByteArray();
-								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), srcID, 22, rspBodyBuff));
+								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), srcID, hc.protoconfig.GateProtocol.S2GRsp, rspBodyBuff));
 							} catch (InvalidProtocolBufferException e) {
 								e.printStackTrace();
 								session.getChannel().close();
@@ -110,5 +104,10 @@ public class InnerServerListener implements ServerListener {
 		}else{
 			GateApp.getInstace().recvServerProto( server, buf );
 		}
+	}
+
+	@Override
+	public void OnExceptionCaught(Session session, Throwable cause) {
+		Trace.logger.info(cause);
 	}
 }

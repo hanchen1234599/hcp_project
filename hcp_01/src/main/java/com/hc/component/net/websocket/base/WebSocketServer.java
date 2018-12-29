@@ -107,7 +107,8 @@ public class WebSocketServer {
 
 		@Override
 		public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-			ctx.close();
+			Session session = this.manager.getSession(ctx.channel());
+			this.manager.OnExceptionCaught(session, cause);
 		}
 
 		/**
@@ -161,7 +162,6 @@ public class WebSocketServer {
 					ctx.close();
 				this.manager.recvHttp(session, req,
 						new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK));
-				//ctx.channel().closeFuture().addListener(new Scanc)
 			}
 		}
 	}

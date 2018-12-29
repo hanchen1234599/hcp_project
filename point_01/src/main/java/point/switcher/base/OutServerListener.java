@@ -9,6 +9,7 @@ import com.hc.share.util.Trace;
 import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import point.switcher.GateApp;
+
 /**
  * @author hanchen
  */
@@ -28,7 +29,7 @@ public class OutServerListener implements ServerListener {
 		GateApp.getInstace().setOuterManager(null);
 		Trace.logger.info("OutServerListener onDestory");
 	}
-	
+
 	@Override
 	public void onAddSession(Session session) {
 		GateApp.getInstace().onClientInactive(session);
@@ -40,16 +41,11 @@ public class OutServerListener implements ServerListener {
 	}
 
 	@Override
-	public void onExceptionSession(Session session) {
-		session.getChannel().close();
-	}
-
-	@Override
 	public void onData(Session session, ByteBuf buf) {
 		if (session.getPassCheck() == null) {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body) -> {
 				if (result) {
-					if (protoType == ProtoType.PROTOBUF && protoID == 11) {
+					if (protoType == ProtoType.PROTOBUF && protoID == hc.protoconfig.LoginProtocol.LoginReq) {
 						int bodyLen = body.readableBytes();
 						byte[] reqbody = new byte[bodyLen];
 						body.getBytes(0, reqbody);
@@ -61,8 +57,10 @@ public class OutServerListener implements ServerListener {
 									.newBuilder();
 							loginPassReqBuilder.setAccountName(roleName);
 							loginPassReqBuilder.setSessionID(session.getSessionID());
-							GateApp.getInstace().getLogin().getSession().send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0, 12,
-									loginPassReqBuilder.build().toByteArray()));
+							GateApp.getInstace().getLogin().getSession()
+									.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0,
+											hc.protoconfig.LoginProtocol.LoginPessReq,
+											loginPassReqBuilder.build().toByteArray()));
 						} catch (Exception e) {
 							Trace.logger.info(e);
 						}
@@ -75,8 +73,14 @@ public class OutServerListener implements ServerListener {
 					session.getChannel().close();
 				}
 			});
-		}else {
-			GateApp.getInstace().recvClientProto( session, buf );
+		} else {
+			GateApp.getInstace().recvClientProto(session, buf);
 		}
+	}
+
+	@Override
+	public void OnExceptionCaught(Session session, Throwable cause) {
+		session.getChannel().close();
+		Trace.logger.info(cause);
 	}
 }

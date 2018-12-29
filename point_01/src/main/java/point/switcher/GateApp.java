@@ -107,7 +107,7 @@ public class GateApp {
 	public void recvLoginProto(Session session, ByteBuf buf) {
 		ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body) -> {
 			if (result) {
-				if (protoType == ProtoType.PROTOBUF && protoID == 13) {
+				if (protoType == ProtoType.PROTOBUF && protoID == hc.protoconfig.LoginProtocol.LoginPessRsp) {
 					int bodyLen = body.readableBytes();
 					byte[] bodyBuff = new byte[bodyLen];
 					body.getBytes(0, bodyBuff);
@@ -129,22 +129,22 @@ public class GateApp {
 							}
 							if (clientSession != null && clientSession.getChannel().isActive()) {
 								Center center = getCenterServer();
-								if(center == null) {
-									clientSession.getChannel().close();
-									return;
-								}
+//								if(center == null) {
+//									clientSession.getChannel().close();
+//									return;
+//								}
 								
 								AccountPass pass = new AccountPass();
 								pass.setUserID(rspUserID);
-								pass.addPass(center);
+								//pass.addPass(center);
 								clientSession.setPassCheck(pass);
 								rspBuilder.setUserID(rspUserID);
-								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0, 14, rspBuilder.build().toByteArray()));
+								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0, hc.protoconfig.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
 								Trace.logger.info("usreID: " + rspUserID + " 登陆成功" + " time:" + System.currentTimeMillis() );
 							}
 						} else {
 							rspBuilder.setUserID(0);
-							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0, 14, rspBuilder.build().toByteArray()));
+							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0, hc.protoconfig.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
 						}
 					} catch (InvalidProtocolBufferException e) {
 						Trace.logger.info("login 登陆协议解析错误");
