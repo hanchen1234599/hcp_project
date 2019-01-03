@@ -37,7 +37,7 @@ public class GateApp {
 	private HashMap<Integer, GateModule> protoBufProtocols = new HashMap<>();
 	private ConcurrentHashMap<Long, Session> clients = new ConcurrentHashMap<>(); // userid - > session
 	private ConcurrentHashMap<Integer, Server> servers = new ConcurrentHashMap<>();
-	private int centerID = 0;
+	private int centerID = 0;  
 	
 	// 注册模块 main
 	public void registerModule(GateModule module) {

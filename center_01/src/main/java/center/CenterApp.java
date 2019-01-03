@@ -1,6 +1,5 @@
 package center;
 
-import java.rmi.server.RemoteServer;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
 
@@ -12,15 +11,14 @@ import com.hc.component.net.server.ServerComponent;
 import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
+import com.hc.share.service.Data;
 import com.hc.share.service.Gate;
+import com.hc.share.service.Scene;
 import com.hc.share.service.Server;
 import com.hc.share.service.ServerType;
 import com.hc.share.util.ProtoHelper;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
-
-import hc.center.CenterProto;
-import hc.center.CenterProto.CenterCreateServerConnectReq.Builder;
 import hc.head.ProtoHead.Head.ProtoType;
 import hc.protoconfig.CenterProtocol;
 import hc.protoconfig.ProtocolLogic;
@@ -85,9 +83,11 @@ public class CenterApp {
 	}
 	
  	public void addServer( Server server) {
-		this.servers.put(server.getServerId(), server);
+		this.session2server.remove(server.getSession());
+ 		this.servers.put(server.getServerId(), server);
 		this.session2server.put(server.getSession(), server);
 	}
+ 	
 	public void removeServer( int serverID ) {
 		this.servers.remove(serverID);
 	}
@@ -158,7 +158,7 @@ public class CenterApp {
 class CreateServer{
 	static enum CreateState{ CREATECONNECT, CHECKCONNECT, RECVCONNECTMESSAGE, READY }
 	private CreateState state = CreateState.CREATECONNECT;
-	public Server tryCreate( Session session, ByteBuf buf ) {
+	public void tryCreate( Session session, ByteBuf buf ) {
 		if(this.state == CreateState.CREATECONNECT) {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
 				if (protoType == ProtoType.PROTOBUF) {
@@ -220,22 +220,21 @@ class CreateServer{
 						if(protoID == CenterProtocol.CenterServerMessageAskRsp) {
 							CenterApp.getInstance().getServerConnectLogic().recvMessage2Protocol(protoID, body, (recvMsg)->{
 								hc.center.CenterProto.CenterServerMessageAskRsp msg = (hc.center.CenterProto.CenterServerMessageAskRsp)recvMsg;
-								int reomteServerID = msg.getServerID();
+								int remoteServerID = msg.getServerID();
 								int remoteServerType = msg.getServerType();
 								String remoteServerName = msg.getServerName();
 								String remoteServerJsonMsg = msg.getJsonMsg();
 								Server remoteServer = null;
 								if(remoteServerType == ServerType.GATE.ordinal()) {
-									remoteServer = new Gate(session);
-									remoteServer.setServerId(reomteServerID);
-									remoteServer.setOpen(false);
-									
-									
+									remoteServer = new Gate(session, remoteServerID);
 								}else if(remoteServerType == ServerType.DATA.ordinal()) {
-									
+									remoteServer = new Data(session, remoteServerID);
 								}else if(remoteServerType == ServerType.SCENE.ordinal()) {
-									
+									remoteServer = new Scene(session, remoteServerID);
 								}
+								remoteServer.setServerName(remoteServerName);
+								remoteServer.setJsonConfig(remoteServerJsonMsg);
+								remoteServer.setOpen(false);	
 								CenterApp.getInstance().addServer(remoteServer);
 							});
 						}else {
@@ -249,7 +248,6 @@ class CreateServer{
 				}
 			});
 		}
-		return null;
 	}
 }
 

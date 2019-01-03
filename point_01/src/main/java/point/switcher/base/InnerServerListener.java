@@ -95,6 +95,7 @@ public class InnerServerListener implements ServerListener {
 							}
 						}else {
 							session.getChannel().close();
+							Trace.logger.info("服务器未注册");
 						}
 					}else {
 						session.getChannel().close();
