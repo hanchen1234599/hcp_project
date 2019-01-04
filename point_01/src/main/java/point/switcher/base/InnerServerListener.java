@@ -26,7 +26,7 @@ public class InnerServerListener implements ServerListener {
 
 	@Override
 	public void onInit(ServerManager manager) {
-		GateApp.getInstace().setInnerManager(manager);
+		GateApp.getInstance().setInnerManager(manager);
 		try {
 			manager.open();
 		} catch (Exception e) {
@@ -37,7 +37,7 @@ public class InnerServerListener implements ServerListener {
 
 	@Override
 	public void onDestory(ServerManager manager) {
-		GateApp.getInstace().setInnerManager(manager);
+		GateApp.getInstance().setInnerManager(manager);
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class InnerServerListener implements ServerListener {
 	public void onRemoveSession(Session session) {
 		Server server = servers.remove(session);
 		if( server != null )
-			GateApp.getInstace().onRemoveServer(server);
+			GateApp.getInstance().onRemoveServer(server);
 	}
 
 	@Override
@@ -84,11 +84,11 @@ public class InnerServerListener implements ServerListener {
 									return;
 								}
 								servers.put(session, newServer);
-								GateApp.getInstace().onAddServer(serverID, newServer);
+								GateApp.getInstance().onAddServer(serverID, newServer);
 								hc.gate.S2GConnect.S2GRsp.Builder rspBody = hc.gate.S2GConnect.S2GRsp.newBuilder();
 								rspBody.setResult(true);
 								byte[] rspBodyBuff = rspBody.build().toByteArray();
-								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), srcID, hc.protoconfig.GateProtocol.S2GRsp, rspBodyBuff));
+								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), srcID, hc.protoconfig.GateProtocol.S2GRsp, rspBodyBuff));
 							} catch (InvalidProtocolBufferException e) {
 								e.printStackTrace();
 								session.getChannel().close();
@@ -103,7 +103,7 @@ public class InnerServerListener implements ServerListener {
 				}
 			});
 		}else{
-			GateApp.getInstace().recvServerProto( server, buf );
+			GateApp.getInstance().recvServerProto( server, buf );
 		}
 	}
 

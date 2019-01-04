@@ -122,7 +122,7 @@ public class CenterApp {
 		serverConfig.setOutProtoLength(Integer.parseInt(serverTypeInner.attribute("outprotolength").getText()));
 		serverConfig.setWorkeThreadNum(Integer.parseInt(serverTypeInner.attribute("workethreadnum").getText()));
 		Element centerRoot = XmlReader.getInstance().readFile("../share/config/serverconfig.xml").getRootElement();
-		Element centerPoint = XmlReader.getElementByAttributeWithElementName(XmlReader.getInstance().readFile("../share/config/serverconfig.xml").getRootElement(), "point", "type", "center");
+		Element centerPoint = XmlReader.getElementByAttributeWithElementName(centerRoot, "point", "type", "center");
 		this.serverID = Integer.parseInt(centerPoint.attribute("serverid").getText());
 		this.serverName = centerPoint.attribute("name").getText();
 		Element ceneerDb = centerPoint.element("centerdb");

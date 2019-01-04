@@ -50,15 +50,19 @@ public interface NettyServer {
 					ch.pipeline().addLast("logic", new ServerLogic(container));
 				}
 			});
-			ChannelFuture future = bs.bind(port);
-			future.addListener((f)->{
-				if(f.isSuccess()) {
-					Trace.logger.info("open listener port:" + port + " success");
-				}else {
-					Trace.logger.info("open listener port:" + port + " error");
-					Runtime.getRuntime().exit(1);
-				}
-			});
+			try {
+				ChannelFuture future = bs.bind(port).sync();
+				future.addListener((f)->{
+					if(f.isSuccess()) {
+						Trace.logger.info("open listener port:" + port + " success");
+					}else {
+						Trace.logger.info("open listener port:" + port + " error");
+						Runtime.getRuntime().exit(1);
+					}
+				});	
+			} catch (InterruptedException e) {
+				Trace.logger.error(e);
+			}
 			
 		}
 

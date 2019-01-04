@@ -16,7 +16,7 @@ import point.switcher.GateApp;
 public class OutServerListener implements ServerListener {
 	@Override
 	public void onInit(ServerManager manager) {
-		GateApp.getInstace().setOuterManager(manager);
+		GateApp.getInstance().setOuterManager(manager);
 		try {
 			manager.open();
 		} catch (Exception e) {
@@ -26,18 +26,18 @@ public class OutServerListener implements ServerListener {
 
 	@Override
 	public void onDestory(ServerManager manager) {
-		GateApp.getInstace().setOuterManager(null);
+		GateApp.getInstance().setOuterManager(null);
 		Trace.logger.info("OutServerListener onDestory");
 	}
 
 	@Override
 	public void onAddSession(Session session) {
-		GateApp.getInstace().onClientInactive(session);
+		GateApp.getInstance().onClientInactive(session);
 	}
 
 	@Override
 	public void onRemoveSession(Session session) {
-		GateApp.getInstace().onClientUnactive(session);
+		GateApp.getInstance().onClientUnactive(session);
 	}
 
 	@Override
@@ -57,8 +57,8 @@ public class OutServerListener implements ServerListener {
 									.newBuilder();
 							loginPassReqBuilder.setAccountName(roleName);
 							loginPassReqBuilder.setSessionID(session.getSessionID());
-							GateApp.getInstace().getLogin().getSession()
-									.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstace().getCurServiceID(), 0,
+							GateApp.getInstance().getLogin().getSession()
+									.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0,
 											hc.protoconfig.LoginProtocol.LoginPessReq,
 											loginPassReqBuilder.build().toByteArray()));
 						} catch (Exception e) {
@@ -74,7 +74,7 @@ public class OutServerListener implements ServerListener {
 				}
 			});
 		} else {
-			GateApp.getInstace().recvClientProto(session, buf);
+			GateApp.getInstance().recvClientProto(session, buf);
 		}
 	}
 

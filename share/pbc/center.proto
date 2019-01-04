@@ -29,3 +29,7 @@ message CenterServerMessageAskRsp{
 	required string serverName = 3;
 	required string jsonMsg = 4;
 }
+
+message CenterServerResult{
+	required bool result = 1;
+}

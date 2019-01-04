@@ -4,25 +4,23 @@
 	元素point内部配置的 组件未启动组件  其他类型中的组件在  启动后逻辑里边会用到
  -->
 <project name = "mmotest">
-	<!-- 
-	<point serverid = "1" name = "gate1" type = "gate">
+	<point serverid = "3" name = "gate1" type = "gate">
+		<inner port ="5001"/>
+		<outer port ="5002"/>
 		<union remoteip = "127.0.0.1" remoteport = "5000"/>
 		<center remoteid = "127.0.0.1" remoteport = "5003"/>
-		<inner port ="5001"/>
-		<outer port ="5001"/>
 	</point>
-	<point serverid = "2" name = "union" type = "union">
-		<uniondb hikariconfig = "./config/HikariConfig.properties"/>
+	<point serverid = "1" name = "union" type = "union">
+		<uniondb id = "3"/>
 		<inner port = "5000"/>
 	</point>
-	 -->
-	<point serverid = "1" name = "center" type = "center">
+	<point serverid = "2" name = "center" type = "center">
 		<centerdb id = "2"/>
-		<inner port = "10000"/>
+		<inner port = "5003"/>
 	</point>
-	
 	<dbconfig>
 		<roledb id ="1" index = "1, 2" hikariconfig= "" />
 		<centerdb id = "2" hikariconfig= "" />
+		<uniondb id = "3" hikariconfig= "" />
 	</dbconfig>
 </project>

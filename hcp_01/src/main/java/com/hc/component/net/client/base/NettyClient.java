@@ -50,19 +50,23 @@ public class NettyClient {
 				ch.pipeline().addLast("logic", logic);
 			}
 		});
-		bootstrap.connect().addListener((ChannelFuture f) -> {
-			if (!f.isSuccess()) {
-				f.channel().eventLoop().schedule(new Runnable() {
-					@Override
-					public void run() {
-						Trace.logger.debug("reConnect");
-						beginConnect();
-					}
-				}, 5L, TimeUnit.SECONDS); // or you can give up at some point by just doing nothing.
-			}else {
-				Trace.logger.info("connect host:"+ this.host + " port:" + this.port + " success");
-			}
-		});
+		try {
+			bootstrap.connect().sync().addListener((ChannelFuture f) -> {
+				if (!f.isSuccess()) {
+					f.channel().eventLoop().schedule(new Runnable() {
+						@Override
+						public void run() {
+							Trace.logger.debug("reConnect");
+							beginConnect();
+						}
+					}, 5L, TimeUnit.SECONDS); // or you can give up at some point by just doing nothing.
+				}else {
+					Trace.logger.info("connect host:"+ this.host + " port:" + this.port + " success");
+				}
+			});
+		} catch (InterruptedException e) {
+			Trace.logger.error(e);
+		}
 	}
 	
 	public void close() {

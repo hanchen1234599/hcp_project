@@ -35,13 +35,13 @@ public class PassCheckConnect implements ClientListener {
 	@Override
 	public void onConnect(Session session) {
 		this.session = session;
-		GateApp.getInstace().setLogin(new Login(session));
+		GateApp.getInstance().setLogin(new Login(session));
 	}
 
 	@Override
 	public void onUnConnect() {
 		this.session = null;
-		GateApp.getInstace().setLogin(null);
+		GateApp.getInstance().setLogin(null);
 	}
 
 	@Override
@@ -51,6 +51,6 @@ public class PassCheckConnect implements ClientListener {
 
 	@Override
 	public void onData(Session session, ByteBuf body) {
-		GateApp.getInstace().recvLoginProto( session, body );
+		GateApp.getInstance().recvLoginProto( session, body );
 	}
 }

@@ -4,8 +4,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import com.hc.component.net.session.Session;
 import com.hc.component.net.websocket.WebSocket;
 import com.hc.share.util.AtomicSessionID;
+import com.hc.share.util.Trace;
+
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.ChannelInitializer;
@@ -59,7 +62,19 @@ public class WebSocketServer {
 						ch.pipeline().addLast("websocket", new WebSocketLogic(manager));
 					}
 				});
-		bs.bind(this.port);
+		try {
+			ChannelFuture future = bs.bind(port).sync();
+			future.addListener((f)->{
+				if(f.isSuccess()) {
+					Trace.logger.info("open listener port:" + port + " success");
+				}else {
+					Trace.logger.info("open listener port:" + port + " error");
+					Runtime.getRuntime().exit(1);
+				}
+			});	
+		} catch (InterruptedException e) {
+			Trace.logger.error(e);
+		}
 	}
 
 	public void close() {
