@@ -1,14 +1,13 @@
 package com.hc.component.net.websocket.base;
 
-import com.hc.component.net.session.PassCheck;
 import com.hc.component.net.session.Session;
 import com.hc.component.net.websocket.WebSocket;
-
+//import hc.server.passcheck.PassCheck;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
 
 public class WebSocketSessionImpl implements Session {
-	private PassCheck pass = null; // 通行证
+	private Object arg = null;
 	private Channel channel;
 	private long sessionID;
 	public WebSocketSessionImpl(Channel channel, long sessionID) {
@@ -28,11 +27,11 @@ public class WebSocketSessionImpl implements Session {
 		WebSocket.sendTextWebSocketFrame(channel, body);
 	}
 	@Override
-	public PassCheck getPassCheck() {
-		return this.pass;
+	public void setParamete(Object arg) {
+		this.arg = arg;
 	}
 	@Override
-	public void setPassCheck(PassCheck pass) {
-		this.pass = pass;
+	public Object getParamete() {
+		return this.arg;
 	}
 }

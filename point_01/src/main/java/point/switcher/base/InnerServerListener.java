@@ -9,15 +9,15 @@ import com.google.protobuf.InvalidProtocolBufferException;
 import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
-import com.hc.share.service.Center;
-import com.hc.share.service.Data;
-import com.hc.share.service.Scene;
-import com.hc.share.service.Server;
-import com.hc.share.service.ServerType;
 import com.hc.share.util.ProtoHelper;
 import com.hc.share.util.Trace;
 
 import hc.head.ProtoHead.Head.ProtoType;
+import hc.server.service.Center;
+import hc.server.service.Data;
+import hc.server.service.Scene;
+import hc.server.service.Server;
+import hc.server.service.ServerType;
 /**
  * @author hanchen
  */
@@ -59,7 +59,7 @@ public class InnerServerListener implements ServerListener {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
 				if(result) {
 					if(protoType == ProtoType.PROTOBUF) {
-						if(protoID == hc.protoconfig.GateProtocol.S2GReq) {
+						if(protoID == hc.config.proto.GateProtocol.S2GReq) {
 							int bodyLen = body.readableBytes();
 							byte[] bodyBuff = new byte[bodyLen];
 							body.getBytes(0, bodyBuff, 0, bodyLen);
@@ -88,7 +88,7 @@ public class InnerServerListener implements ServerListener {
 								hc.gate.S2GConnect.S2GRsp.Builder rspBody = hc.gate.S2GConnect.S2GRsp.newBuilder();
 								rspBody.setResult(true);
 								byte[] rspBodyBuff = rspBody.build().toByteArray();
-								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), srcID, hc.protoconfig.GateProtocol.S2GRsp, rspBodyBuff));
+								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), srcID, hc.config.proto.GateProtocol.S2GRsp, rspBodyBuff));
 							} catch (InvalidProtocolBufferException e) {
 								e.printStackTrace();
 								session.getChannel().close();

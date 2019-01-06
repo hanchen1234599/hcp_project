@@ -3,9 +3,9 @@ package point.switcher.base;
 import com.hc.component.net.client.ClientListener;
 import com.hc.component.net.client.ClientManager;
 import com.hc.component.net.session.Session;
-import com.hc.share.service.Login;
 import com.hc.share.util.Trace;
 
+import hc.server.service.Login;
 import io.netty.buffer.ByteBuf;
 import point.switcher.GateApp;
 /**

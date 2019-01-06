@@ -1,0 +1,7 @@
+[INFO ] 2018-12-29 13:45:34,799(0)-->[main] com.hc.test.Test9.main(Test9.java:8): 0  
+[INFO ] 2018-12-29 13:46:55,543(0)-->[main] com.hc.test.Test9.main(Test9.java:8): 1  
+[INFO ] 2018-12-29 13:47:14,509(0)-->[main] com.hc.test.Test9.main(Test9.java:8): 2  
+[INFO ] 2018-12-29 13:47:22,165(0)-->[main] com.hc.test.Test9.main(Test9.java:8): 2  
+[INFO ] 2018-12-29 13:49:07,419(0)-->[main] com.hc.test.Test9.main(Test9.java:8): 1  
+[INFO ] 2018-12-29 13:49:28,345(0)-->[main] com.hc.test.Test9.main(Test9.java:8): 1  
+[INFO ] 2018-12-29 13:49:28,347(2)-->[main] com.hc.test.Test9.main(Test9.java:9): 10  

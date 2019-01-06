@@ -13,21 +13,23 @@ import com.hc.component.net.server.ServerComponent;
 import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
-import com.hc.share.service.Center;
-import com.hc.share.service.Login;
-import com.hc.share.service.Server;
-import com.hc.share.service.ServerType;
 import com.hc.share.util.ProtoHelper;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
+
+import hc.config.proto.CenterProtocol;
+import hc.config.proto.base.ProtocolLogic;
+import hc.config.server.ClientConfig;
+import hc.config.server.ServerConfig;
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.protoconfig.CenterProtocol;
-import hc.protoconfig.ProtocolLogic;
+import hc.server.service.Center;
+import hc.server.service.Login;
+import hc.server.service.Server;
+import hc.server.service.ServerType;
 import io.netty.buffer.ByteBuf;
 import point.switcher.logic.GateModule;
 import point.switcher.passcheck.AccountPass;
-import serverType.ClientConfig;
-import serverType.ServerConfig;
+import point.switcher.passcheck.PassCheck;
 
 public class GateApp {
 	private int serverID = 0;
@@ -105,8 +107,8 @@ public class GateApp {
 
 	public void onClientUnactive(Session session) {
 		Trace.logger.debug("客户端断开   gate sessionID:" + session.getSessionID());
-		if(session.getPassCheck() != null)
-			this.clients.remove(session.getPassCheck().getUserID());
+		if(session.getParamete() != null)
+			this.clients.remove(((PassCheck) (session.getParamete())).getUserID());
 	}
 
 	public void recvServerProto(Server server, ByteBuf buf) {
@@ -120,7 +122,7 @@ public class GateApp {
 	public void recvLoginProto(Session session, ByteBuf buf) {
 		ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body) -> {
 			if (result) {
-				if (protoType == ProtoType.PROTOBUF && protoID == hc.protoconfig.LoginProtocol.LoginPessRsp) {
+				if (protoType == ProtoType.PROTOBUF && protoID == hc.config.proto.LoginProtocol.LoginPessRsp) {
 					int bodyLen = body.readableBytes();
 					byte[] bodyBuff = new byte[bodyLen];
 					body.getBytes(0, bodyBuff);
@@ -136,7 +138,7 @@ public class GateApp {
 							long rspUserID = loginPessRsp.getUserID();
 							if (clientSession == null)
 								return;
-							if (clientSession.getPassCheck() != null) {
+							if (clientSession.getParamete() != null) {
 								Trace.logger.info("userID:" + rspUserID + "重复登陆");
 								return;
 							}
@@ -150,14 +152,14 @@ public class GateApp {
 								AccountPass pass = new AccountPass();
 								pass.setUserID(rspUserID);
 								//pass.addPass(center);
-								clientSession.setPassCheck(pass);
+								clientSession.setParamete(pass);
 								rspBuilder.setUserID(rspUserID);
-								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, hc.protoconfig.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
+								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, hc.config.proto.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
 								Trace.logger.info("usreID: " + rspUserID + " 登陆成功" + " time:" + System.currentTimeMillis() );
 							}
 						} else {
 							rspBuilder.setUserID(0);
-							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, hc.protoconfig.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
+							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, hc.config.proto.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
 						}
 					} catch (InvalidProtocolBufferException e) {
 						Trace.logger.info("login 登陆协议解析错误");

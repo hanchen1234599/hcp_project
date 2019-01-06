@@ -9,10 +9,11 @@ import java.util.concurrent.Executors;
 import com.hc.component.db.mysql.MysqlManager;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
-import com.hc.share.service.Gate;
 import com.hc.share.util.ProtoHelper;
 import com.hc.share.util.Trace;
+
 import hc.head.ProtoHead.Head.ProtoType;
+import hc.server.service.Gate;
 import io.netty.buffer.ByteBuf;
 import point.login.base.LoginModule;
 

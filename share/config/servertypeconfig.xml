@@ -9,14 +9,14 @@
 	</servertype>
 	<servertype type = "union" nthread = "4">
 		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="point.login.base.LoginServerManager"/>
-		<component name = "uniondb" type = "mysql" packetpath="point.login.dbbean" workethreadnum="1" listener="point.login.base.AccountDbManager"/>
+		<component name = "uniondb" type = "mysql" workethreadnum="1" listener="point.login.base.AccountDbManager"/>
 	</servertype>
 	<servertype type = "center" nthread = "4">
-		<component name ="centerdb" type = "mysql" packetpath="center.db" workethreadnum="1" listener="DbCenterListener"/>
+		<component name ="centerdb" type = "mysql" workethreadnum="1" listener="DbCenterListener"/>
 		<component name ="inner" type = "server"  boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="ServerCenterListener" />
 	</servertype>
 	<servertype type = "data" nthread = "4">
-		<component name = "roledb" type = "mysql" packetpath="point.login.dbbean" workethreadnum="1" listener="" />
+		<component name = "roledb" type = "mysql" workethreadnum="1" listener="" />
 		<component name = "center" type = "client"  workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
 		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
 		<component name= "gata" type = "client"  workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>

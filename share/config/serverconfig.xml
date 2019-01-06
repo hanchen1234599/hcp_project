@@ -18,6 +18,14 @@
 		<centerdb id = "2"/>
 		<inner port = "5003"/>
 	</point>
+	<point serverid = "3" name = "data" type = "data">
+		<roledb id = "1"/>
+		<inner port = "5004"/>
+		<center port = "5003"/>
+	</point>
+	<point serverid = "4" name = "scene" type = "scene">
+		<center port = "5003"/>
+	</point>
 	<dbconfig>
 		<roledb id ="1" index = "1, 2" hikariconfig= "" />
 		<centerdb id = "2" hikariconfig= "" />

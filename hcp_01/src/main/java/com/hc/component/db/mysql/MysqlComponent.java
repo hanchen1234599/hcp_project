@@ -5,7 +5,11 @@ import org.dom4j.Element;
 import com.hc.component.ComponentType;
 import com.hc.component.db.mysql.base.MysqlManagerImpl;
 import com.hc.share.Component;
-
+/**
+ * jackson + sql + preparesql 
+ * @author Administrator
+ *
+ */
 public class MysqlComponent extends Component<MysqlManager, MysqlListener> implements MysqlBuilder {
 	private String packetPath = "com.hc";
 	private int nThread = 2;

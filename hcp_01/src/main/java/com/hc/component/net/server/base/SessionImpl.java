@@ -1,13 +1,11 @@
 package com.hc.component.net.server.base;
 
-import com.hc.component.net.session.PassCheck;
 import com.hc.component.net.session.Session;
-
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
 
 public class SessionImpl implements Session{
-	private PassCheck pass = null; //通行证
+	private Object arg = null;
 	private Channel channel = null;
 	private long sessionID;
 	public SessionImpl(Channel channel, long sessionID) {
@@ -27,11 +25,11 @@ public class SessionImpl implements Session{
 		channel.writeAndFlush(body);
 	}
 	@Override
-	public PassCheck getPassCheck() {
-		return this.pass;
+	public void setParamete(Object arg) {
+		this.arg = arg;
 	}
 	@Override
-	public void setPassCheck(PassCheck pass) {
-		this.pass = pass;
-	}	
+	public Object getParamete() {
+		return this.arg;
+	}
 }

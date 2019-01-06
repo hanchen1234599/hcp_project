@@ -21,9 +21,6 @@ public class ProtoHelper {
 		ByteBuf rspBodyBuf = Unpooled.wrappedBuffer(protoBytes);
 		return Unpooled.wrappedBuffer( rspHeadLenBuf, rspHeadBuf, rspBodyBuf );
 	}
-//	ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
-//		
-//	});
 	// 这个函数是线程安全的  适合底层用  
 	public static void recvProtoBufByteBuf(ByteBuf buf, RecvProtoBufByteBuf callback) {
 		int bufLenght = buf.readableBytes();
@@ -45,6 +42,5 @@ public class ProtoHelper {
 			callback.recvProtoBufByteBuf(false, 0, 0, ProtoType.PROTOBUF, 0, null);
 		}
 	}
-	
 }
 

@@ -39,7 +39,7 @@ public class AccountManager extends LogicAbstract {
 		Trace.logger.info("recv protobuf pid :" + pid);
 		if(isOpen == false)
 			return;
-		if(pid == hc.protoconfig.LoginProtocol.LoginPessReq) {
+		if(pid == hc.config.proto.LoginProtocol.LoginPessReq) {
 			int bodyLen = body.readableBytes();
 			byte[] bodyBuff = new byte[bodyLen];
 			body.getBytes(0, bodyBuff, 0, bodyLen);
@@ -58,12 +58,12 @@ public class AccountManager extends LogicAbstract {
 						loginPessRspBuilder.setResult(0);
 						loginPessRspBuilder.setSessionID(sessionID);
 						loginPessRspBuilder.setUserID(userID);
-						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, hc.protoconfig.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
+						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, hc.config.proto.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
 					} catch (SQLException e) {
 						loginPessRspBuilder.setResult(1); // 数据库操作异常
 						loginPessRspBuilder.setSessionID(sessionID);
 						loginPessRspBuilder.setUserID(0);
-						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, hc.protoconfig.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
+						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, hc.config.proto.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
 						Trace.logger.info(e);
 					}
 				}, LoginApp.getInstace().getAppExec(), "select login( ?, 'evo', '' )", accountName);

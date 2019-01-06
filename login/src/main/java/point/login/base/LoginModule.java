@@ -1,8 +1,8 @@
 package point.login.base;
 
 import com.hc.component.net.session.Session;
-import com.hc.share.service.Gate;
 
+import hc.server.service.Gate;
 import io.netty.buffer.ByteBuf;
 
 public interface LoginModule{

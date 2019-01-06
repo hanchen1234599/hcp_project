@@ -5,38 +5,28 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.HashMap;
-import java.util.Map.Entry;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import com.hc.component.db.mysql.MysqlListener;
 import com.hc.component.db.mysql.MysqlManager;
 import com.hc.component.db.mysql.base.connpool.HikaricpPool;
 import com.hc.component.db.mysql.async.MysqlFindResult;
 import com.hc.component.db.mysql.async.MysqlInsertResult;
 import com.hc.component.db.mysql.async.MysqlUpdateResult;
-import com.hc.component.db.mysql.base.desc.MysqlDB;
-import com.hc.component.db.mysql.base.desc.MysqlTable;
 import com.hc.share.exception.DbException;
-import com.hc.share.util.MysqlUtil;
 import com.hc.share.util.Trace;
 
 public class MysqlManagerImpl implements MysqlManager {
-	private MysqlDB db = null;
-	private HashMap<String, MysqlTable> tables = null;
 	private MysqlListener listener = null;
 	private HikaricpPool hikaricp = null;
 	private ExecutorService excutorPool = null;
 
 	private int nThreads = 1;
-	private String packetPath = "";
 	private String dbConfigPath = "";
 
 	public MysqlManagerImpl(String packetPath, int nThreads, String dbConfigPath) {
 		this.nThreads = nThreads;
-		this.packetPath = packetPath;
 		this.dbConfigPath = dbConfigPath;
 	}
 
@@ -48,32 +38,17 @@ public class MysqlManagerImpl implements MysqlManager {
 	@Override
 	public void open() throws Exception {
 		this.hikaricp = new HikaricpPool(this.dbConfigPath);
-		this.tables = new HashMap<>();
-		this.db = MysqlUtil.getMysqlDb(packetPath);
-		for (Entry<String, MysqlTable> table : db.tables.entrySet()) {
-			this.tables.put(table.getValue().className, table.getValue());
-		}
 		this.excutorPool = Executors.newFixedThreadPool(this.nThreads);
 		Trace.logger.info("mysql connect success");
 	}
 
 	@Override
 	public void close() {
-		this.db = null;
-		this.tables = null;
 		this.hikaricp.close();
 		this.excutorPool.shutdown();
 		this.hikaricp = null;
 		this.excutorPool = null;
 		this.listener.onDestory(this);
-	}
-
-	protected MysqlTable getTableByClassName(String className) {
-		return tables.get(className);
-	}
-
-	protected MysqlTable getTableByTableName(String tableName) {
-		return db.tables.get(tableName);
 	}
 
 	protected Connection getConnection() {

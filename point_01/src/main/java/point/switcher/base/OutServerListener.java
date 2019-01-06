@@ -42,10 +42,10 @@ public class OutServerListener implements ServerListener {
 
 	@Override
 	public void onData(Session session, ByteBuf buf) {
-		if (session.getPassCheck() == null) {
+		if (session.getParamete() == null) {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body) -> {
 				if (result) {
-					if (protoType == ProtoType.PROTOBUF && protoID == hc.protoconfig.LoginProtocol.LoginReq) {
+					if (protoType == ProtoType.PROTOBUF && protoID == hc.config.proto.LoginProtocol.LoginReq) {
 						int bodyLen = body.readableBytes();
 						byte[] reqbody = new byte[bodyLen];
 						body.getBytes(0, reqbody);
@@ -59,7 +59,7 @@ public class OutServerListener implements ServerListener {
 							loginPassReqBuilder.setSessionID(session.getSessionID());
 							GateApp.getInstance().getLogin().getSession()
 									.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0,
-											hc.protoconfig.LoginProtocol.LoginPessReq,
+											hc.config.proto.LoginProtocol.LoginPessReq,
 											loginPassReqBuilder.build().toByteArray()));
 						} catch (Exception e) {
 							Trace.logger.info(e);

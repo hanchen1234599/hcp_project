@@ -1,9 +1,9 @@
 package point.switcher.logic;
 
 import com.hc.component.net.session.Session;
-import com.hc.share.service.Login;
-import com.hc.share.service.Server;
 
+import hc.server.service.Login;
+import hc.server.service.Server;
 import io.netty.buffer.ByteBuf;
 
 public interface GateModule {

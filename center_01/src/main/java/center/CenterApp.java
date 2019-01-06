@@ -2,8 +2,8 @@ package center;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
-
 import org.dom4j.Element;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hc.component.db.mysql.MysqlComponent;
 import com.hc.component.db.mysql.MysqlListener;
 import com.hc.component.db.mysql.MysqlManager;
@@ -11,20 +11,20 @@ import com.hc.component.net.server.ServerComponent;
 import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
-import com.hc.share.service.Data;
-import com.hc.share.service.Gate;
-import com.hc.share.service.Scene;
-import com.hc.share.service.Server;
-import com.hc.share.service.ServerType;
 import com.hc.share.util.ProtoHelper;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
+import hc.config.proto.CenterProtocol;
+import hc.config.proto.base.ProtocolLogic;
+import hc.config.server.MysqlConfig;
+import hc.config.server.ServerConfig;
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.protoconfig.CenterProtocol;
-import hc.protoconfig.ProtocolLogic;
+import hc.server.service.Data;
+import hc.server.service.Gate;
+import hc.server.service.Scene;
+import hc.server.service.Server;
+import hc.server.service.ServerType;
 import io.netty.buffer.ByteBuf;
-import serverType.MysqlConfig;
-import serverType.ServerConfig;
 
 public class CenterApp {
 	private static CenterApp instance = new CenterApp();
@@ -64,7 +64,7 @@ public class CenterApp {
 		Trace.logger.info("断开连接sessionid:" + session.getSessionID());
 		this.serverConnectLogic.exec(() -> {
 			this.tempSession.remove(session);
-		});
+		});    
 	}
 
 	public void OnServerConnectException(Session session, Throwable cause) {
@@ -126,7 +126,6 @@ public class CenterApp {
 		MysqlConfig dbConfig = new MysqlConfig();
 		dbConfig.setWorkeThreadNum(Integer.parseInt(serverTypeDb.attribute("workethreadnum").getText()));
 		dbConfig.setListener(serverTypeDb.attribute("listener").getText());
-		dbConfig.setPackagePath(serverTypeDb.attribute("packetpath").getText());
 		Element serverTypeInner = XmlReader.getElementByAttributeWithElementName(serverTypeCenter, "component", "name",
 				"inner");
 		ServerConfig serverConfig = new ServerConfig();
@@ -145,8 +144,7 @@ public class CenterApp {
 				ceneerDb.attribute("id").getText());
 		MysqlComponent mysql = new MysqlComponent();
 		mysql.setHikaricpConfigPaht(centerDbConfig.attribute("hikariconfig").getText());
-		mysql.setListener((MysqlListener) Class.forName(dbConfig.getListener()).newInstance());
-		mysql.setPacketPath(dbConfig.getPackagePath());
+		mysql.setListener((MysqlListener) Class.forName(dbConfig.getListener()).newInstance()); 
 		mysql.setUseThread(dbConfig.getWorkeThreadNum());
 		mysql.build(); // 数据库组件启动
 		ServerComponent serverComponent = new ServerComponent();
@@ -264,15 +262,21 @@ class CreateServer {
 										String remoteServerName = msg.getServerName();
 										String remoteServerJsonMsg = msg.getJsonMsg();
 										Server remoteServer = null;
-										if (remoteServerType == ServerType.GATE.ordinal()) {
-											remoteServer = new Gate(session, remoteServerID);
-										} else if (remoteServerType == ServerType.DATA.ordinal()) {
-											remoteServer = new Data(session, remoteServerID);
-										} else if (remoteServerType == ServerType.SCENE.ordinal()) {
-											remoteServer = new Scene(session, remoteServerID);
+										ObjectMapper json = new ObjectMapper();
+										try {
+											if (remoteServerType == ServerType.GATE.ordinal()) {
+												remoteServer = json.readValue(remoteServerJsonMsg, Gate.class);
+											} else if (remoteServerType == ServerType.DATA.ordinal()) {
+												remoteServer = json.readValue(remoteServerJsonMsg, Data.class);
+											} else if (remoteServerType == ServerType.SCENE.ordinal()) {
+												remoteServer = json.readValue(remoteServerJsonMsg, Scene.class);
+											}
+										} catch (Exception e) {
+											Trace.logger.info(e);
+											session.getChannel().close();
 										}
+										remoteServer.setServerId(remoteServerID);
 										remoteServer.setServerName(remoteServerName);
-										remoteServer.setJsonConfig(remoteServerJsonMsg);
 										remoteServer.setOpen(false);
 										CenterApp.getInstance().addServer(remoteServer);
 									});

@@ -1,5 +1,6 @@
 package com.hc.component.net.session;
 
+//import hc.server.passcheck.PassCheck;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;
 /**
@@ -11,7 +12,7 @@ public interface Session {
 	long getSessionID();
 	void send(ByteBuf body);
 	Channel getChannel();
-	public PassCheck getPassCheck();
-	public void setPassCheck( PassCheck pass );
+	void setParamete( Object arg );
+	Object getParamete();
 }
  

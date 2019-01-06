@@ -1,12 +1,12 @@
 package point.switcher.passcheck;
 
 import java.util.concurrent.ConcurrentHashMap;
-import com.hc.component.net.session.PassCheck;
-import com.hc.share.service.Center;
-import com.hc.share.service.Data;
-import com.hc.share.service.Scene;
-import com.hc.share.service.Server;
-import com.hc.share.service.ServerType;
+
+import hc.server.service.Center;
+import hc.server.service.Data;
+import hc.server.service.Scene;
+import hc.server.service.Server;
+import hc.server.service.ServerType;
 /**
  * @author hanchen
  * 账号通行证
