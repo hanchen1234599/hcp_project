@@ -7,11 +7,11 @@ import com.hc.share.util.Trace;
 
 import gate.GateApp;
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.proto.config.CenterProtocol;
-import hc.proto.util.ProtoHelper;
-import hc.server.service.Center;
-import hc.server.service.ServerType;
 import io.netty.buffer.ByteBuf;
+import share.proto.config.CenterProtocol;
+import share.proto.util.ProtoHelper;
+import share.server.service.Center;
+import share.server.service.ServerType;
 
 public class Gate2CenterListener implements ClientListener {
 	private ClientManager manager = null;

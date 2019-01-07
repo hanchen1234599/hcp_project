@@ -1,7 +1,7 @@
 package gate.passcheck;
 
-import hc.server.service.Server;
-import hc.server.service.ServerType;
+import share.server.service.Server;
+import share.server.service.ServerType;
 
 public interface PassCheck {
 	void addPass(Server server);

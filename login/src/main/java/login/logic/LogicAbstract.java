@@ -1,7 +1,7 @@
 package login.logic;
 
-import hc.server.service.Gate;
 import login.base.LoginModule;
+import share.server.service.Gate;
 
 public abstract class LogicAbstract implements LoginModule {
 	@Override

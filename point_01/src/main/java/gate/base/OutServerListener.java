@@ -7,8 +7,8 @@ import com.hc.share.util.Trace;
 
 import gate.GateApp;
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.proto.util.ProtoHelper;
 import io.netty.buffer.ByteBuf;
+import share.proto.util.ProtoHelper;
 
 /**
  * @author hanchen
@@ -45,7 +45,7 @@ public class OutServerListener implements ServerListener {
 		if (session.getParamete() == null) {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body) -> {
 				if (result) {
-					if (protoType == ProtoType.PROTOBUF && protoID == hc.proto.config.LoginProtocol.LoginReq) {
+					if (protoType == ProtoType.PROTOBUF && protoID == share.proto.config.LoginProtocol.LoginReq) {
 						int bodyLen = body.readableBytes();
 						byte[] reqbody = new byte[bodyLen];
 						body.getBytes(0, reqbody);
@@ -59,7 +59,7 @@ public class OutServerListener implements ServerListener {
 							loginPassReqBuilder.setSessionID(session.getSessionID());
 							GateApp.getInstance().getLogin().getSession()
 									.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0,
-											hc.proto.config.LoginProtocol.LoginPessReq,
+											share.proto.config.LoginProtocol.LoginPessReq,
 											loginPassReqBuilder.build().toByteArray()));
 						} catch (Exception e) {
 							Trace.logger.info(e);

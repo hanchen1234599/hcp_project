@@ -2,11 +2,11 @@ package gate.passcheck;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-import hc.server.service.Center;
-import hc.server.service.Data;
-import hc.server.service.Scene;
-import hc.server.service.Server;
-import hc.server.service.ServerType;
+import share.server.service.Center;
+import share.server.service.Data;
+import share.server.service.Scene;
+import share.server.service.Server;
+import share.server.service.ServerType;
 /**
  * @author hanchen
  * 账号通行证

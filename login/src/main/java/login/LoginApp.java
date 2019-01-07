@@ -12,10 +12,10 @@ import com.hc.component.net.session.Session;
 import com.hc.share.util.Trace;
 
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.proto.util.ProtoHelper;
-import hc.server.service.Gate;
 import io.netty.buffer.ByteBuf;
 import login.base.LoginModule;
+import share.proto.util.ProtoHelper;
+import share.server.service.Gate;
 
 /**
  * @author hanchen 登陆应用 管理网关的连接与记录 提供与给网关外网通行证 appExec 应用执行器应用逻辑都用这个执行器 gates

@@ -1,6 +1,12 @@
 package gate.base;
 
 import io.netty.buffer.ByteBuf;
+import share.proto.util.ProtoHelper;
+import share.server.service.Center;
+import share.server.service.Data;
+import share.server.service.Scene;
+import share.server.service.Server;
+import share.server.service.ServerType;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -12,12 +18,6 @@ import com.hc.share.util.Trace;
 
 import gate.GateApp;
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.proto.util.ProtoHelper;
-import hc.server.service.Center;
-import hc.server.service.Data;
-import hc.server.service.Scene;
-import hc.server.service.Server;
-import hc.server.service.ServerType;
 /**
  * @author hanchen
  */
@@ -59,7 +59,7 @@ public class InnerServerListener implements ServerListener {
 			ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body)->{
 				if(result) {
 					if(protoType == ProtoType.PROTOBUF) {
-						if(protoID == hc.proto.config.GateProtocol.S2GReq) {
+						if(protoID == share.proto.config.GateProtocol.S2GReq) {
 							int bodyLen = body.readableBytes();
 							byte[] bodyBuff = new byte[bodyLen];
 							body.getBytes(0, bodyBuff, 0, bodyLen);
@@ -88,7 +88,7 @@ public class InnerServerListener implements ServerListener {
 								hc.gate.S2GConnect.S2GRsp.Builder rspBody = hc.gate.S2GConnect.S2GRsp.newBuilder();
 								rspBody.setResult(true);
 								byte[] rspBodyBuff = rspBody.build().toByteArray();
-								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), srcID, hc.proto.config.GateProtocol.S2GRsp, rspBodyBuff));
+								session.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), srcID, share.proto.config.GateProtocol.S2GRsp, rspBodyBuff));
 							} catch (InvalidProtocolBufferException e) {
 								e.printStackTrace();
 								session.getChannel().close();

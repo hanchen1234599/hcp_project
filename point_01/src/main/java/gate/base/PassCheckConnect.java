@@ -6,8 +6,8 @@ import com.hc.component.net.session.Session;
 import com.hc.share.util.Trace;
 
 import gate.GateApp;
-import hc.server.service.Login;
 import io.netty.buffer.ByteBuf;
+import share.server.service.Login;
 /**
  * @author hanchen
  * 连接登录服务

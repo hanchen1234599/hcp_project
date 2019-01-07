@@ -6,10 +6,10 @@ import com.google.protobuf.InvalidProtocolBufferException;
 import com.hc.component.net.session.Session;
 import com.hc.share.util.Trace;
 
-import hc.proto.util.ProtoHelper;
 import io.netty.buffer.ByteBuf;
 import login.LoginApp;
 import login.logic.LogicAbstract;
+import share.proto.util.ProtoHelper;
 
 public class AccountManager extends LogicAbstract {
 	private static AccountManager instance = new AccountManager();
@@ -39,7 +39,7 @@ public class AccountManager extends LogicAbstract {
 		Trace.logger.info("recv protobuf pid :" + pid);
 		if(isOpen == false)
 			return;
-		if(pid == hc.proto.config.LoginProtocol.LoginPessReq) {
+		if(pid == share.proto.config.LoginProtocol.LoginPessReq) {
 			int bodyLen = body.readableBytes();
 			byte[] bodyBuff = new byte[bodyLen];
 			body.getBytes(0, bodyBuff, 0, bodyLen);
@@ -58,12 +58,12 @@ public class AccountManager extends LogicAbstract {
 						loginPessRspBuilder.setResult(0);
 						loginPessRspBuilder.setSessionID(sessionID);
 						loginPessRspBuilder.setUserID(userID);
-						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, hc.proto.config.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
+						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, share.proto.config.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
 					} catch (SQLException e) {
 						loginPessRspBuilder.setResult(1); // 数据库操作异常
 						loginPessRspBuilder.setSessionID(sessionID);
 						loginPessRspBuilder.setUserID(0);
-						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, hc.proto.config.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
+						session.send(ProtoHelper.createProtoBufByteBuf(0, 0, share.proto.config.LoginProtocol.LoginPessRsp, loginPessRspBuilder.build().toByteArray()));
 						Trace.logger.info(e);
 					}
 				}, LoginApp.getInstace().getAppExec(), "select login( ?, 'evo', '' )", accountName);

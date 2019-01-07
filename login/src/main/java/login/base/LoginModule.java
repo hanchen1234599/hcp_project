@@ -2,8 +2,8 @@ package login.base;
 
 import com.hc.component.net.session.Session;
 
-import hc.server.service.Gate;
 import io.netty.buffer.ByteBuf;
+import share.server.service.Gate;
 
 public interface LoginModule{
 	void onAddGateConnect(Gate gate);

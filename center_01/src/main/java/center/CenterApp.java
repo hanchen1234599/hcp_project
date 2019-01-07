@@ -15,17 +15,17 @@ import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
 
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.proto.config.CenterProtocol;
-import hc.proto.config.base.ProtocolLogic;
-import hc.proto.util.ProtoHelper;
-import hc.server.config.MysqlConfig;
-import hc.server.config.ServerConfig;
-import hc.server.service.Data;
-import hc.server.service.Gate;
-import hc.server.service.Scene;
-import hc.server.service.Server;
-import hc.server.service.ServerType;
 import io.netty.buffer.ByteBuf;
+import share.proto.config.CenterProtocol;
+import share.proto.config.base.ProtocolLogic;
+import share.proto.util.ProtoHelper;
+import share.server.config.MysqlConfig;
+import share.server.config.ServerConfig;
+import share.server.service.Data;
+import share.server.service.Gate;
+import share.server.service.Scene;
+import share.server.service.Server;
+import share.server.service.ServerType;
 
 public class CenterApp {
 	private static CenterApp instance = new CenterApp();

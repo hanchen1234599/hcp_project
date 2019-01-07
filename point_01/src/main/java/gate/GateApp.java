@@ -20,14 +20,14 @@ import gate.logic.GateModule;
 import gate.passcheck.AccountPass;
 import gate.passcheck.PassCheck;
 import hc.head.ProtoHead.Head.ProtoType;
-import hc.proto.config.base.ProtocolLogic;
-import hc.proto.util.ProtoHelper;
-import hc.server.config.ClientConfig;
-import hc.server.config.ServerConfig;
-import hc.server.service.Center;
-import hc.server.service.Login;
-import hc.server.service.Server;
 import io.netty.buffer.ByteBuf;
+import share.proto.config.base.ProtocolLogic;
+import share.proto.util.ProtoHelper;
+import share.server.config.ClientConfig;
+import share.server.config.ServerConfig;
+import share.server.service.Center;
+import share.server.service.Login;
+import share.server.service.Server;
 
 public class GateApp {
 	private int serverID = 0;
@@ -120,7 +120,7 @@ public class GateApp {
 	public void recvLoginProto(Session session, ByteBuf buf) {
 		ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body) -> {
 			if (result) {
-				if (protoType == ProtoType.PROTOBUF && protoID == hc.proto.config.LoginProtocol.LoginPessRsp) {
+				if (protoType == ProtoType.PROTOBUF && protoID == share.proto.config.LoginProtocol.LoginPessRsp) {
 					int bodyLen = body.readableBytes();
 					byte[] bodyBuff = new byte[bodyLen];
 					body.getBytes(0, bodyBuff);
@@ -152,12 +152,12 @@ public class GateApp {
 								//pass.addPass(center);
 								clientSession.setParamete(pass);
 								rspBuilder.setUserID(rspUserID);
-								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, hc.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
+								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, share.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
 								Trace.logger.info("usreID: " + rspUserID + " 登陆成功" + " time:" + System.currentTimeMillis() );
 							}
 						} else {
 							rspBuilder.setUserID(0);
-							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, hc.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
+							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, share.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
 						}
 					} catch (InvalidProtocolBufferException e) {
 						Trace.logger.info("login 登陆协议解析错误");

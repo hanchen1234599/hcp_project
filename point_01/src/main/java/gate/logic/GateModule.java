@@ -2,9 +2,9 @@ package gate.logic;
 
 import com.hc.component.net.session.Session;
 
-import hc.server.service.Login;
-import hc.server.service.Server;
 import io.netty.buffer.ByteBuf;
+import share.server.service.Login;
+import share.server.service.Server;
 
 public interface GateModule {
 	String getModuleName();
