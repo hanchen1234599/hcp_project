@@ -73,19 +73,19 @@ class myClientListener implements ClientListener{
 	}
 
 	@Override
-	public void onUnConnect() {
+	public void onUnConnect(Session session) {
 		// TODO Auto-generated method stub
 		Trace.info("client manager onUnConnect");
 	}
 
 	@Override
-	public void onConnectException() {
+	public void onData(Session session, ByteBuf body) {
 		// TODO Auto-generated method stub
-		Trace.info("client manager onConnectException");
+		
 	}
 
 	@Override
-	public void onData(Session session, ByteBuf body) {
+	public void onConnectException(Session session, Throwable cause) {
 		// TODO Auto-generated method stub
 		
 	}

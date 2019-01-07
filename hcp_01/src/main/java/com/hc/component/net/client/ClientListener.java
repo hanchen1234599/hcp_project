@@ -7,7 +7,7 @@ import io.netty.buffer.ByteBuf;
 
 public interface ClientListener extends Listener<ClientManager> {
 	void onConnect(Session session);
-	void onUnConnect();
-	void onConnectException();
+	void onUnConnect(Session session);
+	void onConnectException(Session session, Throwable cause);
 	void onData(Session session, ByteBuf body);
 }

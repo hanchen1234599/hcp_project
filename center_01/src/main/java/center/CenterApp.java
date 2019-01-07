@@ -11,14 +11,15 @@ import com.hc.component.net.server.ServerComponent;
 import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
-import com.hc.share.util.ProtoHelper;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
-import hc.config.proto.CenterProtocol;
-import hc.config.proto.base.ProtocolLogic;
-import hc.config.server.MysqlConfig;
-import hc.config.server.ServerConfig;
+
 import hc.head.ProtoHead.Head.ProtoType;
+import hc.proto.config.CenterProtocol;
+import hc.proto.config.base.ProtocolLogic;
+import hc.proto.util.ProtoHelper;
+import hc.server.config.MysqlConfig;
+import hc.server.config.ServerConfig;
 import hc.server.service.Data;
 import hc.server.service.Gate;
 import hc.server.service.Scene;
@@ -91,7 +92,6 @@ public class CenterApp {
 	}
 
 	public void addServer(Server server) {
-		this.session2server.remove(server.getSession());
 		this.servers.put(server.getServerId(), server);
 		this.session2server.put(server.getSession(), server);
 	}
@@ -230,6 +230,8 @@ class CreateServer {
 													.getInstance().getServerConnectLogic()
 													.getBuilder(CenterProtocol.CenterServerMessageAskReq);
 											builder.setMsg("ask");
+											builder.setServerID(CenterApp.getInstance().getServerID());
+											builder.setServerName(CenterApp.getInstance().getServerName());
 											session.getChannel()
 													.writeAndFlush(ProtoHelper.createProtoBufByteBuf(
 															CenterApp.getInstance().getServerID(), 0,

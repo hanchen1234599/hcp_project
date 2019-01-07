@@ -18,9 +18,9 @@ public class ClientManagerImpl implements ClientManager {
 		this.session  = session;
 		this.listener.onConnect(this.session);
 	}
-	public void unConnect() {
+	public void unConnect(Session session) {
 		this.session = null;
-		this.listener.onUnConnect();
+		this.listener.onUnConnect( session );
 	}
 	@Override
 	public void registListener(ClientListener listener) {
@@ -35,9 +35,9 @@ public class ClientManagerImpl implements ClientManager {
 		this.isOpen = true;
 	}
 	
-	public void onConnectException() {
+	public void onConnectException(Session session, Throwable cause) {
 		this.session = null;
-		this.listener.onConnectException();
+		this.listener.onConnectException(session, cause);
 	}
 	
 	@Override

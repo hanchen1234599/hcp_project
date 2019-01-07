@@ -21,6 +21,8 @@ message CenterServerCheckRsp{
 
 message CenterServerMessageAskReq{
 	required string msg = 1;
+	required int32 serverID = 2;
+	required string serverName = 3;
 }
 
 message CenterServerMessageAskRsp{
