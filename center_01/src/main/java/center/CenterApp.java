@@ -19,8 +19,7 @@ import io.netty.buffer.ByteBuf;
 import share.proto.config.CenterProtocol;
 import share.proto.config.base.ProtocolLogic;
 import share.proto.util.ProtoHelper;
-import share.server.config.MysqlConfig;
-import share.server.config.ServerConfig;
+import share.server.config.MmoServerConfigTemp;
 import share.server.service.Data;
 import share.server.service.Gate;
 import share.server.service.Scene;
@@ -117,42 +116,24 @@ public class CenterApp {
 	}
 
 	public void init() throws Exception {
-		Element serverTypeRoot = XmlReader.getInstance().readFile("../share/config/servertypeconfig.xml")
-				.getRootElement();
-		Element serverTypeCenter = XmlReader.getElementByAttributeWithElementName(serverTypeRoot, "servertype", "type",
-				"center");
-		Element serverTypeDb = XmlReader.getElementByAttributeWithElementName(serverTypeCenter, "component", "name",
-				"centerdb");
-		MysqlConfig dbConfig = new MysqlConfig();
-		dbConfig.setWorkeThreadNum(Integer.parseInt(serverTypeDb.attribute("workethreadnum").getText()));
-		dbConfig.setListener(serverTypeDb.attribute("listener").getText());
-		Element serverTypeInner = XmlReader.getElementByAttributeWithElementName(serverTypeCenter, "component", "name",
-				"inner");
-		ServerConfig serverConfig = new ServerConfig();
-		serverConfig.setBoosThreadNum(Integer.parseInt(serverTypeInner.attribute("boosthreadnum").getText()));
-		serverConfig.setInProtoLength(Integer.parseInt(serverTypeInner.attribute("inprotolength").getText()));
-		serverConfig.setListener(serverTypeInner.attribute("listener").getText());
-		serverConfig.setOutProtoLength(Integer.parseInt(serverTypeInner.attribute("outprotolength").getText()));
-		serverConfig.setWorkeThreadNum(Integer.parseInt(serverTypeInner.attribute("workethreadnum").getText()));
+		MmoServerConfigTemp.getInstace().init("../share/config/servertypeconfig.xml");
 		Element centerRoot = XmlReader.getInstance().readFile("../share/config/serverconfig.xml").getRootElement();
 		Element centerPoint = XmlReader.getElementByAttributeWithElementName(centerRoot, "point", "type", "center");
+		Element centerDbConfig = XmlReader.getElementByAttribute(centerRoot.element("dbconfig"), "id", centerPoint.element("centerdb").attribute("id").getText());
+		
 		this.serverID = Integer.parseInt(centerPoint.attribute("serverid").getText());
 		this.serverName = centerPoint.attribute("name").getText();
-		Element ceneerDb = centerPoint.element("centerdb");
-		Element centerInner = centerPoint.element("inner");
-		Element centerDbConfig = XmlReader.getElementByAttribute(centerRoot.element("dbconfig"), "id",
-				ceneerDb.attribute("id").getText());
 		MysqlComponent mysql = new MysqlComponent();
 		mysql.setHikaricpConfigPaht(centerDbConfig.attribute("hikariconfig").getText());
-		mysql.setListener((MysqlListener) Class.forName(dbConfig.getListener()).newInstance()); 
-		mysql.setUseThread(dbConfig.getWorkeThreadNum());
+		mysql.setListener((MysqlListener) Class.forName(MmoServerConfigTemp.getInstace().getMysqlConfig("center", "centerdb").getListener()).newInstance()); 
+		mysql.setUseThread(MmoServerConfigTemp.getInstace().getMysqlConfig("center", "centerdb").getWorkeThreadNum());
 		mysql.build(); // 数据库组件启动
 		ServerComponent serverComponent = new ServerComponent();
-		serverComponent.setEventLoop(serverConfig.getBoosThreadNum(), serverConfig.getWorkeThreadNum());
-		serverComponent.setInProtoLength(serverConfig.getInProtoLength());
-		serverComponent.setOutProtoLength(serverConfig.getOutProtoLength());
-		serverComponent.setListener((ServerListener) Class.forName(serverConfig.getListener()).newInstance());
-		serverComponent.setPort(Integer.parseInt(centerInner.attribute("port").getText()));
+		serverComponent.setEventLoop(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getBoosThreadNum(), MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getWorkeThreadNum());
+		serverComponent.setInProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getInProtoLength());
+		serverComponent.setOutProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getOutProtoLength());
+		serverComponent.setListener((ServerListener) Class.forName(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getListener()).newInstance());
+		serverComponent.setPort(Integer.parseInt(centerPoint.element("inner").attribute("port").getText()));
 		serverComponent.build(); // 网络连接 启动
 	}
 
