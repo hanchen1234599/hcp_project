@@ -1,0 +1,14 @@
+服务器创建   server = 服务
+
+Center 负责服务器管理
+
+
+share.serverframe
+	.create
+		.Server2CenterCreate  	<=> 	ServerConnectCenterListener
+		.Center2ServerCreate  	<=> 	CenterRecvServerConnectListener
+		--建立连接 	 结构
+
+
+第一阶段：
+	建立连接 => 验证连接 => 交换数据并且创建服务
