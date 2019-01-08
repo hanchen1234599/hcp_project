@@ -5,15 +5,12 @@ import java.util.concurrent.Executors;
 import org.dom4j.Element;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hc.component.db.mysql.MysqlComponent;
-import com.hc.component.db.mysql.MysqlListener;
 import com.hc.component.db.mysql.MysqlManager;
 import com.hc.component.net.server.ServerComponent;
-import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
-
 import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import share.proto.config.CenterProtocol;
@@ -123,17 +120,11 @@ public class CenterApp {
 		
 		this.serverID = Integer.parseInt(centerPoint.attribute("serverid").getText());
 		this.serverName = centerPoint.attribute("name").getText();
-		MysqlComponent mysql = new MysqlComponent();
-		mysql.setHikaricpConfigPaht(centerDbConfig.attribute("hikariconfig").getText());
-		mysql.setListener((MysqlListener) Class.forName(MmoServerConfigTemp.getInstace().getMysqlConfig("center", "centerdb").getListener()).newInstance()); 
-		mysql.setUseThread(MmoServerConfigTemp.getInstace().getMysqlConfig("center", "centerdb").getWorkeThreadNum());
+		
+		MysqlComponent mysql = MmoServerConfigTemp.getInstace().getMysql("center", "centerdb", centerDbConfig.attribute("hikariconfig").getText());
+		ServerComponent serverComponent = MmoServerConfigTemp.getInstace().getServer("center", "inner", Integer.parseInt(centerPoint.element("inner").attribute("port").getText()));
+		
 		mysql.build(); // 数据库组件启动
-		ServerComponent serverComponent = new ServerComponent();
-		serverComponent.setEventLoop(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getBoosThreadNum(), MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getWorkeThreadNum());
-		serverComponent.setInProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getInProtoLength());
-		serverComponent.setOutProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getOutProtoLength());
-		serverComponent.setListener((ServerListener) Class.forName(MmoServerConfigTemp.getInstace().getServerConfig("center", "inner").getListener()).newInstance());
-		serverComponent.setPort(Integer.parseInt(centerPoint.element("inner").attribute("port").getText()));
 		serverComponent.build(); // 网络连接 启动
 	}
 

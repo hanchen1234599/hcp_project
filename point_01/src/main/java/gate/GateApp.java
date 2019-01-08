@@ -8,14 +8,11 @@ import java.util.concurrent.Executors;
 import org.dom4j.Element;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.hc.component.net.client.ClientComponent;
-import com.hc.component.net.client.ClientListener;
 import com.hc.component.net.server.ServerComponent;
-import com.hc.component.net.server.ServerListener;
 import com.hc.component.net.server.ServerManager;
 import com.hc.component.net.session.Session;
 import com.hc.share.util.Trace;
 import com.hc.share.util.XmlReader;
-
 import gate.logic.GateModule;
 import gate.passcheck.AccountPass;
 import gate.passcheck.PassCheck;
@@ -33,16 +30,15 @@ public class GateApp {
 	private String serverName = "";
 	private String serverMsg = "";
 
-
 	private static GateApp instance = new GateApp();
 
-	private GateApp( ) {
+	private GateApp() {
 	}
 
 	public static GateApp getInstance() {
 		return instance;
 	}
-	
+
 	private Login login = null;
 	private ExecutorService appExec = null;
 	private ServerManager outerManager = null;
@@ -51,12 +47,13 @@ public class GateApp {
 	private HashMap<Integer, GateModule> protoBufProtocols = new HashMap<>();
 	private ConcurrentHashMap<Long, Session> clients = new ConcurrentHashMap<>(); // userid - > session
 	private ConcurrentHashMap<Integer, Server> servers = new ConcurrentHashMap<>();
-	private int centerID = 0;  
-	
+	private int centerID = 0;
+
 	// 注册模块 main
 	public void registerModule(GateModule module) {
 		this.modules.put(module.getModuleName(), module);
 	}
+
 	// 给模块注册协议
 	public void registerProtoBufProtoProtocol(int pid, GateModule logic) {
 		if (this.protoBufProtocols.get(pid) != null) {
@@ -68,10 +65,10 @@ public class GateApp {
 
 	// 服务器初始化
 	public void onAddServer(int serverID, Server server) {
-		if(server instanceof Center) {
-			if(this.centerID == 0) {
+		if (server instanceof Center) {
+			if (this.centerID == 0) {
 				this.centerID = serverID;
-			}else {
+			} else {
 				server.getSession().getChannel().close();
 				return;
 			}
@@ -83,7 +80,7 @@ public class GateApp {
 	}
 
 	public void onRemoveServer(Server server) {
-		if(server instanceof Center) {
+		if (server instanceof Center) {
 			this.centerID = 0;
 		}
 		this.servers.remove(server.getServerId());
@@ -104,7 +101,7 @@ public class GateApp {
 
 	public void onClientUnactive(Session session) {
 		Trace.logger.debug("客户端断开   gate sessionID:" + session.getSessionID());
-		if(session.getParamete() != null)
+		if (session.getParamete() != null)
 			this.clients.remove(((PassCheck) (session.getParamete())).getUserID());
 	}
 
@@ -115,6 +112,7 @@ public class GateApp {
 			}
 		});
 	}
+
 	// 收到login service的协议
 	public void recvLoginProto(Session session, ByteBuf buf) {
 		ProtoHelper.recvProtoBufByteBuf(buf, (result, srcID, desID, protoType, protoID, body) -> {
@@ -140,23 +138,27 @@ public class GateApp {
 								return;
 							}
 							if (clientSession != null && clientSession.getChannel().isActive()) {
-								//Center center = getCenterServer();
-//								if(center == null) {
-//									clientSession.getChannel().close();
-//									return;
-//								}
-								
+								// Center center = getCenterServer();
+								// if(center == null) {
+								// clientSession.getChannel().close();
+								// return;
+								// }
+
 								AccountPass pass = new AccountPass();
 								pass.setUserID(rspUserID);
-								//pass.addPass(center);
+								// pass.addPass(center);
 								clientSession.setParamete(pass);
 								rspBuilder.setUserID(rspUserID);
-								clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, share.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
-								Trace.logger.info("usreID: " + rspUserID + " 登陆成功" + " time:" + System.currentTimeMillis() );
+								clientSession.send(ProtoHelper.createProtoBufByteBuf(
+										GateApp.getInstance().getServerID(), 0,
+										share.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
+								Trace.logger
+										.info("usreID: " + rspUserID + " 登陆成功" + " time:" + System.currentTimeMillis());
 							}
 						} else {
 							rspBuilder.setUserID(0);
-							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0, share.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
+							clientSession.send(ProtoHelper.createProtoBufByteBuf(GateApp.getInstance().getServerID(), 0,
+									share.proto.config.LoginProtocol.LoginRsp, rspBuilder.build().toByteArray()));
 						}
 					} catch (InvalidProtocolBufferException e) {
 						Trace.logger.info("login 登陆协议解析错误");
@@ -170,8 +172,8 @@ public class GateApp {
 	}
 
 	public void recvClientProto(Session session, ByteBuf buf) {
-		this.appExec.execute(() -> {				
-					
+		this.appExec.execute(() -> {
+
 		});
 	}
 
@@ -187,19 +189,19 @@ public class GateApp {
 			}
 		}
 	}
-	
+
 	public void setAppNThead(int nThread) {
 		this.appExec = Executors.newFixedThreadPool(nThread);
 	}
-	
+
 	public Center getCenterServer() {
 		Server server = servers.get(this.centerID);
-		if(server != null)
+		if (server != null)
 			return (Center) server;
 		else
 			return null;
 	}
-	
+
 	public Login getLogin() {
 		return login;
 	}
@@ -227,64 +229,58 @@ public class GateApp {
 	public void setServerID(int curServiceID) {
 		this.serverID = curServiceID;
 	}
+
 	public String getServerName() {
 		return serverName;
 	}
+
 	public void setServerName(String serverName) {
 		this.serverName = serverName;
 	}
+
 	public String getServerMsg() {
 		return serverMsg;
 	}
+
 	public void setServerMsg(String serverMsg) {
 		this.serverMsg = serverMsg;
 	}
 	// 连接center服务器
-	
+
 	private ProtocolLogic serverinnerLogic = new ProtocolLogic();
-	
+
 	public void start() {
 		this.serverinnerLogic.init();
 		this.serverinnerLogic.setExec(Executors.newSingleThreadExecutor());
 	}
+
 	public ProtocolLogic getServerInnerLogic() {
 		return this.serverinnerLogic;
 	}
+
 	public void init(int serverID) throws Exception {
 		MmoServerConfigTemp.getInstace().init("../share/config/servertypeconfig.xml");
-		Element serverConfigRoot = XmlReader.getInstance().readFile("../share/config/serverconfig.xml").getRootElement();
-		Element gatePoint = XmlReader.getElementByAttributeWithElementName(serverConfigRoot, "point", "serverid", "" + serverID);
-		
+		Element serverConfigRoot = XmlReader.getInstance().readFile("../share/config/serverconfig.xml")
+				.getRootElement();
+		Element gatePoint = XmlReader.getElementByAttributeWithElementName(serverConfigRoot, "point", "serverid",
+				"" + serverID);
+
 		this.serverID = serverID;
 		this.serverName = gatePoint.attribute("name").getText();
-		ServerComponent innerServerComponent = new ServerComponent();
-		ServerComponent outerServerComponent = new ServerComponent();
-		ClientComponent unionClientComponent = new ClientComponent();
-		ClientComponent centerClientComponent = new ClientComponent();
-		innerServerComponent.setEventLoop(MmoServerConfigTemp.getInstace().getServerConfig("gate", "inner").getBoosThreadNum(), MmoServerConfigTemp.getInstace().getServerConfig("gate", "inner").getWorkeThreadNum());
-		innerServerComponent.setInProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("gate", "inner").getInProtoLength());
-		innerServerComponent.setOutProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("gate", "inner").getOutProtoLength());
-		innerServerComponent.setListener((ServerListener) Class.forName(MmoServerConfigTemp.getInstace().getServerConfig("gate", "inner").getListener()).newInstance());
-		innerServerComponent.setPort(Integer.parseInt(gatePoint.element("inner").attribute("port").getText()));
-		innerServerComponent.build(); 
-		outerServerComponent.setEventLoop(MmoServerConfigTemp.getInstace().getServerConfig("gate", "outer").getBoosThreadNum(), MmoServerConfigTemp.getInstace().getServerConfig("gate", "outer").getWorkeThreadNum());
-		outerServerComponent.setInProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("gate", "outer").getInProtoLength());
-		outerServerComponent.setOutProtoLength(MmoServerConfigTemp.getInstace().getServerConfig("gate", "outer").getOutProtoLength());
-		outerServerComponent.setListener((ServerListener) Class.forName(MmoServerConfigTemp.getInstace().getServerConfig("gate", "outer").getListener()).newInstance());
-		outerServerComponent.setPort(Integer.parseInt(gatePoint.element("outer").attribute("port").getText()));
-		outerServerComponent.build();
-		unionClientComponent.setEventLoop(MmoServerConfigTemp.getInstace().getClientConfig("gate", "union").getWorkeThreadNum());
-		unionClientComponent.setInProtoLength(MmoServerConfigTemp.getInstace().getClientConfig("gate", "union").getInProtoLength());
-		unionClientComponent.setOutProtoLength(MmoServerConfigTemp.getInstace().getClientConfig("gate", "union").getOutProtoLength());
-		unionClientComponent.setListener((ClientListener)Class.forName(MmoServerConfigTemp.getInstace().getClientConfig("gate", "union").getListener()).newInstance());
-		unionClientComponent.setConnect(gatePoint.element("union").attribute("remoteip").getText(), Integer.parseInt(gatePoint.element("union").attribute("remoteport").getText()));
-		unionClientComponent.build();
-		centerClientComponent.setEventLoop(MmoServerConfigTemp.getInstace().getClientConfig("gate", "center").getWorkeThreadNum());
-		centerClientComponent.setInProtoLength(MmoServerConfigTemp.getInstace().getClientConfig("gate", "center").getInProtoLength());
-		centerClientComponent.setOutProtoLength(MmoServerConfigTemp.getInstace().getClientConfig("gate", "center").getOutProtoLength());
-		centerClientComponent.setListener((ClientListener)Class.forName(MmoServerConfigTemp.getInstace().getClientConfig("gate", "center").getListener()).newInstance());
-		centerClientComponent.setConnect(gatePoint.element("center").attribute("remoteip").getText(), Integer.parseInt(gatePoint.element("center").attribute("remoteport").getText()));
-		centerClientComponent.build();
+		ServerComponent inner = MmoServerConfigTemp.getInstace().getServer("gate", "inner",
+				Integer.parseInt(gatePoint.element("inner").attribute("port").getText()));
+		ServerComponent outer = MmoServerConfigTemp.getInstace().getServer("gate", "outer",
+				Integer.parseInt(gatePoint.element("outer").attribute("port").getText()));
+		ClientComponent union = MmoServerConfigTemp.getInstace().getClient("gate", "union",
+				gatePoint.element("union").attribute("remoteip").getText(),
+				Integer.parseInt(gatePoint.element("union").attribute("remoteport").getText()));
+		ClientComponent center = MmoServerConfigTemp.getInstace().getClient("gate", "center",
+				gatePoint.element("center").attribute("remoteip").getText(),
+				Integer.parseInt(gatePoint.element("center").attribute("remoteport").getText()));
+
+		inner.build();
+		outer.build();
+		union.build();
+		center.build();
 	}
 }
-

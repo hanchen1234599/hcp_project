@@ -2,28 +2,28 @@
 
 <config name = "mmotest">
 	<servertype type = "gate" nthread = "4">
-		<component name = "outer" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="point.switcher.base.OutServerListener"/>
-		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="point.switcher.base.InnerServerListener"/>
-		<component name = "union" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="point.switcher.base.PassCheckConnect"/> 
-		<component name = "center" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
+		<component name = "outer" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="gate.base.OutServerListener"/>
+		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="gate.base.InnerServerListener"/>
+		<component name = "union" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="gate.base.PassCheckConnect"/> 
+		<component name = "center" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="gate.base.Gate2CenterListener"/>
 	</servertype>
 	<servertype type = "union" nthread = "4">
-		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="point.login.base.LoginServerManager"/>
-		<component name = "uniondb" type = "mysql" workethreadnum="1" listener="point.login.base.AccountDbManager"/>
+		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="gate.base.LoginServerManager"/>
+		<component name = "uniondb" type = "mysql" workethreadnum="1" listener="gate.base.AccountDbManager"/>
 	</servertype>
 	<servertype type = "center" nthread = "4">
-		<component name ="centerdb" type = "mysql" workethreadnum="1" listener="DbCenterListener"/>
-		<component name ="inner" type = "server"  boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="ServerCenterListener" />
+		<component name ="centerdb" type = "mysql" workethreadnum="1" listener="center.base.DbCenterListener"/>
+		<component name ="inner" type = "server"  boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="center.base.ServerCenterListener" />
 	</servertype>
 	<servertype type = "data" nthread = "4">
-		<component name = "roledb" type = "mysql" workethreadnum="1" listener="" />
-		<component name = "center" type = "client"  workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
-		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
-		<component name= "gata" type = "client"  workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
+		<component name = "roledb" type = "mysql" workethreadnum="1" listener="data.base.RoleDbListener" />
+		<component name = "center" type = "client"  workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="data.base.Data2CenterListener"/>
+		<component name = "inner" type = "server" boosthreadnum="1" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="data.base.ServerDataListener"/>
+		<component name= "gata" type = "client"  workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="data.base.Data2GateListener"/>
 	</servertype>
 	<servertype type = "scene" nthread = "4">
-		<component name="center" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
-		<component name="data" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
-		<component name="gata" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener=""/>
+		<component name="center" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="scene.base.Scene2CenterListener"/>
+		<component name="data" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="scene.base.Scene2DataListener"/>
+		<component name="gata" type = "client" workethreadnum="4" inprotolength="65536" outprotolength="65536" listener="scene.base.Scene2GateListener"/>
 	</servertype>
 </config>
