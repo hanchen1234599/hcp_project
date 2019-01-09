@@ -12,3 +12,42 @@ share.serverframe
 
 第一阶段：
 	建立连接 => 验证连接 => 交换数据并且创建服务
+
+
+
+service   =>代表的是每一个服务的实体   
+
+
+serviceManager  ==> 本身是一个服务 是一个管理服务的服务
+
+一个服务或者几个服务公用一个  ClientListener 或者 ServerListener
+
+
+Service 没有 server client 之分
+	每个服务都有 providerServices( 为本服务提供服务的服务 )
+
+提供服务的相互性  为你提供服务你也为它提供服务
+
+
+有相同 serviceIp
+本地服务     
+否则
+远程服务
+
+在相同本地服务 有不同的 servicePort
+
+
+serviceIp + servicePort => 决定了一个服务
+
+
+
+玄学： 自己里边不包含自己
+
+
+现在有两个问题： 
+1.本地服务 
+	数据通信问题
+
+2.远程服务提供
+	数据通信问题
+都是来形容其他服务的
