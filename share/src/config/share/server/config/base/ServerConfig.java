@@ -1,5 +1,8 @@
 package share.server.config.base;
 
+import com.hc.component.net.server.ServerComponent;
+import com.hc.component.net.server.ServerListener;
+
 public class ServerConfig extends BaseConfig {
 	private int boosThreadNum = 1;
 	private int workeThreadNum = 4;
@@ -28,5 +31,14 @@ public class ServerConfig extends BaseConfig {
 	}
 	public void setOutProtoLength(int outProtoLength) {
 		this.outProtoLength = outProtoLength;
+	}
+	public ServerComponent createServerComponent(int port) throws Exception {
+		ServerComponent server = new ServerComponent();
+		server.setEventLoop(this.getBoosThreadNum(), this.getWorkeThreadNum());
+		server.setInProtoLength(this.getInProtoLength());
+		server.setOutProtoLength(this.getOutProtoLength());
+		server.setListener((ServerListener) Class.forName(this.getListener()).newInstance());
+		server.setPort(port);
+		return server;
 	}
 }

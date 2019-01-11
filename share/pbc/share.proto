@@ -1,0 +1,21 @@
+package share;
+
+option java_package = "hc.share";
+option java_outer_classname = "ProtoShare";
+
+message ServicePoint {
+  required uint32 containerID = 1;
+  required uint32 serviceID = 2;
+  repeated uint64 userIDs = 3;
+}
+
+//连接的安全验证
+message ServiceConnectCheckReq{
+	//证书
+	required string certificateStr = 1;
+}
+
+message ServiceConnectCheckRsp{
+	//证书
+	required string certificateStr = 1;
+}

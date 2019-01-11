@@ -1,7 +1,7 @@
 package share;
 
 public class Config {
-	static class Component{
+	public static class Component{
 		public static final int serverDefaultBoosThreadNum = 1;
 		public static final int serverDefaultWorkeThreadNum = 4;
 		public static final int clientDefaultWorkeThreadNum = 4;

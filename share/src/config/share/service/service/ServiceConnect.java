@@ -1,8 +1,8 @@
 package share.service.service;
 
 public interface ServiceConnect {
-	String getServiceID();
+	int getServiceID();
 	int getServiceContainerID();
-	String getRomoteServiceType();
+	String getRemoteServiceType();
 	void send( byte[] bytes );
 }

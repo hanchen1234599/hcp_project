@@ -1,7 +1,10 @@
 package share.service.service.base;
 
+import java.util.HashMap;
+
 import share.service.container.ServiceContainerManager;
 import share.service.service.Service;
+import share.service.service.ServiceConnect;
 import share.service.service.ServiceManager;
 
 public class ServiceManagerImpl implements ServiceManager {
@@ -9,12 +12,32 @@ public class ServiceManagerImpl implements ServiceManager {
 	private String serviceType;
 	private Service service;
 	private int serviceID;
-	
-	public ServiceManagerImpl( ServiceContainerManager container, int serviceID ) {
+	private HashMap<String, Boolean> watchServiceType = new HashMap<>();
+
+	public ServiceManagerImpl(ServiceContainerManager container, int serviceID) {
 		this.container = container;
 		this.serviceID = serviceID;
 	}
-	
+
+	@Override
+	public void noticeServiceConnect(boolean isDelete, ServiceConnect conn) {
+		if (isDelete) {
+			this.service.onNoticeServiceUnConnect(conn);
+		} else {
+			this.service.onNoticeServiceConnect(conn);
+		}
+	}
+
+	@Override
+	public Service getService() {
+		return this.service;
+	}
+
+	@Override
+	public String getServiceType() {
+		return this.serviceType;
+	}
+
 	@Override
 	public void registListener(Service listener) {
 		this.service = listener;
@@ -22,12 +45,12 @@ public class ServiceManagerImpl implements ServiceManager {
 
 	@Override
 	public void open() throws Exception {
-		this.container.registerService(this);
+		this.container.addServiceManager(this);
 	}
 
 	@Override
 	public void close() {
-		this.container.remoteService(this);
+		this.container.deleteServiceManager(this);
 	}
 
 	@Override
@@ -42,22 +65,11 @@ public class ServiceManagerImpl implements ServiceManager {
 
 	@Override
 	public void watchServiceType(String serviceType) {
-		
+		this.watchServiceType.put(serviceType, true);
 	}
-	
+
 	@Override
 	public boolean getIsWatch(String serviceType) {
-		return false;
+		return this.watchServiceType.get(serviceType) == true;
 	}
-
-	@Override
-	public Service getService() {
-		return this.service;
-	}
-
-	@Override
-	public String getServiceType() {
-		return this.serviceType;
-	}
-	
 }
