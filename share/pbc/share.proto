@@ -12,7 +12,7 @@ message ServicePoint {
 //连接的安全验证
 message ServiceConnectCheckReq{
 	//证书
-	required string certificateStr = 1;
+	required string key = 1;
 }
 
 message ServiceConnectCheckRsp{

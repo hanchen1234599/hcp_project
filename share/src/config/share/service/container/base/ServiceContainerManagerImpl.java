@@ -22,7 +22,7 @@ import share.service.container.ServiceContainerManager;
 public class ServiceContainerManagerImpl implements ServiceContainerManager {
 
 	private int serviceContatinerID;
-	private String certificateKey = "";
+	private String certificateKey = "123";
 	@SuppressWarnings("unused")
 	private ServiceContainerListener listener = null;
 	private ServiceContainerType serviceContainerType;

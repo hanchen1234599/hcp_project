@@ -1,9 +1,11 @@
 package share.service.container.base.net;
 
+import com.google.protobuf.InvalidProtocolBufferException;
 import com.hc.component.net.client.ClientListener;
 import com.hc.component.net.client.ClientManager;
 import com.hc.component.net.session.Session;
 import com.hc.share.util.Trace;
+import com.hc.share.util.Utils;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -30,9 +32,6 @@ public class ServiceContainerClientListener implements ClientListener {
 	@Override
 	public void onConnect(Session session) {
 		Trace.logger.info("连接container  sessionID:" + session.getSessionID() +" desc:" + session.getChannel());
-		//发起安全连接验证
-		byte[] body = hc.share.ProtoShare.ServiceConnectCheckReq.newBuilder().setCertificateStr(this.serviceContainerManager.getCertificateKey()).build().toByteArray();
-		session.send(Unpooled.wrappedBuffer(body));
 	}
 
 	@Override
@@ -52,6 +51,18 @@ public class ServiceContainerClientListener implements ClientListener {
 			this.serviceContainerManager.onServiceContainerMessage(session, body);
 		}else {
 			//这里进行安全验证
+			try {
+				String key = hc.share.ProtoShare.ServiceConnectCheckReq.newBuilder().mergeFrom(body.array()).build().getKey();
+				try {
+					session.send(Unpooled.wrappedBuffer(hc.share.ProtoShare.ServiceConnectCheckRsp.newBuilder().setCertificateStr(Utils.encodeMd5TwoBase64(key + this.serviceContainerManager.getCertificateKey())).build().toByteArray()));
+				} catch (Exception e) {
+					Trace.logger.info(e);
+					session.getChannel().close();
+				}
+			} catch (InvalidProtocolBufferException e) {
+				Trace.logger.info(e);
+				session.getChannel().close();
+			}
 		}
 	}
 	

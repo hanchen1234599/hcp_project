@@ -661,32 +661,32 @@ public final class ProtoShare {
   public interface ServiceConnectCheckReqOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required string certificateStr = 1;
+    // required string key = 1;
     /**
-     * <code>required string certificateStr = 1;</code>
+     * <code>required string key = 1;</code>
      *
      * <pre>
      *证书
      * </pre>
      */
-    boolean hasCertificateStr();
+    boolean hasKey();
     /**
-     * <code>required string certificateStr = 1;</code>
+     * <code>required string key = 1;</code>
      *
      * <pre>
      *证书
      * </pre>
      */
-    java.lang.String getCertificateStr();
+    java.lang.String getKey();
     /**
-     * <code>required string certificateStr = 1;</code>
+     * <code>required string key = 1;</code>
      *
      * <pre>
      *证书
      * </pre>
      */
     com.google.protobuf.ByteString
-        getCertificateStrBytes();
+        getKeyBytes();
   }
   /**
    * Protobuf type {@code share.ServiceConnectCheckReq}
@@ -745,7 +745,7 @@ public final class ProtoShare {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              certificateStr_ = input.readBytes();
+              key_ = input.readBytes();
               break;
             }
           }
@@ -788,28 +788,28 @@ public final class ProtoShare {
     }
 
     private int bitField0_;
-    // required string certificateStr = 1;
-    public static final int CERTIFICATESTR_FIELD_NUMBER = 1;
-    private java.lang.Object certificateStr_;
+    // required string key = 1;
+    public static final int KEY_FIELD_NUMBER = 1;
+    private java.lang.Object key_;
     /**
-     * <code>required string certificateStr = 1;</code>
+     * <code>required string key = 1;</code>
      *
      * <pre>
      *证书
      * </pre>
      */
-    public boolean hasCertificateStr() {
+    public boolean hasKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string certificateStr = 1;</code>
+     * <code>required string key = 1;</code>
      *
      * <pre>
      *证书
      * </pre>
      */
-    public java.lang.String getCertificateStr() {
-      java.lang.Object ref = certificateStr_;
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
@@ -817,26 +817,26 @@ public final class ProtoShare {
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
-          certificateStr_ = s;
+          key_ = s;
         }
         return s;
       }
     }
     /**
-     * <code>required string certificateStr = 1;</code>
+     * <code>required string key = 1;</code>
      *
      * <pre>
      *证书
      * </pre>
      */
     public com.google.protobuf.ByteString
-        getCertificateStrBytes() {
-      java.lang.Object ref = certificateStr_;
+        getKeyBytes() {
+      java.lang.Object ref = key_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        certificateStr_ = b;
+        key_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -844,14 +844,14 @@ public final class ProtoShare {
     }
 
     private void initFields() {
-      certificateStr_ = "";
+      key_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasCertificateStr()) {
+      if (!hasKey()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -863,7 +863,7 @@ public final class ProtoShare {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getCertificateStrBytes());
+        output.writeBytes(1, getKeyBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -876,7 +876,7 @@ public final class ProtoShare {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getCertificateStrBytes());
+          .computeBytesSize(1, getKeyBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -998,7 +998,7 @@ public final class ProtoShare {
 
       public Builder clear() {
         super.clear();
-        certificateStr_ = "";
+        key_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -1031,7 +1031,7 @@ public final class ProtoShare {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.certificateStr_ = certificateStr_;
+        result.key_ = key_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1048,6 +1048,533 @@ public final class ProtoShare {
 
       public Builder mergeFrom(hc.share.ProtoShare.ServiceConnectCheckReq other) {
         if (other == hc.share.ProtoShare.ServiceConnectCheckReq.getDefaultInstance()) return this;
+        if (other.hasKey()) {
+          bitField0_ |= 0x00000001;
+          key_ = other.key_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasKey()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        hc.share.ProtoShare.ServiceConnectCheckReq parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (hc.share.ProtoShare.ServiceConnectCheckReq) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string key = 1;
+      private java.lang.Object key_ = "";
+      /**
+       * <code>required string key = 1;</code>
+       *
+       * <pre>
+       *证书
+       * </pre>
+       */
+      public boolean hasKey() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string key = 1;</code>
+       *
+       * <pre>
+       *证书
+       * </pre>
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       *
+       * <pre>
+       *证书
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       *
+       * <pre>
+       *证书
+       * </pre>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       *
+       * <pre>
+       *证书
+       * </pre>
+       */
+      public Builder clearKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       *
+       * <pre>
+       *证书
+       * </pre>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:share.ServiceConnectCheckReq)
+    }
+
+    static {
+      defaultInstance = new ServiceConnectCheckReq(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:share.ServiceConnectCheckReq)
+  }
+
+  public interface ServiceConnectCheckRspOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string certificateStr = 1;
+    /**
+     * <code>required string certificateStr = 1;</code>
+     *
+     * <pre>
+     *证书
+     * </pre>
+     */
+    boolean hasCertificateStr();
+    /**
+     * <code>required string certificateStr = 1;</code>
+     *
+     * <pre>
+     *证书
+     * </pre>
+     */
+    java.lang.String getCertificateStr();
+    /**
+     * <code>required string certificateStr = 1;</code>
+     *
+     * <pre>
+     *证书
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getCertificateStrBytes();
+  }
+  /**
+   * Protobuf type {@code share.ServiceConnectCheckRsp}
+   */
+  public static final class ServiceConnectCheckRsp extends
+      com.google.protobuf.GeneratedMessage
+      implements ServiceConnectCheckRspOrBuilder {
+    // Use ServiceConnectCheckRsp.newBuilder() to construct.
+    private ServiceConnectCheckRsp(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private ServiceConnectCheckRsp(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final ServiceConnectCheckRsp defaultInstance;
+    public static ServiceConnectCheckRsp getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public ServiceConnectCheckRsp getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ServiceConnectCheckRsp(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              certificateStr_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return hc.share.ProtoShare.internal_static_share_ServiceConnectCheckRsp_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return hc.share.ProtoShare.internal_static_share_ServiceConnectCheckRsp_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              hc.share.ProtoShare.ServiceConnectCheckRsp.class, hc.share.ProtoShare.ServiceConnectCheckRsp.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<ServiceConnectCheckRsp> PARSER =
+        new com.google.protobuf.AbstractParser<ServiceConnectCheckRsp>() {
+      public ServiceConnectCheckRsp parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ServiceConnectCheckRsp(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ServiceConnectCheckRsp> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string certificateStr = 1;
+    public static final int CERTIFICATESTR_FIELD_NUMBER = 1;
+    private java.lang.Object certificateStr_;
+    /**
+     * <code>required string certificateStr = 1;</code>
+     *
+     * <pre>
+     *证书
+     * </pre>
+     */
+    public boolean hasCertificateStr() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string certificateStr = 1;</code>
+     *
+     * <pre>
+     *证书
+     * </pre>
+     */
+    public java.lang.String getCertificateStr() {
+      java.lang.Object ref = certificateStr_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          certificateStr_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string certificateStr = 1;</code>
+     *
+     * <pre>
+     *证书
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getCertificateStrBytes() {
+      java.lang.Object ref = certificateStr_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        certificateStr_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      certificateStr_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasCertificateStr()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getCertificateStrBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getCertificateStrBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static hc.share.ProtoShare.ServiceConnectCheckRsp parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(hc.share.ProtoShare.ServiceConnectCheckRsp prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code share.ServiceConnectCheckRsp}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements hc.share.ProtoShare.ServiceConnectCheckRspOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return hc.share.ProtoShare.internal_static_share_ServiceConnectCheckRsp_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return hc.share.ProtoShare.internal_static_share_ServiceConnectCheckRsp_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                hc.share.ProtoShare.ServiceConnectCheckRsp.class, hc.share.ProtoShare.ServiceConnectCheckRsp.Builder.class);
+      }
+
+      // Construct using hc.share.ProtoShare.ServiceConnectCheckRsp.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        certificateStr_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return hc.share.ProtoShare.internal_static_share_ServiceConnectCheckRsp_descriptor;
+      }
+
+      public hc.share.ProtoShare.ServiceConnectCheckRsp getDefaultInstanceForType() {
+        return hc.share.ProtoShare.ServiceConnectCheckRsp.getDefaultInstance();
+      }
+
+      public hc.share.ProtoShare.ServiceConnectCheckRsp build() {
+        hc.share.ProtoShare.ServiceConnectCheckRsp result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public hc.share.ProtoShare.ServiceConnectCheckRsp buildPartial() {
+        hc.share.ProtoShare.ServiceConnectCheckRsp result = new hc.share.ProtoShare.ServiceConnectCheckRsp(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.certificateStr_ = certificateStr_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof hc.share.ProtoShare.ServiceConnectCheckRsp) {
+          return mergeFrom((hc.share.ProtoShare.ServiceConnectCheckRsp)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(hc.share.ProtoShare.ServiceConnectCheckRsp other) {
+        if (other == hc.share.ProtoShare.ServiceConnectCheckRsp.getDefaultInstance()) return this;
         if (other.hasCertificateStr()) {
           bitField0_ |= 0x00000001;
           certificateStr_ = other.certificateStr_;
@@ -1069,11 +1596,11 @@ public final class ProtoShare {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        hc.share.ProtoShare.ServiceConnectCheckReq parsedMessage = null;
+        hc.share.ProtoShare.ServiceConnectCheckRsp parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (hc.share.ProtoShare.ServiceConnectCheckReq) e.getUnfinishedMessage();
+          parsedMessage = (hc.share.ProtoShare.ServiceConnectCheckRsp) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1182,15 +1709,15 @@ public final class ProtoShare {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:share.ServiceConnectCheckReq)
+      // @@protoc_insertion_point(builder_scope:share.ServiceConnectCheckRsp)
     }
 
     static {
-      defaultInstance = new ServiceConnectCheckReq(true);
+      defaultInstance = new ServiceConnectCheckRsp(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:share.ServiceConnectCheckReq)
+    // @@protoc_insertion_point(class_scope:share.ServiceConnectCheckRsp)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
@@ -1203,6 +1730,11 @@ public final class ProtoShare {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_share_ServiceConnectCheckReq_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_share_ServiceConnectCheckRsp_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_share_ServiceConnectCheckRsp_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1214,9 +1746,10 @@ public final class ProtoShare {
     java.lang.String[] descriptorData = {
       "\n\013share.proto\022\005share\"G\n\014ServicePoint\022\023\n\013" +
       "containerID\030\001 \002(\r\022\021\n\tserviceID\030\002 \002(\r\022\017\n\007" +
-      "userIDs\030\003 \003(\004\"0\n\026ServiceConnectCheckReq\022" +
-      "\026\n\016certificateStr\030\001 \002(\tB\026\n\010hc.shareB\nPro" +
-      "toShare"
+      "userIDs\030\003 \003(\004\"%\n\026ServiceConnectCheckReq\022" +
+      "\013\n\003key\030\001 \002(\t\"0\n\026ServiceConnectCheckRsp\022\026" +
+      "\n\016certificateStr\030\001 \002(\tB\026\n\010hc.shareB\nProt" +
+      "oShare"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1234,6 +1767,12 @@ public final class ProtoShare {
           internal_static_share_ServiceConnectCheckReq_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_share_ServiceConnectCheckReq_descriptor,
+              new java.lang.String[] { "Key", });
+          internal_static_share_ServiceConnectCheckRsp_descriptor =
+            getDescriptor().getMessageTypes().get(2);
+          internal_static_share_ServiceConnectCheckRsp_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_share_ServiceConnectCheckRsp_descriptor,
               new java.lang.String[] { "CertificateStr", });
           return null;
         }
