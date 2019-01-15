@@ -3,10 +3,12 @@ package share.server.config.base;
 import com.hc.component.net.client.ClientComponent;
 import com.hc.component.net.client.ClientListener;
 
+import share.Config;
+
 public class ClientConfig extends BaseConfig {
-	private int workeThreadNum = 4;
-	private int inProtoLength = 65536;
-	private int outProtoLength = 65536;
+	private int workeThreadNum = Config.Component.serverDefaultBoosThreadNum;
+	private int inProtoLength = Config.Component.serverDefaultWorkeThreadNum;
+	private int outProtoLength = Config.Component.netProtoLength;
 
 	public int getWorkeThreadNum() {
 		return workeThreadNum;

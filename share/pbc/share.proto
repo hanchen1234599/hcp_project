@@ -13,9 +13,29 @@ message ServicePoint {
 message ServiceConnectCheckReq{
 	//证书
 	required string key = 1;
+	required int32 serviceContainerID = 2;
 }
 
 message ServiceConnectCheckRsp{
 	//证书
 	required string certificateStr = 1;
+	required int32 serviceContainerID = 2;
+}
+//上报服务连接
+message ReportServiceConnect{
+	required bool isDelete = 1;
+	required string connectMsg = 2;
+}
+//同步服务连接
+message SvncServiceConnect{
+	required bool isDelete = 1;
+	required string connectMsg = 2;
+}
+
+message ContainerHead{
+	required int32 serviceContainerID = 1;
+	required int32 serviceID = 2;
+	required int32 sourceServiceContainerID = 3;
+	required int32 sourceServiceID = 4;
+	required int32 protocolID = 5;
 }

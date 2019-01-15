@@ -16,8 +16,26 @@ public interface ServiceContainerManager extends Manager<ServiceContainerListene
 	void deleteServiceManager(ServiceManager service);
 
 	void onServiceContainerMessage(Session session, ByteBuf body);
-	
+
 	String getCertificateKey();
 
 	void setCertificateKey(String certificateKey);
+
+	ServiceContainerListener getListener();
+
+	void addSecuritySession(Session session, Integer serviceContainerID);
+	
+	void removeSecuritySession(Session session);
+
+	Session remoteSecuritySession(Session session);
+
+	boolean isSecuritySession(Session session);
+	
+	Session getServerSession();
+
+	void setServerSession(Session serverSession);
+	
+	void openServerServiceConatiner(int port);
+	
+	void insertClientServiceConatiner(String remoteIp, int port);
 }

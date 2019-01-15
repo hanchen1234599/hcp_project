@@ -12,6 +12,14 @@ public class ServiceConnectImpl implements ServiceConnect {
 	private String remoteServiceType;
 	@JsonIgnore
 	private Session session;
+	public Session getSession() {
+		return session;
+	}
+
+	public void setSession(Session session) {
+		this.session = session;
+	}
+
 	public int getServiceID() {
 		return serviceID;
 	}

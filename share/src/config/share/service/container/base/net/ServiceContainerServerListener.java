@@ -19,6 +19,7 @@ public class ServiceContainerServerListener implements ServerListener {
 	private ConcurrentHashMap<Session, Boolean> securitySession = new ConcurrentHashMap<>();
 	@SuppressWarnings("unused")
 	private ServerManager manager;
+
 	public void setServiceContainerManager(ServiceContainerManager serviceContainerManager) {
 		this.serviceContainerManager = serviceContainerManager;
 	}
@@ -35,35 +36,49 @@ public class ServiceContainerServerListener implements ServerListener {
 
 	@Override
 	public void onAddSession(Session session) {
-		Trace.logger.info("收到service container连接  sessionID:" + session.getSessionID() +" desc:" + session.getChannel());
+		Trace.logger
+				.info("收到service container连接  sessionID:" + session.getSessionID() + " desc:" + session.getChannel());
 		// 安全连接请求
 		String randomStr = Utils.randomString();
 		checkSession.put(session, new ServiceContainerConnectCheck(randomStr, session));
-		session.send(Unpooled.wrappedBuffer(hc.share.ProtoShare.ServiceConnectCheckReq.newBuilder().setKey(randomStr).build().toByteArray()));
+		hc.share.ProtoShare.ServiceConnectCheckReq.Builder builder = hc.share.ProtoShare.ServiceConnectCheckReq
+				.newBuilder();
+		builder.setKey(randomStr);
+		builder.setServiceContainerID(this.serviceContainerManager.getServiceContainerId());
+		session.send(Unpooled.wrappedBuffer(builder.build().toByteArray()));
 	}
 
 	@Override
 	public void onRemoveSession(Session session) {
-		Trace.logger.info("断开service container连接 sessionID："+ session.getSessionID() + " desc：" + session.getChannel());
+		Trace.logger
+				.info("断开service container连接 sessionID：" + session.getSessionID() + " desc：" + session.getChannel());
 		this.checkSession.remove(session);
-		this.securitySession.remove(session);
+		if (this.serviceContainerManager.remoteSecuritySession(session) != null) {
+			this.serviceContainerManager.getListener().onDestorySecurityConnect(session);
+		}
 	}
 
 	@Override
 	public void onData(Session session, ByteBuf body) {
-		if(isSecurity(session)) {
+		if (isSecurity(session)) {
 			this.serviceContainerManager.onServiceContainerMessage(session, body);
-		}else {
-			//安全连接验证
+		} else {
+			// 安全连接验证
 			ServiceContainerConnectCheck check = this.checkSession.get(session);
-			if(check == null) {
+			if (check == null) {
 				session.getChannel().close();
-			}else {
+			} else {
 				try {
-					String certificateStr = hc.share.ProtoShare.ServiceConnectCheckRsp.newBuilder().mergeFrom(body.array()).build().getCertificateStr();
+					hc.share.ProtoShare.ServiceConnectCheckRsp connRsp = hc.share.ProtoShare.ServiceConnectCheckRsp
+							.newBuilder().mergeFrom(body.array()).build();
+					String certificateStr = connRsp.getCertificateStr();
+					Integer reomteServiceContainerID = connRsp.getServiceContainerID();
 					try {
-						if(Utils.encodeMd5TwoBase64(check.getKey() + this.serviceContainerManager.getCertificateKey()).equals(certificateStr)) {
-							this.securitySession.put(session, true);
+						if (Utils.encodeMd5TwoBase64(check.getKey() + this.serviceContainerManager.getCertificateKey())
+								.equals(certificateStr) && reomteServiceContainerID != null
+								&& reomteServiceContainerID != 0) {
+							this.serviceContainerManager.addSecuritySession(session, reomteServiceContainerID);
+							this.serviceContainerManager.getListener().onCreateSecurityConnect(session);
 						}
 					} catch (Exception e) {
 						Trace.logger.info(e);
@@ -72,31 +87,34 @@ public class ServiceContainerServerListener implements ServerListener {
 					e.printStackTrace();
 				}
 			}
- 		}
+		}
 	}
 
 	@Override
 	public void OnExceptionCaught(Session session, Throwable cause) {
-		Trace.logger.error("servicecontainer网络异常：sessionID:" + session.getSessionID() + "desc:" +session);
+		Trace.logger.error("servicecontainer网络异常：sessionID:" + session.getSessionID() + "desc:" + session);
 		Trace.logger.error(cause);
 	}
-	
-	private boolean isSecurity( Session session ) {
+
+	private boolean isSecurity(Session session) {
 		return this.securitySession.get(session) == true;
 	}
 }
-class ServiceContainerConnectCheck{
+
+class ServiceContainerConnectCheck {
 	private String key;
 	private Session session;
+
 	public String getKey() {
 		return key;
 	}
+
 	public Session getSession() {
 		return session;
 	}
+
 	public ServiceContainerConnectCheck(String key, Session session) {
 		this.key = key;
 		this.session = session;
 	}
 }
-

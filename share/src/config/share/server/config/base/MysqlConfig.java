@@ -3,8 +3,10 @@ package share.server.config.base;
 import com.hc.component.db.mysql.MysqlComponent;
 import com.hc.component.db.mysql.MysqlListener;
 
+import share.Config;
+
 public class MysqlConfig extends BaseConfig {
-	private int workeThreadNum = 1;
+	private int workeThreadNum = Config.Component.mysqlDefaultThreadNum;
 	public int getWorkeThreadNum() {
 		return workeThreadNum;
 	}
