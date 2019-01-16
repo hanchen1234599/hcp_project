@@ -1,8 +1,5 @@
 package com.hc.component.net.server;
 
-import org.dom4j.Element;
-
-import com.hc.component.ComponentType;
 import com.hc.component.net.server.base.ServerManagerImpl;
 import com.hc.share.Component;
 import com.hc.share.exception.NetException;
@@ -35,12 +32,7 @@ public class ServerComponent extends Component<ServerManager, ServerListener> im
 		return this;
 	}
 	@Override
-	public void setListener(ServerListener listener) {
-		this.listener = listener;
-	}
-	@Override
 	public void build() throws NetException {
-		this.setType(ComponentType.SERVER);
 		if(port == 0)
 			throw new NetException("NettyServerImpl port is error");
 		if(this.listener == null)
@@ -48,23 +40,5 @@ public class ServerComponent extends Component<ServerManager, ServerListener> im
 		this.manager = new ServerManagerImpl(port, boosThreadNum, workeThreadNum, inProtoLength, outProtoLength);
 		this.manager.registListener(listener);
 		this.listener.onInit(this.manager);
-	}
-	@Override
-	public void build(Element element) throws Exception {
-		if(element.attributeValue("boosthreadnum") != null)
-			this.boosThreadNum = Integer.parseInt(element.attributeValue("boosthreadnum"));
-		if(element.attributeValue("workethreadnum") != null)
-			this.workeThreadNum = Integer.parseInt(element.attributeValue("workethreadnum"));
-		if(element.attributeValue("inprotolength") != null)
-			this.inProtoLength = Integer.parseInt(element.attributeValue("inprotolength"));
-		if(element.attributeValue("outprotolength") != null)
-			this.outProtoLength  = Integer.parseInt(element.attributeValue("outprotolength"));
-		if(element.attributeValue("port") != null)
-			this.port = Integer.parseInt(element.attributeValue("port"));
-		if(element.attributeValue("listener") != null) {
-			Class<?> listenerClass = Class.forName(element.attributeValue("listener"));
-			this.listener = (ServerListener) listenerClass.newInstance();
-		}
-		this.build();
 	}
 }

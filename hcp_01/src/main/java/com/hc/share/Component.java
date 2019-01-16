@@ -1,18 +1,24 @@
 package com.hc.share;
 
-import com.hc.component.ComponentType;
+//import com.hc.component.ComponentType;
 
 @SuppressWarnings("rawtypes")
 public abstract class Component<T extends Manager, E extends Listener> {
 	protected E listener;
 	protected T manager;
-	private ComponentType type;
-	public ComponentType getType() {
-		return type;
+	
+	public T getManager() {
+		return manager;
 	}
-	public void setType(ComponentType type) {
-		this.type = type;
+
+	public void setManager(T manager) {
+		this.manager = manager;
 	}
+
+	public void setListener(E listener) {
+		this.listener = listener;
+	}
+
 	public E getListener() {
 		return listener;
 	}

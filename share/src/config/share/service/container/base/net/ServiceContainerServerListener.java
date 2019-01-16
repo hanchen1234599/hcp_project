@@ -16,7 +16,7 @@ import share.service.container.ServiceContainerManager;
 public class ServiceContainerServerListener implements ServerListener {
 	private ServiceContainerManager serviceContainerManager = null;
 	private ConcurrentHashMap<Session, ServiceContainerConnectCheck> checkSession = new ConcurrentHashMap<>();
-	private ConcurrentHashMap<Session, Boolean> securitySession = new ConcurrentHashMap<>();
+	//private ConcurrentHashMap<Session, Boolean> securitySession = new ConcurrentHashMap<>();
 	@SuppressWarnings("unused")
 	private ServerManager manager;
 
@@ -27,6 +27,12 @@ public class ServiceContainerServerListener implements ServerListener {
 	@Override
 	public void onInit(ServerManager manager) {
 		this.manager = manager;
+		try {
+			this.manager.open();
+		} catch (Exception e) {
+			Trace.logger.info("服务器容器启动失败");
+			Trace.logger.error(e);
+		}
 	}
 
 	@Override
@@ -36,13 +42,11 @@ public class ServiceContainerServerListener implements ServerListener {
 
 	@Override
 	public void onAddSession(Session session) {
-		Trace.logger
-				.info("收到service container连接  sessionID:" + session.getSessionID() + " desc:" + session.getChannel());
+		Trace.logger.info("收到service container连接  sessionID:" + session.getSessionID() + " desc:" + session.getChannel());
 		// 安全连接请求
 		String randomStr = Utils.randomString();
 		checkSession.put(session, new ServiceContainerConnectCheck(randomStr, session));
-		hc.share.ProtoShare.ServiceConnectCheckReq.Builder builder = hc.share.ProtoShare.ServiceConnectCheckReq
-				.newBuilder();
+		hc.share.ProtoShare.ServiceConnectCheckReq.Builder builder = hc.share.ProtoShare.ServiceConnectCheckReq.newBuilder();
 		builder.setKey(randomStr);
 		builder.setServiceContainerID(this.serviceContainerManager.getServiceContainerId());
 		session.send(Unpooled.wrappedBuffer(builder.build().toByteArray()));
@@ -50,17 +54,16 @@ public class ServiceContainerServerListener implements ServerListener {
 
 	@Override
 	public void onRemoveSession(Session session) {
-		Trace.logger
-				.info("断开service container连接 sessionID：" + session.getSessionID() + " desc：" + session.getChannel());
+		Trace.logger.info("断开service container连接 sessionID：" + session.getSessionID() + " desc：" + session.getChannel());
 		this.checkSession.remove(session);
-		if (this.serviceContainerManager.remoteSecuritySession(session) != null) {
+		if (this.serviceContainerManager.isSecuritySession(session))
 			this.serviceContainerManager.getListener().onDestorySecurityConnect(session);
-		}
+		this.serviceContainerManager.removeSecuritySession(session);
 	}
 
 	@Override
 	public void onData(Session session, ByteBuf body) {
-		if (isSecurity(session)) {
+		if (this.serviceContainerManager.isSecuritySession(session)) {
 			this.serviceContainerManager.onServiceContainerMessage(session, body);
 		} else {
 			// 安全连接验证
@@ -69,13 +72,14 @@ public class ServiceContainerServerListener implements ServerListener {
 				session.getChannel().close();
 			} else {
 				try {
-					hc.share.ProtoShare.ServiceConnectCheckRsp connRsp = hc.share.ProtoShare.ServiceConnectCheckRsp
-							.newBuilder().mergeFrom(body.array()).build();
+					int length = body.readableBytes();
+					byte[] buff = new byte[length];
+					body.readBytes(buff);
+					hc.share.ProtoShare.ServiceConnectCheckRsp connRsp = hc.share.ProtoShare.ServiceConnectCheckRsp.newBuilder().mergeFrom(buff).build();
 					String certificateStr = connRsp.getCertificateStr();
 					Integer reomteServiceContainerID = connRsp.getServiceContainerID();
 					try {
-						if (Utils.encodeMd5TwoBase64(check.getKey() + this.serviceContainerManager.getCertificateKey())
-								.equals(certificateStr) && reomteServiceContainerID != null
+						if (Utils.encodeMd5TwoBase64(check.getKey() + this.serviceContainerManager.getCertificateKey()).equals(certificateStr) && reomteServiceContainerID != null
 								&& reomteServiceContainerID != 0) {
 							this.serviceContainerManager.addSecuritySession(session, reomteServiceContainerID);
 							this.serviceContainerManager.getListener().onCreateSecurityConnect(session);
@@ -94,10 +98,6 @@ public class ServiceContainerServerListener implements ServerListener {
 	public void OnExceptionCaught(Session session, Throwable cause) {
 		Trace.logger.error("servicecontainer网络异常：sessionID:" + session.getSessionID() + "desc:" + session);
 		Trace.logger.error(cause);
-	}
-
-	private boolean isSecurity(Session session) {
-		return this.securitySession.get(session) == true;
 	}
 }
 

@@ -13,7 +13,6 @@ import share.service.container.ServiceContainerManager;
 
 public class ServiceContainerClientListener implements ClientListener {
 	private ServiceContainerManager serviceContainerManager = null;
-	@SuppressWarnings("unused")
 	private ClientManager manager;
 
 	public void setServiceContainerManager(ServiceContainerManager serviceContainerManager) {
@@ -23,6 +22,12 @@ public class ServiceContainerClientListener implements ClientListener {
 	@Override
 	public void onInit(ClientManager manager) {
 		this.manager = manager;
+		try {
+			this.manager.open();
+		} catch (Exception e) {
+			Trace.logger.info("客户端容器启动失败");
+			Trace.logger.error(e);
+		}
 	}
 
 	@Override
@@ -38,9 +43,9 @@ public class ServiceContainerClientListener implements ClientListener {
 	@Override
 	public void onUnConnect(Session session) {
 		Trace.logger.info("断开container  sessionID:" + session.getSessionID() + " desc:" + session.getChannel());
-		if (this.serviceContainerManager.remoteSecuritySession(session) != null) {
+		if (this.serviceContainerManager.isSecuritySession(session))
 			this.serviceContainerManager.getListener().onDestorySecurityConnect(session);
-		}
+		this.serviceContainerManager.removeSecuritySession(session);
 	}
 
 	@Override
@@ -56,26 +61,29 @@ public class ServiceContainerClientListener implements ClientListener {
 		} else {
 			// 这里进行安全验证
 			try {
-				hc.share.ProtoShare.ServiceConnectCheckReq connReq = hc.share.ProtoShare.ServiceConnectCheckReq
-						.newBuilder().mergeFrom(body.array()).build();
+				int length = body.readableBytes();
+				byte[] buff = new byte[length];
+				body.readBytes(buff);
+				hc.share.ProtoShare.ServiceConnectCheckReq connReq = hc.share.ProtoShare.ServiceConnectCheckReq.newBuilder().mergeFrom(buff).build();
 				String key = connReq.getKey();
 				Integer remoteServiceContainerID = connReq.getServiceContainerID();
-				if(remoteServiceContainerID != null && remoteServiceContainerID != 0) {
+				if (remoteServiceContainerID != null && remoteServiceContainerID != 0) {
 					try {
 						hc.share.ProtoShare.ServiceConnectCheckRsp.Builder connRspBuilder = hc.share.ProtoShare.ServiceConnectCheckRsp.newBuilder();
 						connRspBuilder.setCertificateStr(Utils.encodeMd5TwoBase64(key + this.serviceContainerManager.getCertificateKey()));
 						connRspBuilder.setServiceContainerID(this.serviceContainerManager.getServiceContainerId());
-						session.send(Unpooled.wrappedBuffer(connRspBuilder.build().toByteArray()));
+						byte[] bs = connRspBuilder.build().toByteArray();
+						session.send(Unpooled.wrappedBuffer(bs));
 						this.serviceContainerManager.setServerSession(session);
 						this.serviceContainerManager.addSecuritySession(session, remoteServiceContainerID);
 						this.serviceContainerManager.getListener().onCreateSecurityConnect(session);
 					} catch (Exception e) {
-						Trace.logger.info(e);
+						Trace.logger.error(e);
 						session.getChannel().close();
 					}
-				}	
+				}
 			} catch (InvalidProtocolBufferException e) {
-				Trace.logger.info(e);
+				Trace.logger.error(e);
 				session.getChannel().close();
 			}
 		}

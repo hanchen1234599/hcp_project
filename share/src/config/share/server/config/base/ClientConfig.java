@@ -7,7 +7,7 @@ import share.Config;
 
 public class ClientConfig extends BaseConfig {
 	private int workeThreadNum = Config.Component.serverDefaultBoosThreadNum;
-	private int inProtoLength = Config.Component.serverDefaultWorkeThreadNum;
+	private int inProtoLength = Config.Component.netProtoLength;
 	private int outProtoLength = Config.Component.netProtoLength;
 
 	public int getWorkeThreadNum() {

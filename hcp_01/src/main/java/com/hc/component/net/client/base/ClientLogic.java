@@ -37,8 +37,8 @@ public class ClientLogic extends ChannelInboundHandlerAdapter {
 	@Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 		Trace.logger.debug("client channelInactive");
-		this.session = null;
 		this.manager.unConnect( session );
+		this.session = null;
     }
 	
 	@Override

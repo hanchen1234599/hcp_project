@@ -1,8 +1,5 @@
 package com.hc.component.net.client;
 
-import org.dom4j.Element;
-
-import com.hc.component.ComponentType;
 import com.hc.component.net.client.base.ClientManagerImpl;
 import com.hc.share.Component;
 
@@ -12,10 +9,6 @@ public class ClientComponent extends Component<ClientManager, ClientListener> im
 	private int outProtoLength  = 64 * 1024;
 	private int port = 0;
 	private String host = null;
-	@Override
-	public void setListener(ClientListener listener) {
-		this.listener = listener;
-	}
 
 	@Override
 	public ClientBuilder setConnect(String host, int port) {
@@ -44,28 +37,28 @@ public class ClientComponent extends Component<ClientManager, ClientListener> im
 	
 	@Override
 	public void build() throws Exception {
-		this.setType(ComponentType.CLIENT);
+		//this.setType(ComponentType.CLIENT);
 		this.manager = new ClientManagerImpl(host, port, workeThreadNum, inProtoLength, outProtoLength);
 		this.manager.registListener(listener);
 		this.listener.onInit(this.manager);
 	}
 	
-	@Override
-	public void build(Element element) throws Exception {
-		if(element.attributeValue("workeThreadNum") != null)
-			this.workeThreadNum = Integer.parseInt(element.attributeValue("workethreadnum"));
-		if(element.attributeValue("inprotolength") != null)
-			this.inProtoLength = Integer.parseInt(element.attributeValue("inprotolength"));
-		if(element.attributeValue("outprotolength") != null)
-			this.outProtoLength  = Integer.parseInt(element.attributeValue("outprotolength"));
-		if(element.attributeValue("port") != null)
-			this.port = Integer.parseInt(element.attributeValue("port"));
-		if(element.attributeValue("host") != null)
-			this.host = element.attributeValue("host");
-		if(element.attributeValue("listener") != null) {
-			Class<?> listenerClass = Class.forName(element.attributeValue("listener"));
-			this.listener = (ClientListener) listenerClass.newInstance();
-		}
-		this.build();
-	}
+//	@Override
+//	public void build(Element element) throws Exception {
+//		if(element.attributeValue("workeThreadNum") != null)
+//			this.workeThreadNum = Integer.parseInt(element.attributeValue("workethreadnum"));
+//		if(element.attributeValue("inprotolength") != null)
+//			this.inProtoLength = Integer.parseInt(element.attributeValue("inprotolength"));
+//		if(element.attributeValue("outprotolength") != null)
+//			this.outProtoLength  = Integer.parseInt(element.attributeValue("outprotolength"));
+//		if(element.attributeValue("port") != null)
+//			this.port = Integer.parseInt(element.attributeValue("port"));
+//		if(element.attributeValue("host") != null)
+//			this.host = element.attributeValue("host");
+//		if(element.attributeValue("listener") != null) {
+//			Class<?> listenerClass = Class.forName(element.attributeValue("listener"));
+//			this.listener = (ClientListener) listenerClass.newInstance();
+//		}
+//		this.build();
+//	}
 }

@@ -70,6 +70,6 @@ public class ServiceManagerImpl implements ServiceManager {
 
 	@Override
 	public boolean getIsWatch(String serviceType) {
-		return this.watchServiceType.get(serviceType) == true;
+		return this.watchServiceType.get(serviceType) != null ? this.watchServiceType.get(serviceType) == true : false;
 	}
 }

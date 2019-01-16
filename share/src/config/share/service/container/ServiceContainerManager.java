@@ -27,11 +27,7 @@ public interface ServiceContainerManager extends Manager<ServiceContainerListene
 	
 	void removeSecuritySession(Session session);
 
-	Session remoteSecuritySession(Session session);
-
 	boolean isSecuritySession(Session session);
-	
-	Session getServerSession();
 
 	void setServerSession(Session serverSession);
 	

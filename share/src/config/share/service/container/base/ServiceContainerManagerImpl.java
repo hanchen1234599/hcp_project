@@ -35,21 +35,15 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 	private int serviceContatinerID;
 	private String certificateKey = "123";
 	private ServiceContainerListener listener = null;
-	private ServiceContainerType serviceContainerType;
+	private ServiceContainerType serviceContainerType = null;
 	private ConcurrentHashMap<Session, Integer> sessions = new ConcurrentHashMap<>();
 	private Session serverSession = null; // clientSession 这里边才有值
 	private ConcurrentHashMap<Integer, ServiceManager> provider = new ConcurrentHashMap<>();// 该容器内提供的服务
 	private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, ServiceConnect>> serviceConnects = new ConcurrentHashMap<>(); // 所有的service存放到这里
 	private ExecutorService exec = Executors.newSingleThreadExecutor();// 容器的处理线程
 
-	public ServiceContainerManagerImpl(int serviceContatinerID, int port) {
-		this.serviceContatinerID = serviceContatinerID;
-		this.serviceContainerType = ServiceContainerType.SERVER;
-	}
-
 	public ServiceContainerManagerImpl(int serviceContatinerID) {
 		this.serviceContatinerID = serviceContatinerID;
-		this.serviceContainerType = ServiceContainerType.CLIENTS;
 	}
 
 	@Override
@@ -108,14 +102,12 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 		if (this.serviceContainerType == ServiceContainerType.SERVER) {
 			recvServiceConnect(isDelete, conn);
 			return;
-		} else {// 上报于依赖容器
+		} else if (this.serviceContainerType == ServiceContainerType.CLIENTS  && this.serverSession != null) {// 上报于依赖容器
 			String json = jsonParse.writeValueAsString(conn);
-			hc.share.ProtoShare.ReportServiceConnect.Builder builder = hc.share.ProtoShare.ReportServiceConnect
-					.newBuilder();
+			hc.share.ProtoShare.ReportServiceConnect.Builder builder = hc.share.ProtoShare.ReportServiceConnect.newBuilder();
 			builder.setIsDelete(isDelete);
 			builder.setConnectMsg(json);
-			this.serverSession.send(ProtoHelper.createContainerProtoByteBuf(0, 0, 0, 0,
-					ShareProtocol.reportServiceConnect, builder.build().toByteArray()));
+			this.serverSession.send(ProtoHelper.createContainerProtoByteBuf(0, 0, 0, 0, ShareProtocol.reportServiceConnect, builder.build().toByteArray()));
 		}
 	}
 
@@ -131,12 +123,10 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 		// 通知client容器 服务数据发生改变
 		try {
 			String json = jsonParse.writeValueAsString(conn);
-			hc.share.ProtoShare.SvncServiceConnect.Builder builder = hc.share.ProtoShare.SvncServiceConnect
-					.newBuilder();
+			hc.share.ProtoShare.SvncServiceConnect.Builder builder = hc.share.ProtoShare.SvncServiceConnect.newBuilder();
 			builder.setIsDelete(isDelete);
 			builder.setConnectMsg(json);
-			ByteBuf buff = ProtoHelper.createContainerProtoByteBuf(0, 0, 0, 0, ShareProtocol.svncServiceConnect,
-					builder.build().toByteArray());
+			ByteBuf buff = ProtoHelper.createContainerProtoByteBuf(0, 0, 0, 0, ShareProtocol.svncServiceConnect, builder.build().toByteArray());
 			for (Entry<Session, Integer> entry : sessions.entrySet()) {
 				entry.getKey().send(buff);
 			}
@@ -159,11 +149,14 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 					this.serviceConnects.get(conn.getServiceContainerID()).remove(conn.getServiceID());
 				}
 			}
+			//this.listener.onCreateService(conn);
+			this.listener.onDeleteService(conn);
 		} else {
 			if (!this.serviceConnects.containsKey(conn.getServiceContainerID())) {
 				this.serviceConnects.put(conn.getServiceContainerID(), new ConcurrentHashMap<>());
 			}
 			this.serviceConnects.get(conn.getServiceContainerID()).put(conn.getServiceID(), conn);
+			this.listener.onCreateService(conn);
 		}
 
 		noticeOldServiceServiceConnectChange(isDelete, conn);
@@ -201,49 +194,48 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 	 * @param body
 	 */
 	public void onServiceContainerMessage(Session session, ByteBuf buf) {
-		ProtoHelper.recvContainerProtoByteBuf(buf,
-				(serviceContainID, serviceID, sourceServiceContainerID, sourceContainID, protoID, body) -> {
-					if (this.serviceContainerType == ServiceContainerType.SERVER) {// server处理服务上报
-						if (protoID == ShareProtocol.reportServiceConnect) {
-							try {
-								hc.share.ProtoShare.ReportServiceConnect rSConnect = hc.share.ProtoShare.ReportServiceConnect
-										.newBuilder().mergeFrom(body.array()).build();
-								boolean isDeleate = rSConnect.getIsDelete();
-								ServiceConnectImpl conn = jsonParse.readValue(rSConnect.getConnectMsg(),
-										ServiceConnectImpl.class);
-								int msgContainerID = conn.getServiceContainerID();
-								this.exec.execute(() -> {
-									if (sessions.get(session) != msgContainerID)
-										return;
-									conn.setSession(session);
-									recvServiceConnect(isDeleate, conn);
-								});
-							} catch (Exception e) {
-								Trace.logger.error(e);
-							}
-							return;
-						}
+		ProtoHelper.recvContainerProtoByteBuf(buf, (serviceContainID, serviceID, sourceServiceContainerID, sourceContainID, protoID, body) -> {
+			int length = body.readableBytes();
+			byte[] buff = new byte[length];
+			body.readBytes(buff);
+			if (this.serviceContainerType == ServiceContainerType.SERVER) {// server处理服务上报
+				if (protoID == ShareProtocol.reportServiceConnect) {
+					try {
+						hc.share.ProtoShare.ReportServiceConnect rSConnect = hc.share.ProtoShare.ReportServiceConnect.newBuilder().mergeFrom(buff).build();
+						boolean isDeleate = rSConnect.getIsDelete();
+						ServiceConnectImpl conn = jsonParse.readValue(rSConnect.getConnectMsg(), ServiceConnectImpl.class);
+						int msgContainerID = conn.getServiceContainerID();
+						this.exec.execute(() -> {
+							if (sessions.get(session) != msgContainerID)
+								return;
+							conn.setSession(session);
+							recvServiceConnect(isDeleate, conn);
+						});
+					} catch (Exception e) {
+						Trace.logger.error(e);
 					}
-					if (this.serviceContainerType == ServiceContainerType.CLIENTS) {
-						if (protoID == ShareProtocol.svncServiceConnect) {// client处理服务同数据
-							try {
-								hc.share.ProtoShare.SvncServiceConnect ssConnect = hc.share.ProtoShare.SvncServiceConnect
-										.newBuilder().mergeFrom(body.array()).build();
-								String connectMsg = ssConnect.getConnectMsg();
-								boolean isDelete = ssConnect.getIsDelete();
-								ServiceConnectImpl conn = jsonParse.readValue(connectMsg, ServiceConnectImpl.class);
-								this.exec.submit(() -> {
-									conn.setSession(session);
-									dealContainerServiceConnect(isDelete, conn);
-								});
-							} catch (Exception e) {
-								Trace.logger.info(e);
-							}
-							return;
-						}
+					return;
+				}
+			}
+			if (this.serviceContainerType == ServiceContainerType.CLIENTS) {
+				if (protoID == ShareProtocol.svncServiceConnect) {// client处理服务同数据
+					try {
+						hc.share.ProtoShare.SvncServiceConnect ssConnect = hc.share.ProtoShare.SvncServiceConnect.newBuilder().mergeFrom(buff).build();
+						String connectMsg = ssConnect.getConnectMsg();
+						boolean isDelete = ssConnect.getIsDelete();
+						ServiceConnectImpl conn = jsonParse.readValue(connectMsg, ServiceConnectImpl.class);
+						this.exec.submit(() -> {
+							conn.setSession(session);
+							dealContainerServiceConnect(isDelete, conn);
+						});
+					} catch (Exception e) {
+						Trace.logger.info(e);
 					}
+					return;
+				}
+			}
 
-				});
+		});
 	}
 
 	@Override
@@ -256,39 +248,47 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 		return this.serviceContainerType;
 	}
 
+	private int port = 0;
+
 	@Override
 	public void open() throws Exception {
 		this.exec.execute(() -> {
-			Trace.logger.info("container open");
-		});
-	}
-
-	@Override
-	public void openServerServiceConatiner(int port) {
-		this.exec.execute(() -> {
-			ServerConfig config = new ServerConfig();
-			config.setListener("share.service.container.base.net.ServiceContainerServerListener");
-			try {
-				ServerComponent component = config.createServerComponent(port);
-				((ServiceContainerServerListener) component.getListener()).setServiceContainerManager(this);
-				component.build();
-			} catch (Exception e) {
-				Trace.logger.error(e);
+			if (this.serviceContainerType == ServiceContainerType.SERVER) {
+				ServerConfig config = new ServerConfig();
+				config.setListener("share.service.container.base.net.ServiceContainerServerListener");
+				try {
+					ServerComponent component = config.createServerComponent(port);
+					((ServiceContainerServerListener) component.getListener()).setServiceContainerManager(this);
+					component.build();
+				} catch (Exception e) {
+					Trace.logger.error(e);
+				}
 			}
 		});
 	}
 
 	@Override
+	public void openServerServiceConatiner(int port) {
+		this.serviceContainerType = ServiceContainerType.SERVER;
+		this.port = port;
+	}
+
+	@Override
 	public void insertClientServiceConatiner(String remoteIp, int port) {
 		this.exec.execute(() -> {
-			ClientConfig config = new ClientConfig();
-			config.setListener("share.service.container.base.net.ServiceContainerClientListener");
-			try {
-				ClientComponent component = config.createClientComponent(remoteIp, port);
-				((ServiceContainerClientListener) component.getListener()).setServiceContainerManager(this);
-				component.build();
-			} catch (Exception e) {
-				Trace.logger.error(e);
+			if (this.serviceContainerType == ServiceContainerType.SERVER) {
+				Trace.logger.error("不允许serverContainer添加客户单功能 ");
+			} else {
+				this.serviceContainerType = ServiceContainerType.CLIENTS;
+				ClientConfig config = new ClientConfig();
+				config.setListener("share.service.container.base.net.ServiceContainerClientListener");
+				try {
+					ClientComponent component = config.createClientComponent(remoteIp, port);
+					((ServiceContainerClientListener) component.getListener()).setServiceContainerManager(this);
+					component.build();
+				} catch (Exception e) {
+					Trace.logger.error(e);
+				}
 			}
 		});
 	}
@@ -299,8 +299,8 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 			for (Entry<Integer, ServiceManager> entry : this.provider.entrySet()) {
 				entry.getValue().close();
 			}
+			Runtime.getRuntime().exit(1);
 		});
-		Runtime.getRuntime().exit(1);
 	}
 
 	@Override
@@ -310,19 +310,47 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 
 	@Override
 	public void addSecuritySession(Session session, Integer serviceContainerID) {
+		this.sessions.put(session, serviceContainerID);
 		this.exec.execute(() -> {
-			this.sessions.put(session, serviceContainerID);
+			if(this.serviceContainerType == ServiceContainerType.CLIENTS) { //上报容器新开启的所有服务
+				for(Entry<Integer, ServiceManager> entry: this.provider.entrySet()) {
+					ServiceConnectImpl connect = new ServiceConnectImpl();
+					connect.setRemoteServiceType(entry.getValue().getServiceType());
+					connect.setServiceContainerID(this.serviceContatinerID);
+					connect.setServiceID(entry.getValue().getServiceId());
+					try {
+						reportServiceConnect(false, connect);
+					} catch (JsonProcessingException e) {
+						this.provider.remove(entry.getValue().getServiceId());
+						Trace.logger.info(e);
+					}
+				}
+			}else if(this.serviceContainerType == ServiceContainerType.SERVER) { //通知当前开启的服务
+				for(Entry<Integer, ConcurrentHashMap<Integer, ServiceConnect>> entryMap: this.serviceConnects.entrySet() ) {
+					for(Entry<Integer, ServiceConnect> entry: entryMap.getValue().entrySet()) {
+						
+						try {
+							String json = jsonParse.writeValueAsString(entry.getValue());
+							hc.share.ProtoShare.SvncServiceConnect.Builder builder = hc.share.ProtoShare.SvncServiceConnect.newBuilder();
+							builder.setIsDelete(false);
+							builder.setConnectMsg(json);
+							ByteBuf buff = ProtoHelper.createContainerProtoByteBuf(0, 0, 0, 0, ShareProtocol.svncServiceConnect, builder.build().toByteArray());
+							session.send(buff);
+						} catch (JsonProcessingException e) {
+							Trace.logger.error("服务器容器运行异常");
+						}
+					}
+				}
+			}
 		});
 	}
 
 	@Override
 	public void removeSecuritySession(Session session) {
-		this.sessions.remove(session);
+		int remoteServiceContainerID = this.sessions.remove(session);
 		this.exec.execute(() -> {
 			if (this.serviceContainerType == ServiceContainerType.SERVER) {
-				int remoteServiceContainerID = this.sessions.remove(session);
-				ConcurrentHashMap<Integer, ServiceConnect> remoteServiceContainer = this.serviceConnects
-						.get(remoteServiceContainerID);
+				ConcurrentHashMap<Integer, ServiceConnect> remoteServiceContainer = this.serviceConnects.get(remoteServiceContainerID);
 				if (remoteServiceContainer != null) {
 					for (Entry<Integer, ServiceConnect> entry : remoteServiceContainer.entrySet()) {
 						recvServiceConnect(true, entry.getValue());
@@ -338,18 +366,9 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 	}
 
 	@Override
-	public Session remoteSecuritySession(Session session) {
-		return this.sessions.remove(session) == null ? null : session;
-	}
-
-	@Override
 	public boolean isSecuritySession(Session session) {
 		Integer serviceContainerID = this.sessions.get(session);
 		return serviceContainerID != null && serviceContainerID != 0;
-	}
-
-	public Session getServerSession() {
-		return serverSession;
 	}
 
 	public void setServerSession(Session serverSession) {

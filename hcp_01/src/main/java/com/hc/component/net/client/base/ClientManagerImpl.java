@@ -19,8 +19,8 @@ public class ClientManagerImpl implements ClientManager {
 		this.listener.onConnect(this.session);
 	}
 	public void unConnect(Session session) {
-		this.session = null;
 		this.listener.onUnConnect( session );
+		this.session = null;
 	}
 	@Override
 	public void registListener(ClientListener listener) {

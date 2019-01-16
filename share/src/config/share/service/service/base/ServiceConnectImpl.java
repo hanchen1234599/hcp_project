@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hc.component.net.session.Session;
 
+import io.netty.buffer.ByteBuf;
+import share.proto.util.ProtoHelper;
 import share.service.service.ServiceConnect;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ServiceConnectImpl implements ServiceConnect {
@@ -45,7 +47,8 @@ public class ServiceConnectImpl implements ServiceConnect {
 	}
 
 	@Override
-	public void send(byte[] bytes) {
-		//todo
+	public void send(int sourceServiceContainerID, int sourceServiceID, int protocolID, byte[] bytes) {
+		ByteBuf body = ProtoHelper.createContainerProtoByteBuf(this.serviceContainerID, this.serviceID, sourceServiceContainerID, sourceServiceID, protocolID, bytes);
+		this.session.send(body);
 	}
 }
