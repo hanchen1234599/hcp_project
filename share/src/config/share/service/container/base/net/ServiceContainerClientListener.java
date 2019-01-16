@@ -73,8 +73,8 @@ public class ServiceContainerClientListener implements ClientListener {
 						connRspBuilder.setCertificateStr(Utils.encodeMd5TwoBase64(key + this.serviceContainerManager.getCertificateKey()));
 						connRspBuilder.setServiceContainerID(this.serviceContainerManager.getServiceContainerId());
 						byte[] bs = connRspBuilder.build().toByteArray();
-						session.send(Unpooled.wrappedBuffer(bs));
 						this.serviceContainerManager.setServerSession(session);
+						session.send(Unpooled.wrappedBuffer(bs));
 						this.serviceContainerManager.addSecuritySession(session, remoteServiceContainerID);
 						this.serviceContainerManager.getListener().onCreateSecurityConnect(session);
 					} catch (Exception e) {

@@ -39,7 +39,6 @@ class TestClientContainer implements ServiceContainerListener {
 		} catch (Exception e) {
 			Trace.logger.info(e);
 		}
-		this.manager.insertClientServiceConatiner("127.0.0.1", 5001);
 		ServiceComponent serviceComponent = new ServiceComponent(this.manager, 3);
 		try {
 			serviceComponent.setListener((Service) Class.forName("data.DataService").newInstance());
@@ -47,6 +46,7 @@ class TestClientContainer implements ServiceContainerListener {
 		} catch (Exception e) {
 			Trace.logger.error(e);
 		}
+		this.manager.insertClientServiceConatiner("127.0.0.1", 5001);
 	}
 
 	@Override
