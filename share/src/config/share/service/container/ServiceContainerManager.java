@@ -28,8 +28,6 @@ public interface ServiceContainerManager extends Manager<ServiceContainerListene
 	void removeSecuritySession(Session session);
 
 	boolean isSecuritySession(Session session);
-
-	void setServerSession(Session serverSession);
 	
 	void openServerServiceConatiner(int port);
 	

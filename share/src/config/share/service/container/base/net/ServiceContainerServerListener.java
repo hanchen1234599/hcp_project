@@ -16,7 +16,8 @@ import share.service.container.ServiceContainerManager;
 public class ServiceContainerServerListener implements ServerListener {
 	private ServiceContainerManager serviceContainerManager = null;
 	private ConcurrentHashMap<Session, ServiceContainerConnectCheck> checkSession = new ConcurrentHashMap<>();
-	//private ConcurrentHashMap<Session, Boolean> securitySession = new ConcurrentHashMap<>();
+	// private ConcurrentHashMap<Session, Boolean> securitySession = new
+	// ConcurrentHashMap<>();
 	@SuppressWarnings("unused")
 	private ServerManager manager;
 
@@ -82,7 +83,6 @@ public class ServiceContainerServerListener implements ServerListener {
 						if (Utils.encodeMd5TwoBase64(check.getKey() + this.serviceContainerManager.getCertificateKey()).equals(certificateStr) && reomteServiceContainerID != null
 								&& reomteServiceContainerID != 0) {
 							this.serviceContainerManager.addSecuritySession(session, reomteServiceContainerID);
-							this.serviceContainerManager.getListener().onCreateSecurityConnect(session);
 						}
 					} catch (Exception e) {
 						Trace.logger.info(e);

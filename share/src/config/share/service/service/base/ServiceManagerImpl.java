@@ -2,6 +2,8 @@ package share.service.service.base;
 
 import java.util.HashMap;
 
+import com.hc.share.util.Trace;
+
 import share.service.container.ServiceContainerManager;
 import share.service.service.Service;
 import share.service.service.ServiceConnect;
@@ -12,6 +14,7 @@ public class ServiceManagerImpl implements ServiceManager {
 	private String serviceType;
 	private Service service;
 	private int serviceID;
+	private volatile boolean isOpen = false;
 	private HashMap<String, Boolean> watchServiceType = new HashMap<>();
 
 	public ServiceManagerImpl(ServiceContainerManager container, int serviceID) {
@@ -46,6 +49,7 @@ public class ServiceManagerImpl implements ServiceManager {
 	@Override
 	public void open() throws Exception {
 		this.container.addServiceManager(this);
+		this.isOpen = true;
 	}
 
 	@Override
@@ -65,6 +69,10 @@ public class ServiceManagerImpl implements ServiceManager {
 
 	@Override
 	public void watchServiceType(String serviceType) {
+		if(isOpen == true) {
+			Trace.logger.error("service open after watch service");
+			return;
+		}
 		this.watchServiceType.put(serviceType, true);
 	}
 
