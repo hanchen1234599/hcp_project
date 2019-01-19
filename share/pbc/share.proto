@@ -21,6 +21,9 @@ message ServiceConnectCheckRsp{
 	required string certificateStr = 1;
 	required int32 serviceContainerID = 2;
 }
+message NoticeServerConnectCreate{
+	required int32 serviceContainID = 1;	
+}
 //上报服务连接
 message ReportServiceConnect{
 	required bool isDelete = 1;

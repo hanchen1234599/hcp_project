@@ -1898,6 +1898,410 @@ public final class ProtoShare {
     // @@protoc_insertion_point(class_scope:share.ServiceConnectCheckRsp)
   }
 
+  public interface NoticeServerConnectCreateOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 serviceContainID = 1;
+    /**
+     * <code>required int32 serviceContainID = 1;</code>
+     */
+    boolean hasServiceContainID();
+    /**
+     * <code>required int32 serviceContainID = 1;</code>
+     */
+    int getServiceContainID();
+  }
+  /**
+   * Protobuf type {@code share.NoticeServerConnectCreate}
+   */
+  public static final class NoticeServerConnectCreate extends
+      com.google.protobuf.GeneratedMessage
+      implements NoticeServerConnectCreateOrBuilder {
+    // Use NoticeServerConnectCreate.newBuilder() to construct.
+    private NoticeServerConnectCreate(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private NoticeServerConnectCreate(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final NoticeServerConnectCreate defaultInstance;
+    public static NoticeServerConnectCreate getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public NoticeServerConnectCreate getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private NoticeServerConnectCreate(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              serviceContainID_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return hc.share.ProtoShare.internal_static_share_NoticeServerConnectCreate_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return hc.share.ProtoShare.internal_static_share_NoticeServerConnectCreate_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              hc.share.ProtoShare.NoticeServerConnectCreate.class, hc.share.ProtoShare.NoticeServerConnectCreate.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<NoticeServerConnectCreate> PARSER =
+        new com.google.protobuf.AbstractParser<NoticeServerConnectCreate>() {
+      public NoticeServerConnectCreate parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new NoticeServerConnectCreate(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<NoticeServerConnectCreate> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 serviceContainID = 1;
+    public static final int SERVICECONTAINID_FIELD_NUMBER = 1;
+    private int serviceContainID_;
+    /**
+     * <code>required int32 serviceContainID = 1;</code>
+     */
+    public boolean hasServiceContainID() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 serviceContainID = 1;</code>
+     */
+    public int getServiceContainID() {
+      return serviceContainID_;
+    }
+
+    private void initFields() {
+      serviceContainID_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasServiceContainID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, serviceContainID_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, serviceContainID_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static hc.share.ProtoShare.NoticeServerConnectCreate parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(hc.share.ProtoShare.NoticeServerConnectCreate prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code share.NoticeServerConnectCreate}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements hc.share.ProtoShare.NoticeServerConnectCreateOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return hc.share.ProtoShare.internal_static_share_NoticeServerConnectCreate_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return hc.share.ProtoShare.internal_static_share_NoticeServerConnectCreate_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                hc.share.ProtoShare.NoticeServerConnectCreate.class, hc.share.ProtoShare.NoticeServerConnectCreate.Builder.class);
+      }
+
+      // Construct using hc.share.ProtoShare.NoticeServerConnectCreate.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        serviceContainID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return hc.share.ProtoShare.internal_static_share_NoticeServerConnectCreate_descriptor;
+      }
+
+      public hc.share.ProtoShare.NoticeServerConnectCreate getDefaultInstanceForType() {
+        return hc.share.ProtoShare.NoticeServerConnectCreate.getDefaultInstance();
+      }
+
+      public hc.share.ProtoShare.NoticeServerConnectCreate build() {
+        hc.share.ProtoShare.NoticeServerConnectCreate result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public hc.share.ProtoShare.NoticeServerConnectCreate buildPartial() {
+        hc.share.ProtoShare.NoticeServerConnectCreate result = new hc.share.ProtoShare.NoticeServerConnectCreate(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.serviceContainID_ = serviceContainID_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof hc.share.ProtoShare.NoticeServerConnectCreate) {
+          return mergeFrom((hc.share.ProtoShare.NoticeServerConnectCreate)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(hc.share.ProtoShare.NoticeServerConnectCreate other) {
+        if (other == hc.share.ProtoShare.NoticeServerConnectCreate.getDefaultInstance()) return this;
+        if (other.hasServiceContainID()) {
+          setServiceContainID(other.getServiceContainID());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasServiceContainID()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        hc.share.ProtoShare.NoticeServerConnectCreate parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (hc.share.ProtoShare.NoticeServerConnectCreate) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 serviceContainID = 1;
+      private int serviceContainID_ ;
+      /**
+       * <code>required int32 serviceContainID = 1;</code>
+       */
+      public boolean hasServiceContainID() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 serviceContainID = 1;</code>
+       */
+      public int getServiceContainID() {
+        return serviceContainID_;
+      }
+      /**
+       * <code>required int32 serviceContainID = 1;</code>
+       */
+      public Builder setServiceContainID(int value) {
+        bitField0_ |= 0x00000001;
+        serviceContainID_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 serviceContainID = 1;</code>
+       */
+      public Builder clearServiceContainID() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        serviceContainID_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:share.NoticeServerConnectCreate)
+    }
+
+    static {
+      defaultInstance = new NoticeServerConnectCreate(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:share.NoticeServerConnectCreate)
+  }
+
   public interface ReportServiceConnectOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
@@ -3826,6 +4230,11 @@ public final class ProtoShare {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_share_ServiceConnectCheckRsp_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_share_NoticeServerConnectCreate_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_share_NoticeServerConnectCreate_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_share_ReportServiceConnect_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -3854,15 +4263,16 @@ public final class ProtoShare {
       "userIDs\030\003 \003(\004\"A\n\026ServiceConnectCheckReq\022" +
       "\013\n\003key\030\001 \002(\t\022\032\n\022serviceContainerID\030\002 \002(\005" +
       "\"L\n\026ServiceConnectCheckRsp\022\026\n\016certificat" +
-      "eStr\030\001 \002(\t\022\032\n\022serviceContainerID\030\002 \002(\005\"<" +
-      "\n\024ReportServiceConnect\022\020\n\010isDelete\030\001 \002(\010" +
-      "\022\022\n\nconnectMsg\030\002 \002(\t\":\n\022SvncServiceConne" +
-      "ct\022\020\n\010isDelete\030\001 \002(\010\022\022\n\nconnectMsg\030\002 \002(\t" +
-      "\"\215\001\n\rContainerHead\022\032\n\022serviceContainerID",
-      "\030\001 \002(\005\022\021\n\tserviceID\030\002 \002(\005\022 \n\030sourceServi" +
-      "ceContainerID\030\003 \002(\005\022\027\n\017sourceServiceID\030\004" +
-      " \002(\005\022\022\n\nprotocolID\030\005 \002(\005B\026\n\010hc.shareB\nPr" +
-      "otoShare"
+      "eStr\030\001 \002(\t\022\032\n\022serviceContainerID\030\002 \002(\005\"5" +
+      "\n\031NoticeServerConnectCreate\022\030\n\020serviceCo" +
+      "ntainID\030\001 \002(\005\"<\n\024ReportServiceConnect\022\020\n" +
+      "\010isDelete\030\001 \002(\010\022\022\n\nconnectMsg\030\002 \002(\t\":\n\022S" +
+      "vncServiceConnect\022\020\n\010isDelete\030\001 \002(\010\022\022\n\nc",
+      "onnectMsg\030\002 \002(\t\"\215\001\n\rContainerHead\022\032\n\022ser" +
+      "viceContainerID\030\001 \002(\005\022\021\n\tserviceID\030\002 \002(\005" +
+      "\022 \n\030sourceServiceContainerID\030\003 \002(\005\022\027\n\017so" +
+      "urceServiceID\030\004 \002(\005\022\022\n\nprotocolID\030\005 \002(\005B" +
+      "\026\n\010hc.shareB\nProtoShare"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -3887,20 +4297,26 @@ public final class ProtoShare {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_share_ServiceConnectCheckRsp_descriptor,
               new java.lang.String[] { "CertificateStr", "ServiceContainerID", });
-          internal_static_share_ReportServiceConnect_descriptor =
+          internal_static_share_NoticeServerConnectCreate_descriptor =
             getDescriptor().getMessageTypes().get(3);
+          internal_static_share_NoticeServerConnectCreate_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_share_NoticeServerConnectCreate_descriptor,
+              new java.lang.String[] { "ServiceContainID", });
+          internal_static_share_ReportServiceConnect_descriptor =
+            getDescriptor().getMessageTypes().get(4);
           internal_static_share_ReportServiceConnect_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_share_ReportServiceConnect_descriptor,
               new java.lang.String[] { "IsDelete", "ConnectMsg", });
           internal_static_share_SvncServiceConnect_descriptor =
-            getDescriptor().getMessageTypes().get(4);
+            getDescriptor().getMessageTypes().get(5);
           internal_static_share_SvncServiceConnect_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_share_SvncServiceConnect_descriptor,
               new java.lang.String[] { "IsDelete", "ConnectMsg", });
           internal_static_share_ContainerHead_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+            getDescriptor().getMessageTypes().get(6);
           internal_static_share_ContainerHead_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_share_ContainerHead_descriptor,

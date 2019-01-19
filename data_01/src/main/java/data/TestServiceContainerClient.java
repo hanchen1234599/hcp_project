@@ -14,7 +14,7 @@ public class TestServiceContainerClient {
 	public static void main(String args[]) {
 		Trace.logger.info("ServiceContainer client ");
 		// 启动一个容器
-		ServiceContainerComponent containerComponent = new ServiceContainerComponent(1);
+		ServiceContainerComponent containerComponent = new ServiceContainerComponent(2);
 		try {
 			containerComponent.setListener((ServiceContainerListener) Class.forName("data.TestClientContainer").newInstance());
 		} catch (Exception e) {
