@@ -11,6 +11,7 @@ import share.server.config.base.ClientConfig;
 import share.server.config.base.ServerConfig;
 import com.hc.component.net.session.Session;
 import com.hc.share.util.Trace;
+
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -37,7 +38,7 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 	private ConcurrentHashMap<Session, Integer> sessions = new ConcurrentHashMap<>();
 	private ServiceContainerListener listener = null;
 	private volatile ServiceContainerType serviceContainerType = null;
-	private ConcurrentHashMap<Session, ConcurrentHashMap<Integer, Boolean>> serverSessions = new ConcurrentHashMap<>();
+	private ConcurrentHashMap<Session, ServerContainer> serverSessions = new ConcurrentHashMap<>();
 	private volatile int port = 0;
 
 	private ObjectMapper jsonParse = new ObjectMapper();
@@ -110,8 +111,8 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 			hc.share.ProtoShare.ReportServiceConnect.Builder builder = hc.share.ProtoShare.ReportServiceConnect.newBuilder();
 			builder.setIsDelete(isDelete);
 			builder.setConnectMsg(json);
-			for (Entry<Session, ConcurrentHashMap<Integer, Boolean>> entry : this.serverSessions.entrySet()) {
-				if (entry.getValue().get(conn.getServiceID()) == null)
+			for (Entry<Session, ServerContainer> entry : this.serverSessions.entrySet()) {
+				if (entry.getValue().report.get(conn.getServiceID()) == null)
 					entry.getKey().send(ProtoHelper.createContainerProtoByteBuf(0, 0, 0, 0, ShareProtocol.reportServiceConnect, builder.build().toByteArray()));
 			}
 		}
@@ -155,7 +156,6 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 					this.serviceConnects.get(conn.getServiceContainerID()).remove(conn.getServiceID());
 				}
 			}
-			// this.listener.onCreateService(conn);
 			this.listener.onDeleteService(conn);
 		} else {
 			if (!this.serviceConnects.containsKey(conn.getServiceContainerID())) {
@@ -240,6 +240,14 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 								ServiceConnectImpl conn = jsonParse.readValue(connectMsg, ServiceConnectImpl.class);
 								conn.setSession(session);
 								Trace.logger.debug("收到服务器 containerID:" + conn.getServiceContainerID() + "serviceID:" + conn.getServiceID() + "同步服务的通知");
+								ServerContainer serverSession = this.serverSessions.get(session);
+								if(serverSession != null) {
+									if(isDelete) {
+										serverSession.recv.remove(conn.getServiceID());
+									}else {
+										serverSession.recv.put(conn.getServiceID(), conn);
+									}
+								}
 								dealContainerServiceConnect(isDelete, conn);
 							} catch (Exception e) {
 								Trace.logger.error(e);
@@ -255,7 +263,7 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 							hc.share.ProtoShare.NoticeServerConnectCreate notice = hc.share.ProtoShare.NoticeServerConnectCreate.newBuilder().mergeFrom(buff).build();
 							int noticeServiceContainerID = notice.getServiceContainID();
 							Trace.logger.debug("收到服务器 containerID:" + noticeServiceContainerID + "连接检查成功的通知");
-							this.serverSessions.put(session, new ConcurrentHashMap<>());
+							this.serverSessions.put(session, new ServerContainer());
 							for (Entry<Integer, ServiceManager> entry : this.provider.entrySet()) {
 								ServiceConnectImpl connect = new ServiceConnectImpl();
 								connect.setRemoteServiceType(entry.getValue().getServiceType());
@@ -435,9 +443,16 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 					}
 				}
 			} else if (this.serviceContainerType == ServiceContainerType.CLIENTS) {
-				Trace.logger.error("依赖容器挂了");
-				for (Entry<Integer, ServiceManager> entry : this.provider.entrySet()) {
-					entry.getValue().close();
+				Trace.logger.info("依赖容器挂了");
+				ServerContainer serverContainer = this.serverSessions.get(session);
+				if(serverContainer != null) {
+					for(Entry<Integer, ServiceConnect> entry: serverContainer.recv.entrySet()) {
+						for (Entry<Integer, ServiceManager> entryProvider : this.provider.entrySet()) {
+							if (entryProvider.getValue().getIsWatch(entry.getValue().getRemoteServiceType()) && entry.getValue().getServiceContainerID() != this.serviceContatinerID) {
+								entryProvider.getValue().noticeServiceConnect(true, entry.getValue());
+							}
+						}
+					}
 				}
 			}
 		});
@@ -467,8 +482,8 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 	}
 }
 
-//class ServerConainerConnect{
-//	public ConcurrentHashMap<Integer, V>
-//	
-//}
+class ServerContainer{
+	public ConcurrentHashMap<Integer, Boolean> report = new ConcurrentHashMap<>();
+	public ConcurrentHashMap<Integer, ServiceConnect> recv = new ConcurrentHashMap<>();
+}
 
