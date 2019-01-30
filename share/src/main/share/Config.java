@@ -10,7 +10,5 @@ public class Config {
 		public static final String server = "server";
 		public static final String client = "client";
 		public static final String mysql = "mysql";
-		public static final String mysql1 = "mysql1";
-		public static final String mysql2 = "mysql1";
 	}
 }
