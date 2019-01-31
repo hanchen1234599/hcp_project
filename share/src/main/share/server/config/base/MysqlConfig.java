@@ -16,7 +16,7 @@ public class MysqlConfig extends BaseConfig {
 	public MysqlComponent createMysqlComponent( String hikariconfig ) throws Exception {
 		MysqlComponent mysql = new MysqlComponent();
 		mysql.setHikaricpConfigPaht(hikariconfig);
-		mysql.setListener((MysqlListener) Class.forName(this.getListener()).newInstance());
+		mysql.setListener((MysqlListener) this.getListener());
 		mysql.setUseThread(this.getWorkeThreadNum());
 		return mysql;
 	}

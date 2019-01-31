@@ -310,7 +310,7 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 		this.exec.execute(() -> {
 			if (this.serviceContainerType == ServiceContainerType.SERVER) {
 				ServerConfig config = new ServerConfig();
-				config.setListener("share.service.container.base.net.ServiceContainerServerListener");
+				config.setListener(new ServiceContainerServerListener());
 				try {
 					ServerComponent component = config.createServerComponent(port);
 					((ServiceContainerServerListener) component.getListener()).setServiceContainerManager(this);
@@ -344,7 +344,7 @@ public class ServiceContainerManagerImpl implements ServiceContainerManager {
 			} else {
 				this.serviceContainerType = ServiceContainerType.CLIENTS;
 				ClientConfig config = new ClientConfig();
-				config.setListener("share.service.container.base.net.ServiceContainerClientListener");
+				config.setListener(new ServiceContainerClientListener());
 				try {
 					ClientComponent component = config.createClientComponent(remoteIp, port);
 					((ServiceContainerClientListener) component.getListener()).setServiceContainerManager(this);

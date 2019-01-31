@@ -10,7 +10,6 @@ import io.netty.handler.codec.http.FullHttpResponse;
 public interface WebSocketListener extends Listener<WebSocketManager> {
 	void onAddSession(Session session);
 	void onRemoveSession(Session session);
-	void onExceptionSession(Session session);
 	void onData(Session session, ByteBuf body);
 	void onHttp(Session session, FullHttpRequest req, FullHttpResponse rsp);
 	void OnExceptionCaught(Session session, Throwable cause);

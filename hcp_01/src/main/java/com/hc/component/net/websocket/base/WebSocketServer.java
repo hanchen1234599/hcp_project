@@ -19,6 +19,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.http.DefaultFullHttpResponse;
 import io.netty.handler.codec.http.FullHttpRequest;
+import io.netty.handler.codec.http.HttpHeaderValues;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.netty.handler.codec.http.HttpServerCodec;
@@ -68,7 +69,8 @@ public class WebSocketServer {
 				if(f.isSuccess()) {
 					Trace.logger.info("open listener port:" + port + " success");
 				}else {
-					Trace.logger.info("open listener port:" + port + " error");
+					Trace.logger.error("open listener port:" + port + " error");
+					this.close();
 					Runtime.getRuntime().exit(1);
 				}
 			});	
@@ -142,10 +144,6 @@ public class WebSocketServer {
 				ctx.channel().write(new PongWebSocketFrame(frame.content().retain()));
 				return;
 			}
-			if (!(frame instanceof TextWebSocketFrame)) {
-				ctx.close();
-				return;
-			}
 			Session session = this.manager.getSession(ctx.channel());
 			if (session == null)
 				ctx.close();
@@ -175,6 +173,9 @@ public class WebSocketServer {
 				Session session = this.manager.getSession(ctx.channel());
 				if (session == null)
 					ctx.close();
+				req.headers().set("Content-Type", "text/plain");
+				req.headers().set("charset", "UTF-8");
+				req.headers().set("Connection", HttpHeaderValues.KEEP_ALIVE);
 				this.manager.recvHttp(session, req,
 						new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK));
 			}

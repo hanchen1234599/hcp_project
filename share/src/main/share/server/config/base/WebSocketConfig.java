@@ -23,7 +23,7 @@ public class WebSocketConfig extends BaseConfig {
 	public WebSocketComponent createWebSocket(int port) throws Exception {
 		WebSocketComponent webSocket = new WebSocketComponent();
 		webSocket.setEventLoop(boosThreadNum, workeThreadNum);
-		webSocket.setListener((WebSocketListener) Class.forName(this.getListener()).newInstance());
+		webSocket.setListener((WebSocketListener) this.getListener());
 		webSocket.setPort(port);
 		return webSocket;
 	}

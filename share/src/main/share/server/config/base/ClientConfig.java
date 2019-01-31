@@ -38,7 +38,7 @@ public class ClientConfig extends BaseConfig {
 		client.setEventLoop(this.getWorkeThreadNum());
 		client.setInProtoLength(this.getInProtoLength());
 		client.setOutProtoLength(this.getOutProtoLength());
-		client.setListener((ClientListener) Class.forName(this.getListener()).newInstance());
+		client.setListener((ClientListener) this.getListener());
 		client.setConnect(remoteIp, remotePort);
 		return client;
 	}

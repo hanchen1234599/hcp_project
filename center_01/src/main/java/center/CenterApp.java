@@ -16,7 +16,6 @@ import io.netty.buffer.ByteBuf;
 import share.proto.config.CenterProtocol;
 import share.proto.config.base.ProtocolLogic;
 import share.proto.util.ProtoHelper;
-import share.server.config.MmoServerConfigTemp;
 import share.server.service.Data;
 import share.server.service.Gate;
 import share.server.service.Scene;
@@ -113,19 +112,7 @@ public class CenterApp {
 	}
 
 	public void init() throws Exception {
-		MmoServerConfigTemp.getInstace().init("../share/config/servertypeconfig.xml");
-		Element centerRoot = XmlReader.getInstance().readFile("../share/config/serverconfig.xml").getRootElement();
-		Element centerPoint = XmlReader.getElementByAttributeWithElementName(centerRoot, "point", "type", "center");
-		Element centerDbConfig = XmlReader.getElementByAttribute(centerRoot.element("dbconfig"), "id", centerPoint.element("centerdb").attribute("id").getText());
 		
-		this.serverID = Integer.parseInt(centerPoint.attribute("serverid").getText());
-		this.serverName = centerPoint.attribute("name").getText();
-		
-		MysqlComponent mysql = MmoServerConfigTemp.getInstace().getMysql("center", "centerdb", centerDbConfig.attribute("hikariconfig").getText());
-		ServerComponent serverComponent = MmoServerConfigTemp.getInstace().getServer("center", "inner", Integer.parseInt(centerPoint.element("inner").attribute("port").getText()));
-		
-		mysql.build(); // 数据库组件启动
-		serverComponent.build(); // 网络连接 启动
 	}
 
 	public void setDbManager(MysqlManager dbManager) {

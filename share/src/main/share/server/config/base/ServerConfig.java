@@ -39,7 +39,7 @@ public class ServerConfig extends BaseConfig {
 		server.setEventLoop(this.getBoosThreadNum(), this.getWorkeThreadNum());
 		server.setInProtoLength(this.getInProtoLength());
 		server.setOutProtoLength(this.getOutProtoLength());
-		server.setListener((ServerListener) Class.forName(this.getListener()).newInstance());
+		server.setListener((ServerListener)this.getListener());
 		server.setPort(port);
 		return server;
 	}

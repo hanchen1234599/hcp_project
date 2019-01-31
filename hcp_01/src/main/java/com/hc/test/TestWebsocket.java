@@ -66,13 +66,7 @@ class MyListener1 implements WebSocketListener{
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public void onExceptionSession(Session session) {
-		// TODO Auto-generated method stub
-		session.getChannel().close();
-	}
-
+	
 	@Override
 	public void onData(Session session, ByteBuf body) {
 		// TODO Auto-generated method stub
