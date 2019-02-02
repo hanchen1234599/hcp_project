@@ -66,12 +66,6 @@ class MyListener1 implements WebSocketListener{
 		// TODO Auto-generated method stub
 		
 	}
-	
-	@Override
-	public void onData(Session session, ByteBuf body) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public void onHttp(Session session, FullHttpRequest req, FullHttpResponse rsp) {
@@ -91,6 +85,11 @@ class MyListener1 implements WebSocketListener{
 
 	@Override
 	public void OnExceptionCaught(Session session, Throwable cause) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void onData(Session session, ByteBuf body) {
 		// TODO Auto-generated method stub
 		
 	}

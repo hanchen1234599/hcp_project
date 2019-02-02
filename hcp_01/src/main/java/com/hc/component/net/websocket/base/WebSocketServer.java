@@ -24,7 +24,9 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.HttpVersion;
+import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.ContinuationWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.PingWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.PongWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
@@ -136,6 +138,9 @@ public class WebSocketServer {
 		 * @param frame
 		 */
 		public void handlerWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
+			Session session = this.manager.getSession(ctx.channel());
+			if (session == null)
+				ctx.close();
 			if (frame instanceof CloseWebSocketFrame) {
 				handshakerMap.get(ctx.channel()).close(ctx.channel(), (CloseWebSocketFrame) frame.retain());
 				return;
@@ -144,10 +149,17 @@ public class WebSocketServer {
 				ctx.channel().write(new PongWebSocketFrame(frame.content().retain()));
 				return;
 			}
-			Session session = this.manager.getSession(ctx.channel());
-			if (session == null)
+			if (frame instanceof TextWebSocketFrame) {//文本数据。
+				this.manager.recvData(session, ((TextWebSocketFrame) frame).content());
+			}
+			if (frame instanceof BinaryWebSocketFrame) {//二进制数据。 未支持
+				//this.manager.recvData(session, ((BinaryWebSocketFrame) frame).content());
 				ctx.close();
-			this.manager.recvData(session, ((TextWebSocketFrame) frame).content());
+			}
+			if (frame instanceof ContinuationWebSocketFrame) {//ContinuationWebSocketFrame
+				//this.manager.recvData(session, ((ContinuationWebSocketFrame) frame).content());
+				ctx.close();
+			}
 		}
 
 		/**
@@ -165,10 +177,7 @@ public class WebSocketServer {
 				WebSocketServerHandshaker handshaker = new WebSocketServerHandshakerFactory(
 						"ws://" + req.headers().get("Host"), null, false).newHandshaker(req);
 				handshakerMap.put(ctx.channel(), handshaker);
-				if (handshaker == null)
-					WebSocketServerHandshakerFactory.sendUnsupportedVersionResponse(ctx.channel());
-				else
-					handshaker.handshake(ctx.channel(), req);
+				handshaker.handshake(ctx.channel(), req);
 			} else {
 				Session session = this.manager.getSession(ctx.channel());
 				if (session == null)
