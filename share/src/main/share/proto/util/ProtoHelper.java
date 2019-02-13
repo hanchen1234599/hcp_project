@@ -6,7 +6,9 @@ import com.hc.share.util.Trace;
 import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-
+/**
+ * @author hanchen
+ */
 public class ProtoHelper {
 	public static ByteBuf createContainerProtoByteBuf(int serviceContainerID, int serviceID,
 			int sourceServiceContainerID, int sourceServiceID, int protocolID, byte[] protoBytes) {
@@ -63,7 +65,11 @@ public class ProtoHelper {
 		return Unpooled.wrappedBuffer(rspHeadLenBuf, rspHeadBuf, rspBodyBuf);
 	}
 
-	// 这个函数是线程安全的 适合底层用
+	/**
+	 * 这个函数是线程安全的 适合底层用
+	 * @param buf
+	 * @param callback
+	 */
 	public static void recvProtoBufByteBuf(ByteBuf buf, RecvProtoBufByteBuf callback) {
 		int bufLenght = buf.readableBytes();
 		short headLen = buf.readShort();
