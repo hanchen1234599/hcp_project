@@ -19,11 +19,14 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.http.DefaultFullHttpResponse;
 import io.netty.handler.codec.http.FullHttpRequest;
+import io.netty.handler.codec.http.HttpHeaderValues;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.HttpVersion;
+import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.ContinuationWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.PingWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.PongWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
@@ -68,7 +71,8 @@ public class WebSocketServer {
 				if(f.isSuccess()) {
 					Trace.logger.info("open listener port:" + port + " success");
 				}else {
-					Trace.logger.info("open listener port:" + port + " error");
+					Trace.logger.error("open listener port:" + port + " error");
+					this.close();
 					Runtime.getRuntime().exit(1);
 				}
 			});	
@@ -134,6 +138,9 @@ public class WebSocketServer {
 		 * @param frame
 		 */
 		public void handlerWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
+			Session session = this.manager.getSession(ctx.channel());
+			if (session == null)
+				ctx.close();
 			if (frame instanceof CloseWebSocketFrame) {
 				handshakerMap.get(ctx.channel()).close(ctx.channel(), (CloseWebSocketFrame) frame.retain());
 				return;
@@ -142,14 +149,17 @@ public class WebSocketServer {
 				ctx.channel().write(new PongWebSocketFrame(frame.content().retain()));
 				return;
 			}
-			if (!(frame instanceof TextWebSocketFrame)) {
-				ctx.close();
-				return;
+			if (frame instanceof TextWebSocketFrame) {//文本数据。
+				this.manager.recvData(session, ((TextWebSocketFrame) frame).content());
 			}
-			Session session = this.manager.getSession(ctx.channel());
-			if (session == null)
+			if (frame instanceof BinaryWebSocketFrame) {//二进制数据。 未支持
+				//this.manager.recvData(session, ((BinaryWebSocketFrame) frame).content());
 				ctx.close();
-			this.manager.recvData(session, ((TextWebSocketFrame) frame).content());
+			}
+			if (frame instanceof ContinuationWebSocketFrame) {//ContinuationWebSocketFrame
+				//this.manager.recvData(session, ((ContinuationWebSocketFrame) frame).content());
+				ctx.close();
+			}
 		}
 
 		/**
@@ -167,14 +177,14 @@ public class WebSocketServer {
 				WebSocketServerHandshaker handshaker = new WebSocketServerHandshakerFactory(
 						"ws://" + req.headers().get("Host"), null, false).newHandshaker(req);
 				handshakerMap.put(ctx.channel(), handshaker);
-				if (handshaker == null)
-					WebSocketServerHandshakerFactory.sendUnsupportedVersionResponse(ctx.channel());
-				else
-					handshaker.handshake(ctx.channel(), req);
+				handshaker.handshake(ctx.channel(), req);
 			} else {
 				Session session = this.manager.getSession(ctx.channel());
 				if (session == null)
 					ctx.close();
+				req.headers().set("Content-Type", "text/plain");
+				req.headers().set("charset", "UTF-8");
+				req.headers().set("Connection", HttpHeaderValues.KEEP_ALIVE);
 				this.manager.recvHttp(session, req,
 						new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK));
 			}

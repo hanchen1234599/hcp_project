@@ -1,13 +1,16 @@
 package share.server.config.base;
 
-public class BaseConfig {
-	private String listener = "";
+import com.hc.share.Listener;
 
-	public String getListener() {
+public class BaseConfig {
+	private Listener listener = null;
+
+	public Listener getListener() {
 		return listener;
 	}
 
-	public void setListener(String listener) {
+	public void setListener(Listener listener) {
 		this.listener = listener;
 	}
+	
 }

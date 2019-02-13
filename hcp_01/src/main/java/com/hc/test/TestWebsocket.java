@@ -68,18 +68,6 @@ class MyListener1 implements WebSocketListener{
 	}
 
 	@Override
-	public void onExceptionSession(Session session) {
-		// TODO Auto-generated method stub
-		session.getChannel().close();
-	}
-
-	@Override
-	public void onData(Session session, ByteBuf body) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void onHttp(Session session, FullHttpRequest req, FullHttpResponse rsp) {
 		// TODO Auto-generated method stub
 		Trace.info(req);
@@ -97,6 +85,11 @@ class MyListener1 implements WebSocketListener{
 
 	@Override
 	public void OnExceptionCaught(Session session, Throwable cause) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void onData(Session session, ByteBuf body) {
 		// TODO Auto-generated method stub
 		
 	}

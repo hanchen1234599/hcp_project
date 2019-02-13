@@ -20,7 +20,6 @@ import hc.head.ProtoHead.Head.ProtoType;
 import io.netty.buffer.ByteBuf;
 import share.proto.config.base.ProtocolLogic;
 import share.proto.util.ProtoHelper;
-import share.server.config.MmoServerConfigTemp;
 import share.server.service.Center;
 import share.server.service.Login;
 import share.server.service.Server;
@@ -259,28 +258,6 @@ public class GateApp {
 	}
 
 	public void init(int serverID) throws Exception {
-		MmoServerConfigTemp.getInstace().init("../share/config/servertypeconfig.xml");
-		Element serverConfigRoot = XmlReader.getInstance().readFile("../share/config/serverconfig.xml")
-				.getRootElement();
-		Element gatePoint = XmlReader.getElementByAttributeWithElementName(serverConfigRoot, "point", "serverid",
-				"" + serverID);
-
-		this.serverID = serverID;
-		this.serverName = gatePoint.attribute("name").getText();
-		ServerComponent inner = MmoServerConfigTemp.getInstace().getServer("gate", "inner",
-				Integer.parseInt(gatePoint.element("inner").attribute("port").getText()));
-		ServerComponent outer = MmoServerConfigTemp.getInstace().getServer("gate", "outer",
-				Integer.parseInt(gatePoint.element("outer").attribute("port").getText()));
-		ClientComponent union = MmoServerConfigTemp.getInstace().getClient("gate", "union",
-				gatePoint.element("union").attribute("remoteip").getText(),
-				Integer.parseInt(gatePoint.element("union").attribute("remoteport").getText()));
-		ClientComponent center = MmoServerConfigTemp.getInstace().getClient("gate", "center",
-				gatePoint.element("center").attribute("remoteip").getText(),
-				Integer.parseInt(gatePoint.element("center").attribute("remoteport").getText()));
-
-		inner.build();
-		outer.build();
-		union.build();
-		center.build();
+		
 	}
 }
